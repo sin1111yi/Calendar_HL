@@ -1,0 +1,27 @@
+com/example/handlelife/BuildConfig.java
+ com.example.handlelife.BuildConfig
+com/example/handlelife/base/activity/BaseActivity.java
+ com.example.handlelife.base.activity.BaseActivity
+com/example/handlelife/group/GroupItemDecoration.java
+ com.example.handlelife.group.GroupItemDecoration
+com/example/handlelife/base/adapter/BaseRecyclerAdapter.java
+ com.example.handlelife.base.adapter.BaseRecyclerAdapter
+ com.example.handlelife.base.adapter.BaseRecyclerAdapter$1
+ com.example.handlelife.base.adapter.BaseRecyclerAdapter$OnClickListener
+ com.example.handlelife.base.adapter.BaseRecyclerAdapter$OnItemClickListener
+com/example/handlelife/index/MainActivity.java
+ com.example.handlelife.index.MainActivity
+com/example/handlelife/group/GroupRecyclerAdapter.java
+ com.example.handlelife.group.GroupRecyclerAdapter
+com/example/handlelife/base/fragment/BaseFragment.java
+ com.example.handlelife.base.fragment.BaseFragment
+com/example/handlelife/item/itemList.java
+ com.example.handlelife.item.itemList
+ com.example.handlelife.item.itemList$1
+ com.example.handlelife.item.itemList$2
+ com.example.handlelife.item.itemList$3
+com/example/handlelife/base/fragment/FragmentAdapter.java
+ com.example.handlelife.base.fragment.FragmentAdapter
+com/example/handlelife/group/GroupRecyclerView.java
+ com.example.handlelife.group.GroupRecyclerView
+ com.example.handlelife.group.GroupRecyclerView$OnGroupChangeListener
