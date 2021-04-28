@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "H:\\Andriod_workspace\\HandleLife\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v28\\values-v28.xml",
+            "outputFile": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v28\\values-v28.xml",
             "map": [
                 {
                     "source": "C:\\Users\\48521\\.gradle\\caches\\transforms-2\\files-2.1\\c9a2269a2f7830ce89f0107acccf79b2\\material-1.2.1\\res\\values-v28\\values-v28.xml",

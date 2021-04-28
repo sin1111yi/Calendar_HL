@@ -1,13 +1,11 @@
-package com.haibin.calendarviewproject.pager;
+package com.example.handlelife.pager;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.haibin.calendarviewproject.Article;
-import com.haibin.calendarviewproject.ArticleAdapter;
-import com.haibin.calendarviewproject.R;
-import com.haibin.calendarviewproject.base.fragment.BaseFragment;
-import com.haibin.calendarviewproject.group.GroupItemDecoration;
-import com.haibin.calendarviewproject.group.GroupRecyclerView;
+import com.example.handlelife.R;
+import com.example.handlelife.base.fragment.BaseFragment;
+import com.example.handlelife.group.GroupItemDecoration;
+import com.example.handlelife.group.GroupRecyclerView;
 
 public class PagerFragment extends BaseFragment {
 
@@ -27,8 +25,6 @@ public class PagerFragment extends BaseFragment {
     protected void initView() {
         mRecyclerView = mRootView.findViewById(R.id.recyclerView);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(mContext));
-        mRecyclerView.addItemDecoration(new GroupItemDecoration<String, Article>());
-        mRecyclerView.setAdapter(new ArticleAdapter(mContext));
         mRecyclerView.notifyDataSetChanged();
     }
 

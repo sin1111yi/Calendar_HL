@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "H:\\Andriod_workspace\\HandleLife\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sk\\values-sk.xml",
+            "outputFile": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sk\\values-sk.xml",
             "map": [
                 {
                     "source": "C:\\Users\\48521\\.gradle\\caches\\transforms-2\\files-2.1\\a3960cf6dc4cd45393cf42844da95758\\appcompat-1.2.0\\res\\values-sk\\values-sk.xml",

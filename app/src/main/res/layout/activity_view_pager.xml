@@ -7,7 +7,7 @@
     android:background="#ffffff"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context="com.haibin.calendarviewproject.MainActivity"
+    tools:context="com.example.handlelife.MainActivity"
     tools:ignore="RtlHardcoded,HardcodedText,RtlSymmetry,SmallSp">
 
 
@@ -130,7 +130,7 @@
             app:year_view_month_text_size="20sp"
             app:year_view_scheme_color="#f17706" />
 
-        <com.haibin.calendarviewproject.pager.CalendarLinearLayout
+        <com.example.handlelife.pager.CalendarLinearLayout
             android:id="@+id/linearLayout"
             android:orientation="vertical"
             android:elevation="0dp"
@@ -155,7 +155,7 @@
                 android:layout_height="match_parent"
                 android:background="@color/content_background" />
 
-        </com.haibin.calendarviewproject.pager.CalendarLinearLayout>
+        </com.example.handlelife.pager.CalendarLinearLayout>
     </com.haibin.calendarview.CalendarLayout>
 
 

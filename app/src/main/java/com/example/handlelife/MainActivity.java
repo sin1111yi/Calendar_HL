@@ -17,8 +17,6 @@ import com.haibin.calendarview.CalendarLayout;
 import com.haibin.calendarview.CalendarView;
 import com.haibin.calendarview.TrunkBranchAnnals;
 import com.example.handlelife.base.activity.BaseActivity;
-import com.example.handlelife.meizu.MeiZuMonthView;
-import com.example.handlelife.meizu.MeizuWeekView;
 
 import java.util.HashMap;
 import java.util.List;
@@ -272,8 +270,6 @@ public abstract class MainActivity extends BaseActivity implements
                 }
                 break;
             case 4:
-                mCalendarView.setWeekView(MeizuWeekView.class);
-                mCalendarView.setMonthView(MeiZuMonthView.class);
                 mCalendarView.setWeekBar(EnglishWeekBar.class);
                 break;
             case 5:

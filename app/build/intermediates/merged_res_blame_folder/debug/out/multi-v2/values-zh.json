@@ -1,10 +1,29 @@
 {
     "logs": [
         {
-            "outputFile": "H:\\Andriod_workspace\\HandleLife\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
+            "outputFile": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
             "map": [
                 {
-                    "source": "H:\\Andriod_workspace\\HandleLife\\calendarview\\build\\intermediates\\packaged_res\\debug\\values-zh\\values-zh.xml",
+                    "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\values-zh\\strings.xml",
+                    "from": {
+                        "startLines": "12,2,35,24,22,1,47,45",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "318,60,1102,625,569,17,1505,1441",
+                        "endLines": "20,10,43,33,22,1,47,45",
+                        "endColumns": "19,19,19,19,52,41,54,60",
+                        "endOffsets": "561,310,1433,1094,617,54,1555,1497"
+                    },
+                    "to": {
+                        "startLines": "31,40,49,58,231,232,235,236",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "791,1031,1278,1606,6256,6309,6438,6493",
+                        "endLines": "39,48,57,67,231,232,235,236",
+                        "endColumns": "19,19,19,19,52,41,54,60",
+                        "endOffsets": "1026,1273,1601,2066,6304,6346,6488,6549"
+                    }
+                },
+                {
+                    "source": "H:\\Android_workspace\\Calendar_HL\\calendarview\\build\\intermediates\\packaged_res\\debug\\values-zh\\values-zh.xml",
                     "from": {
                         "startLines": "2,16,31,45,77,91,111,137,142,151,164,176,185,194,195,196,197,198,199,200,201",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -12,6 +31,14 @@
                         "endLines": "15,30,44,76,90,110,136,141,150,163,175,184,193,194,195,196,197,198,199,200,201",
                         "endColumns": "20,19,19,19,19,19,19,19,19,20,19,19,19,52,33,33,33,33,33,33,33",
                         "endOffsets": "443,786,1141,1917,2273,2887,3520,3659,3916,4216,4511,4736,4971,5024,5058,5092,5126,5160,5194,5228,5262"
+                    },
+                    "to": {
+                        "startLines": "2,16,68,82,114,128,148,174,179,188,201,213,222,233,234,237,238,239,240,241,242",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "100,448,2071,2426,3202,3558,4172,4805,4944,5201,5501,5796,6021,6351,6404,6554,6588,6622,6656,6690,6724",
+                        "endLines": "15,30,81,113,127,147,173,178,187,200,212,221,230,233,234,237,238,239,240,241,242",
+                        "endColumns": "20,19,19,19,19,19,19,19,19,20,19,19,19,52,33,33,33,33,33,33,33",
+                        "endOffsets": "443,786,2421,3197,3553,4167,4800,4939,5196,5496,5791,6016,6251,6399,6433,6583,6617,6651,6685,6719,6753"
                     }
                 }
             ]

@@ -1,15 +1,19 @@
 -- Merging decision tree log ---
 manifest
-ADDED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:2:1-21:12
+ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-21:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\b17f237cb60dfb627f22bca56b02d983\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\77c6cab4aaccc07e6af8dfd69e03ceb9\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\c9a2269a2f7830ce89f0107acccf79b2\material-1.2.1\AndroidManifest.xml:17:1-24:12
-MERGED from [:calendarview] H:\Andriod_workspace\HandleLife\calendarview\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:calendarview] H:\Android_workspace\Calendar_HL\calendarview\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\a3960cf6dc4cd45393cf42844da95758\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\1b5c0674b03ffc9c833449d65180a346\jetified-glide-4.9.0\AndroidManifest.xml:2:1-12:12
 MERGED from [com.haibin:calendarview:3.7.1] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\ee4d54c848f7d18053a7d4c258bdf53f\jetified-calendarview-3.7.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\1376d2918b9fbfbc167639b8bd9fd047\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\486da60399deac976fe861393502cf1e\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\a15452f3200fd392e8b0b5c3c5dd355f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\59a1fefcc8d367bbd4b86c2aa84fa494\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\54f568fd6bdcd756887174d5f8c059a0\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\7b08cdcab45298a9fe693b0fbb96c650\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
@@ -19,42 +23,48 @@ MERGED from [androidx.transition:transition:1.2.0] C:\Users\48521\.gradle\caches
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\ef9697eda58c16438bde15fe2016705e\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\1ea7d27c1f3c1e9ff9d6ccd16aace249\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\034f1edf3475329cc9135b63bb54ad8b\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\9905396f1cfedf2c2cc766693cea0cc5\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\6ecccfa5a0efa98bcb0b973a23449579\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\f94c3176d83c2722a40b344a7cc20b01\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\9905396f1cfedf2c2cc766693cea0cc5\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\c87bceec23c5fc8d3c480e74f49bdc8e\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\9851f28cff201963bd53864661b15b21\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\b08079db101fcefb4f896682a4d8e67a\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\f0a71a10af4c8516ab420cf7d6aaac19\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\f94c3176d83c2722a40b344a7cc20b01\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.3.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\ce72e042a5b945f188a6572df77bae6c\core-1.3.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\38b9cb56caf7d950490f949ad92989f3\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\c883e3a5d59d0de2d28247eebbb3fb75\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\57ff679a2237d823de7d94e447882215\jetified-gifdecoder-4.9.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\944e8dc07acc391cd10069b7aa742172\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\6f80c3162dd1a97cc101e49464888bd8\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\d3205d78d44fd94f92d3e059bddf4d1c\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\be5b3a80bc1f283e1d7e1aa82d6ac2d6\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\8e6f77676526819efdb5bc28e390b317\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\f886049dd2aac1079f09c6c71e2d0148\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\adaf978abc05f1f7ae0be89ebc5786dd\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\46ae697c07b089fb53812382ea15ddaa\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\be5b3a80bc1f283e1d7e1aa82d6ac2d6\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\965aadf9cbce6c04ed9fa27261085d97\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\e54cf635ae36afe6617834a304c29fcd\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\035b66161eade8718c77d8af56e08b85\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\a85ab96ce25d3393f44c759d77d29a53\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-21:12
 	package
-		ADDED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:3:5-37
-		INJECTED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml
-		INJECTED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:3:5-37
+		INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml
+		INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml
-		ADDED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:2:1-21:12
-		INJECTED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml
+		INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml
-		ADDED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:2:1-21:12
-		INJECTED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml
+		INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:5:5-19:19
+ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:5:5-19:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\b17f237cb60dfb627f22bca56b02d983\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\b17f237cb60dfb627f22bca56b02d983\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\c9a2269a2f7830ce89f0107acccf79b2\material-1.2.1\AndroidManifest.xml:22:5-20
@@ -70,47 +80,55 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\48
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\ce72e042a5b945f188a6572df77bae6c\core-1.3.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:11:9-48
-activity#com.example.handlelife.index.MainActivity
-ADDED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:12:9-18:20
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:11:9-48
+activity#com.example.handlelife.MainActivity
+ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:12:9-18:20
 	android:name
-		ADDED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:12:19-53
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:12:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:13:13-17:29
+ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:13:13-17:29
 action#android.intent.action.MAIN
-ADDED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:14:17-68
+ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:14:17-68
 	android:name
-		ADDED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:14:25-66
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:16:17-76
+ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:16:17-76
 	android:name
-		ADDED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml:16:27-74
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:16:27-74
 uses-sdk
-INJECTED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml
-INJECTED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml
+INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml
+INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\b17f237cb60dfb627f22bca56b02d983\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\b17f237cb60dfb627f22bca56b02d983\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\77c6cab4aaccc07e6af8dfd69e03ceb9\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\77c6cab4aaccc07e6af8dfd69e03ceb9\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\c9a2269a2f7830ce89f0107acccf79b2\material-1.2.1\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\c9a2269a2f7830ce89f0107acccf79b2\material-1.2.1\AndroidManifest.xml:20:5-44
-MERGED from [:calendarview] H:\Andriod_workspace\HandleLife\calendarview\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:calendarview] H:\Andriod_workspace\HandleLife\calendarview\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:calendarview] H:\Android_workspace\Calendar_HL\calendarview\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:calendarview] H:\Android_workspace\Calendar_HL\calendarview\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\a3960cf6dc4cd45393cf42844da95758\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\a3960cf6dc4cd45393cf42844da95758\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\1b5c0674b03ffc9c833449d65180a346\jetified-glide-4.9.0\AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\1b5c0674b03ffc9c833449d65180a346\jetified-glide-4.9.0\AndroidManifest.xml:6:5-8:41
 MERGED from [com.haibin:calendarview:3.7.1] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\ee4d54c848f7d18053a7d4c258bdf53f\jetified-calendarview-3.7.1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.haibin:calendarview:3.7.1] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\ee4d54c848f7d18053a7d4c258bdf53f\jetified-calendarview-3.7.1\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.media:media:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\1376d2918b9fbfbc167639b8bd9fd047\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\1376d2918b9fbfbc167639b8bd9fd047\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\486da60399deac976fe861393502cf1e\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\486da60399deac976fe861393502cf1e\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\a15452f3200fd392e8b0b5c3c5dd355f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\a15452f3200fd392e8b0b5c3c5dd355f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\59a1fefcc8d367bbd4b86c2aa84fa494\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\59a1fefcc8d367bbd4b86c2aa84fa494\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\54f568fd6bdcd756887174d5f8c059a0\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -129,14 +147,20 @@ MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\48521\.gradl
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\1ea7d27c1f3c1e9ff9d6ccd16aace249\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\034f1edf3475329cc9135b63bb54ad8b\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\034f1edf3475329cc9135b63bb54ad8b\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\9905396f1cfedf2c2cc766693cea0cc5\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\9905396f1cfedf2c2cc766693cea0cc5\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\6ecccfa5a0efa98bcb0b973a23449579\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\6ecccfa5a0efa98bcb0b973a23449579\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\f94c3176d83c2722a40b344a7cc20b01\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\f94c3176d83c2722a40b344a7cc20b01\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\9905396f1cfedf2c2cc766693cea0cc5\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\9905396f1cfedf2c2cc766693cea0cc5\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\c87bceec23c5fc8d3c480e74f49bdc8e\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\c87bceec23c5fc8d3c480e74f49bdc8e\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\9851f28cff201963bd53864661b15b21\customview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\9851f28cff201963bd53864661b15b21\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\b08079db101fcefb4f896682a4d8e67a\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\b08079db101fcefb4f896682a4d8e67a\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\f0a71a10af4c8516ab420cf7d6aaac19\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\f0a71a10af4c8516ab420cf7d6aaac19\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\f94c3176d83c2722a40b344a7cc20b01\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\f94c3176d83c2722a40b344a7cc20b01\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.3.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\ce72e042a5b945f188a6572df77bae6c\core-1.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.3.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\ce72e042a5b945f188a6572df77bae6c\core-1.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\38b9cb56caf7d950490f949ad92989f3\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
@@ -145,6 +169,14 @@ MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\48521\.gradle\caches\tra
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\c883e3a5d59d0de2d28247eebbb3fb75\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\57ff679a2237d823de7d94e447882215\jetified-gifdecoder-4.9.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\57ff679a2237d823de7d94e447882215\jetified-gifdecoder-4.9.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\944e8dc07acc391cd10069b7aa742172\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\944e8dc07acc391cd10069b7aa742172\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\6f80c3162dd1a97cc101e49464888bd8\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\6f80c3162dd1a97cc101e49464888bd8\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\d3205d78d44fd94f92d3e059bddf4d1c\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\d3205d78d44fd94f92d3e059bddf4d1c\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\be5b3a80bc1f283e1d7e1aa82d6ac2d6\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\be5b3a80bc1f283e1d7e1aa82d6ac2d6\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\8e6f77676526819efdb5bc28e390b317\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\8e6f77676526819efdb5bc28e390b317\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\f886049dd2aac1079f09c6c71e2d0148\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
@@ -153,8 +185,6 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\48521\.gradl
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\adaf978abc05f1f7ae0be89ebc5786dd\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\46ae697c07b089fb53812382ea15ddaa\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\46ae697c07b089fb53812382ea15ddaa\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\be5b3a80bc1f283e1d7e1aa82d6ac2d6\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\be5b3a80bc1f283e1d7e1aa82d6ac2d6\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\965aadf9cbce6c04ed9fa27261085d97\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\965aadf9cbce6c04ed9fa27261085d97\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\e54cf635ae36afe6617834a304c29fcd\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
@@ -163,13 +193,13 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\48521\.gradle\cache
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\035b66161eade8718c77d8af56e08b85\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\a85ab96ce25d3393f44c759d77d29a53\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\a85ab96ce25d3393f44c759d77d29a53\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
-INJECTED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml
-INJECTED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml
+INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml
+INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml
-		ADDED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml
-		INJECTED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml
+		INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml
+		INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml
-		ADDED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml
-		INJECTED from H:\Andriod_workspace\HandleLife\app\src\main\AndroidManifest.xml
+		INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml
+		INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml

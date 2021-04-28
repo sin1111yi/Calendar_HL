@@ -1,25 +1,23 @@
-package com.haibin.calendarviewproject.pager;
+package com.example.handlelife.pager;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
-import androidx.fragment.app.Fragment;
-import androidx.viewpager.widget.ViewPager;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 import com.haibin.calendarview.Calendar;
 import com.haibin.calendarview.CalendarLayout;
 import com.haibin.calendarview.CalendarView;
-import com.haibin.calendarviewproject.R;
-import com.haibin.calendarviewproject.base.activity.BaseActivity;
-import com.haibin.calendarviewproject.base.fragment.FragmentAdapter;
-import com.haibin.calendarviewproject.colorful.ColorfulActivity;
-import com.haibin.calendarviewproject.index.IndexActivity;
-import com.haibin.calendarviewproject.meizu.MeiZuActivity;
-import com.haibin.calendarviewproject.simple.SimpleActivity;
+import com.example.handlelife.R;
+import com.example.handlelife.base.activity.BaseActivity;
+import com.example.handlelife.base.fragment.FragmentAdapter;
+import com.example.handlelife.simple.SimpleActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -152,18 +150,6 @@ public class ViewPagerActivity extends BaseActivity implements
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.ll_flyme:
-                MeiZuActivity.show(this);
-                break;
-            case R.id.ll_simple:
-                SimpleActivity.show(this);
-                break;
-            case R.id.ll_colorful:
-                ColorfulActivity.show(this);
-                break;
-            case R.id.ll_index:
-                IndexActivity.show(this);
-                break;
         }
     }
 

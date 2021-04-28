@@ -205,7 +205,7 @@ public class GroupItemDecoration<Group, Child> extends RecyclerView.ItemDecorati
      *
      * @param adapter GroupRecyclerAdapter
      */
-    public void notifyDataSetChanged(GroupRecyclerAdapter<Group, Child> adapter) {
+    public void notifyDataSetChanged(com.example.handlelife.group.GroupRecyclerAdapter<Group, Child> adapter) {
         mGroup.clear();
         if (adapter == null) return;
         int key = 0;

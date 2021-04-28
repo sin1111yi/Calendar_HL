@@ -12,15 +12,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import com.haibin.calendarview.Calendar;
 import com.haibin.calendarview.CalendarLayout;
 import com.haibin.calendarview.CalendarView;
-import com.example.handlelife.Article;
-import com.example.handlelife.ArticleAdapter;
 import com.example.handlelife.R;
 import com.example.handlelife.base.activity.BaseActivity;
-import com.example.handlelife.colorful.ColorfulActivity;
-import com.example.handlelife.group.GroupItemDecoration;
 import com.example.handlelife.group.GroupRecyclerView;
-import com.example.handlelife.index.IndexActivity;
-import com.example.handlelife.meizu.MeiZuActivity;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -96,8 +90,6 @@ public class SimpleActivity extends BaseActivity implements
         mTextCurrentDay.setText(String.valueOf(mCalendarView.getCurDay()));
         mRecyclerView = findViewById(R.id.recyclerView);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        mRecyclerView.addItemDecoration(new GroupItemDecoration<String,Article>());
-        mRecyclerView.setAdapter(new ArticleAdapter(this));
         mRecyclerView.notifyDataSetChanged();
     }
 
@@ -135,18 +127,6 @@ public class SimpleActivity extends BaseActivity implements
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.ll_flyme:
-                MeiZuActivity.show(this);
-                break;
-            case R.id.ll_simple:
-                SimpleActivity.show(this);
-                break;
-            case R.id.ll_colorful:
-                ColorfulActivity.show(this);
-                break;
-            case R.id.ll_index:
-                IndexActivity.show(this);
-                break;
         }
     }
 

@@ -1,13 +1,14 @@
-package com.haibin.calendarviewproject.pager;
+package com.example.handlelife.pager;
 
 import android.content.Context;
-import androidx.annotation.Nullable;
-import androidx.viewpager.widget.ViewPager;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
 
+import androidx.annotation.Nullable;
+import androidx.viewpager.widget.ViewPager;
+
 import com.haibin.calendarview.CalendarLayout;
-import com.haibin.calendarviewproject.base.fragment.FragmentAdapter;
+import com.example.handlelife.base.fragment.FragmentAdapter;
 
 /**
  * 如果嵌套各种View出现事件冲突，可以实现这个方法即可
