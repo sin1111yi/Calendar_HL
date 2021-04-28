@@ -7,7 +7,7 @@
     android:background="#ffffff"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context="com.example.handlelife.MainActivity"
+    tools:context="com.haibin.calendarviewproject.MainActivity"
     tools:ignore="RtlHardcoded,HardcodedText,RtlSymmetry,SmallSp">
 
 
@@ -59,20 +59,6 @@
                 tools:ignore="SmallSp" />
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/iv_clear"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_marginRight="12dp"
-            android:layout_centerVertical="true"
-            android:layout_toLeftOf="@+id/fl_current"
-            android:background="@drawable/bg_ripple"
-            android:contentDescription="@string/app_name"
-            android:padding="7dp"
-            android:scaleType="centerInside"
-            android:src="@mipmap/ic_clear"
-            android:tint="#333333" />
-
         <FrameLayout
             android:id="@+id/fl_current"
             android:layout_width="32dp"
@@ -89,7 +75,7 @@
                 android:contentDescription="@string/app_name"
                 android:scaleType="centerInside"
                 android:src="@mipmap/ic_calendar"
-                android:tint="#000000" />
+                app:tint="#000000" />
 
             <TextView
                 android:id="@+id/tv_current_day"
@@ -110,19 +96,20 @@
         android:layout_height="match_parent"
         android:background="#fff"
         android:orientation="vertical"
-        app:calendar_content_view_id="@+id/recyclerView">
+        app:calendar_content_view_id="@+id/linearLayout">
 
         <com.haibin.calendarview.CalendarView
             android:id="@+id/calendarView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:background="#fff"
-            app:calendar_padding="10dp"
             app:current_month_lunar_text_color="#CFCFCF"
             app:current_month_text_color="#333333"
             app:max_year="2020"
             app:min_year="2004"
-            app:month_view="com.example.handlelife.multi.CustomMultiMonthView"
+            app:month_view="com.haibin.calendarviewproject.meizu.MeiZuMonthView"
             app:month_view_show_mode="mode_only_current"
             app:other_month_lunar_text_color="#e1e1e1"
             app:other_month_text_color="#e1e1e1"
@@ -130,14 +117,12 @@
             app:scheme_text_color="#333"
             app:scheme_theme_color="#128c4b"
             app:selected_lunar_text_color="#CFCFCF"
-            app:selected_text_color="#ffffff"
-            app:selected_theme_color="#f17706"
+            app:selected_text_color="#333"
+            app:selected_theme_color="#80cfcfcf"
             app:week_background="#fff"
-            app:week_start_with="sun"
+            app:week_start_with="sat"
             app:week_text_color="#111111"
-            app:select_mode="multi_mode"
-            app:max_multi_select_size="5"
-            app:week_view="com.example.handlelife.multi.CustomMultiWeekView"
+            app:week_view="com.haibin.calendarviewproject.meizu.MeizuWeekView"
             app:week_view_scrollable="true"
             app:year_view_day_text_color="#333333"
             app:year_view_day_text_size="9sp"
@@ -145,20 +130,32 @@
             app:year_view_month_text_size="20sp"
             app:year_view_scheme_color="#f17706" />
 
-        <com.example.handlelife.group.GroupRecyclerView
-            android:id="@+id/recyclerView"
+        <com.haibin.calendarviewproject.pager.CalendarLinearLayout
+            android:id="@+id/linearLayout"
+            android:orientation="vertical"
+            android:elevation="0dp"
+            android:background="@color/content_background"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/content_background"
-            app:group_background="@color/content_background"
-            app:group_center="false"
-            app:group_has_header="false"
-            app:group_height="42dp"
-            app:group_padding_left="16dp"
-            app:group_padding_right="16dp"
-            app:group_text_color="#555555"
-            app:group_text_size="14sp" />
+            tools:ignore="UnusedAttribute">
 
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                app:tabIndicatorColor="#00333333"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/content_background"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="#333333"
+                app:tabTextColor="#CFCFCF" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/content_background" />
+
+        </com.haibin.calendarviewproject.pager.CalendarLinearLayout>
     </com.haibin.calendarview.CalendarLayout>
 
 
