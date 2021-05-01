@@ -1,4 +1,4 @@
-package com.example.handlelife.simple;
+package com.example.handlelife;
 
 import android.content.Context;
 import android.graphics.Canvas;

@@ -2,16 +2,10 @@ com/example/handlelife/MainActivity.java
  com.example.handlelife.MainActivity
  com.example.handlelife.MainActivity$1
  com.example.handlelife.MainActivity$2
- com.example.handlelife.MainActivity$3
- com.example.handlelife.MainActivity$4
 com/example/handlelife/base/activity/BaseActivity.java
  com.example.handlelife.base.activity.BaseActivity
 com/example/handlelife/group/GroupItemDecoration.java
  com.example.handlelife.group.GroupItemDecoration
-com/example/handlelife/simple/SimpleActivity.java
- com.example.handlelife.simple.SimpleActivity
- com.example.handlelife.simple.SimpleActivity$1
- com.example.handlelife.simple.SimpleActivity$2
 com/example/handlelife/base/adapter/BaseRecyclerAdapter.java
  com.example.handlelife.base.adapter.BaseRecyclerAdapter
  com.example.handlelife.base.adapter.BaseRecyclerAdapter$1
@@ -21,24 +15,14 @@ com/example/handlelife/EnglishWeekBar.java
  com.example.handlelife.EnglishWeekBar
 com/example/handlelife/base/fragment/BaseFragment.java
  com.example.handlelife.base.fragment.BaseFragment
-com/example/handlelife/simple/SimpleMonthView.java
- com.example.handlelife.simple.SimpleMonthView
-com/example/handlelife/simple/SimpleWeekView.java
- com.example.handlelife.simple.SimpleWeekView
 com/example/handlelife/item/itemFragment.java
  com.example.handlelife.item.itemFragment
-com/example/handlelife/pager/CalendarLinearLayout.java
- com.example.handlelife.pager.CalendarLinearLayout
 com/example/handlelife/BuildConfig.java
  com.example.handlelife.BuildConfig
-com/example/handlelife/pager/PagerFragment.java
- com.example.handlelife.pager.PagerFragment
 com/example/handlelife/CalendarActivity.java
  com.example.handlelife.CalendarActivity
-com/example/handlelife/pager/ViewPagerActivity.java
- com.example.handlelife.pager.ViewPagerActivity
- com.example.handlelife.pager.ViewPagerActivity$1
- com.example.handlelife.pager.ViewPagerActivity$2
+com/example/handlelife/SimpleWeekView.java
+ com.example.handlelife.SimpleWeekView
 com/example/handlelife/group/GroupRecyclerAdapter.java
  com.example.handlelife.group.GroupRecyclerAdapter
 com/example/handlelife/item/itemList.java
@@ -51,3 +35,5 @@ com/example/handlelife/base/fragment/FragmentAdapter.java
 com/example/handlelife/group/GroupRecyclerView.java
  com.example.handlelife.group.GroupRecyclerView
  com.example.handlelife.group.GroupRecyclerView$OnGroupChangeListener
+com/example/handlelife/SimpleMonthView.java
+ com.example.handlelife.SimpleMonthView

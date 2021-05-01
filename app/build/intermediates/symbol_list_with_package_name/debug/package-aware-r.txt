@@ -953,6 +953,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color gray
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color line_color
@@ -1723,8 +1724,6 @@ id italic
 id item_touch_helper_previous_elevation
 id itemlist_Add1
 id itemlist_Del1
-id iv_func
-id iv_more
 id labeled
 id largeLabel
 id last_select_day
@@ -1733,7 +1732,6 @@ id left
 id line
 id line1
 id line3
-id linearLayout
 id listMode
 id list_item
 id ll_one
@@ -1777,7 +1775,6 @@ id mtrl_picker_title_text
 id multi_mode
 id multiply
 id navigation_header_container
-id nestedScrollView
 id never
 id noScroll
 id none
@@ -1860,7 +1857,7 @@ id stretch
 id submenuarrow
 id submit_area
 id sun
-id tabLayout
+id super_button
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -1909,7 +1906,6 @@ id uniform
 id unlabeled
 id up
 id useLogo
-id viewPager
 id view_offset_helper
 id visible
 id vp_month
@@ -1981,10 +1977,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_calendar
 layout activity_main
-layout activity_simple
-layout activity_view_pager
 layout custom_dialog
-layout custom_week_bar
 layout cv_layout_calendar_view
 layout cv_week_bar
 layout design_bottom_navigation_item

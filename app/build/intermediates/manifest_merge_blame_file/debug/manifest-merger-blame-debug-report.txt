@@ -26,22 +26,23 @@
 18-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:9:9-54
 19        android:supportsRtl="true"
 19-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:10:9-35
-20        android:theme="@style/Theme.HandleLife" >
-20-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:11:9-48
-21        <activity android:name="com.example.handlelife.MainActivity" >
-21-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:12:9-18:20
-21-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:12:19-47
-22            <intent-filter>
-22-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:13:13-17:29
-23                <action android:name="android.intent.action.MAIN" />
-23-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:14:17-68
-23-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:14:25-66
-24
-25                <category android:name="android.intent.category.LAUNCHER" />
-25-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:16:17-76
-25-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:16:27-74
-26            </intent-filter>
-27        </activity>
-28    </application>
-29
-30</manifest>
+20        android:testOnly="true"
+21        android:theme="@style/Theme.HandleLife" >
+21-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:11:9-48
+22        <activity android:name="com.example.handlelife.MainActivity" >
+22-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:12:9-18:20
+22-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:12:19-47
+23            <intent-filter>
+23-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:13:13-17:29
+24                <action android:name="android.intent.action.MAIN" />
+24-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:14:17-68
+24-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:14:25-66
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:16:17-76
+26-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:16:27-74
+27            </intent-filter>
+28        </activity>
+29    </application>
+30
+31</manifest>

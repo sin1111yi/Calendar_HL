@@ -4,10 +4,6 @@
         "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_view_pager.xml.flat",
-        "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\layout\\activity_view_pager.xml"
-    },
-    {
         "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\layout_english_week_bar.xml.flat",
         "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\layout\\english_week_bar.xml"
     },
@@ -32,10 +28,6 @@
         "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_week_bar.xml.flat",
-        "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\layout\\custom_week_bar.xml"
-    },
-    {
         "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_ripple.xml.flat",
         "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\drawable\\bg_ripple.xml"
     },
@@ -54,10 +46,6 @@
     {
         "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_colorful_logo.png.flat",
         "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_colorful_logo.png"
-    },
-    {
-        "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_simple.xml.flat",
-        "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\layout\\activity_simple.xml"
     },
     {
         "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
