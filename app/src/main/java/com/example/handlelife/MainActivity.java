@@ -2,12 +2,6 @@ package com.example.handlelife;
 
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;
-
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -16,13 +10,16 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+
+import com.example.handlelife.base.activity.BaseActivity;
 import com.example.handlelife.group.GroupRecyclerView;
+import com.getbase.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 import com.haibin.calendarview.Calendar;
 import com.haibin.calendarview.CalendarLayout;
 import com.haibin.calendarview.CalendarView;
 import com.haibin.calendarview.TrunkBranchAnnals;
-import com.example.handlelife.base.activity.BaseActivity;
-
 
 import java.util.HashMap;
 import java.util.List;
@@ -41,27 +38,33 @@ public class MainActivity extends BaseActivity implements
         View.OnClickListener {
 
     TextView mTextMonthDay;
-
     TextView mTextYear;
-
     TextView mTextLunar;
-
     TextView mTextCurrentDay;
-
     CalendarView mCalendarView;
-
     RelativeLayout mRelativeTool;
     private int mYear;
     CalendarLayout mCalendarLayout;
-
     GroupRecyclerView mRecyclerView;
 
+    FloatingActionButton fabCreateItem;
+    FloatingActionButton fabManageItem;
+    FloatingActionButton fabStatData;
 
     public static final String TAG = "MainActivity";
 
     @Override
     protected int getLayoutId() {
         return R.layout.activity_main;
+    }
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        //隐藏标题栏
+        super.onCreate(savedInstanceState);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
     }
 
     @SuppressLint("SetTextI18n")
@@ -74,6 +77,10 @@ public class MainActivity extends BaseActivity implements
         mRelativeTool = (RelativeLayout) findViewById(R.id.rl_tool);
         mCalendarView = (CalendarView) findViewById(R.id.calendarView);
         mTextCurrentDay = (TextView) findViewById(R.id.tv_current_day);
+        fabCreateItem  = (FloatingActionButton) findViewById(R.id.fab_create);
+        fabManageItem  = (FloatingActionButton) findViewById(R.id.fab_manage);
+        fabStatData  = (FloatingActionButton) findViewById(R.id.fab_stat);
+
         mTextMonthDay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -101,6 +108,28 @@ public class MainActivity extends BaseActivity implements
         mTextMonthDay.setText(mCalendarView.getCurMonth() + "月" + mCalendarView.getCurDay() + "日");
         mTextLunar.setText("今日");
         mTextCurrentDay.setText(String.valueOf(mCalendarView.getCurDay()));
+
+        //TODO: complete all these methods
+        fabCreateItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        fabManageItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        fabStatData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
     }
 
@@ -158,7 +187,7 @@ public class MainActivity extends BaseActivity implements
 
     /**
      * @brief 该函数可以设定指定日期的标记颜色与标记文字
-     * */
+     */
     private Calendar getSchemeCalendar(int year, int month, int day, int color, String text) {
         Calendar calendar = new Calendar();
         calendar.setYear(year);
@@ -206,7 +235,7 @@ public class MainActivity extends BaseActivity implements
 
     @Override
     public void onCalendarLongClick(Calendar calendar) {
-        Toast.makeText(this, "长按不选择日期\n" + getCalendarText(calendar), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "长按不选择日期\n" + getCalendarText(calendar), Toast.LENGTH_LONG).show();
     }
 
     private static String getCalendarText(Calendar calendar) {
@@ -272,15 +301,6 @@ public class MainActivity extends BaseActivity implements
     public void onYearChange(int year) {
         mTextMonthDay.setText(String.valueOf(year));
         Log.e("onYearChange", " 年份变化 " + year);
-    }
-
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        //隐藏标题栏
-        super.onCreate(savedInstanceState);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().hide();
-        }
     }
 
 }
