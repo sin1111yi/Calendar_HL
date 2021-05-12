@@ -47,4 +47,16 @@
 
     <string name="func_dialog_title">Function</string>
 
+    <string name="item_empty_text">It is empty</string>
+
+    <string name="item_default_time">1970.1.1 00:00</string>
+
+    <string name="title_activity_create">CreateActivity</string>
+
+    <string name="item_custom_note">custom note</string>
+    <string name="item_special_date">special day</string>
+    <string name="item_account_book">account book</string>
+    <string name="item_event_reminder">event reminder</string>
+    <string name="item_alarm_clock">alarm clock</string>
+
 </resources>

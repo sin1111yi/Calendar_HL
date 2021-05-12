@@ -1,4 +1,4 @@
-package com.example.handlelife.create.ui.main;
+package com.example.handlelife.create.ui;
 
 import android.content.Context;
 
@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.handlelife.R;
+import com.example.handlelife.create.ui.PlaceholderFragment;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to

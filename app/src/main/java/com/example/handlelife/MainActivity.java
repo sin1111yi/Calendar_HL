@@ -2,6 +2,7 @@ package com.example.handlelife;
 
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -13,9 +14,9 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 
 import com.example.handlelife.base.activity.BaseActivity;
+import com.example.handlelife.create.CreateActivity;
 import com.example.handlelife.group.GroupRecyclerView;
 import com.getbase.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.haibin.calendarview.Calendar;
 import com.haibin.calendarview.CalendarLayout;
 import com.haibin.calendarview.CalendarView;
@@ -77,9 +78,9 @@ public class MainActivity extends BaseActivity implements
         mRelativeTool = (RelativeLayout) findViewById(R.id.rl_tool);
         mCalendarView = (CalendarView) findViewById(R.id.calendarView);
         mTextCurrentDay = (TextView) findViewById(R.id.tv_current_day);
-        fabCreateItem  = (FloatingActionButton) findViewById(R.id.fab_create);
-        fabManageItem  = (FloatingActionButton) findViewById(R.id.fab_manage);
-        fabStatData  = (FloatingActionButton) findViewById(R.id.fab_stat);
+        fabCreateItem = (FloatingActionButton) findViewById(R.id.fab_create);
+        fabManageItem = (FloatingActionButton) findViewById(R.id.fab_manage);
+        fabStatData = (FloatingActionButton) findViewById(R.id.fab_stat);
 
         mTextMonthDay.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -110,26 +111,9 @@ public class MainActivity extends BaseActivity implements
         mTextCurrentDay.setText(String.valueOf(mCalendarView.getCurDay()));
 
         //TODO: complete all these methods
-        fabCreateItem.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-
-        fabManageItem.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-        fabStatData.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+        fabCreateItem.setOnClickListener(this);
+        fabManageItem.setOnClickListener(this);
+        fabStatData.setOnClickListener(this);
 
     }
 
@@ -181,8 +165,26 @@ public class MainActivity extends BaseActivity implements
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.fab_create:
+                // use implicit intent to jump to create activity
+                Intent intent = new Intent("com.example.handlelife.CREATE_DOCUMENT");
+                intent.addCategory("com.example.handlelife.CREATE_DIVERSE_ITEMS");
+                startActivity(intent);
+                break;
+            case R.id.fab_manage:
+                // manage fragment
+                break;
+            case R.id.fab_stat:
+                // data statistics
+                break;
 
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
     }
 
     /**
@@ -233,6 +235,7 @@ public class MainActivity extends BaseActivity implements
         Toast.makeText(this, String.format("%s : LongClickOutOfRange", calendar), Toast.LENGTH_SHORT).show();
     }
 
+    //TODO: replace getCalendarText with new method
     @Override
     public void onCalendarLongClick(Calendar calendar) {
         Toast.makeText(this, "长按不选择日期\n" + getCalendarText(calendar), Toast.LENGTH_LONG).show();

@@ -1,4 +1,4 @@
-package com.example.handlelife.create.ui.main;
+package com.example.handlelife.create.ui;
 
 import androidx.arch.core.util.Function;
 import androidx.lifecycle.LiveData;
@@ -13,6 +13,10 @@ public class PageViewModel extends ViewModel {
         @Override
         public String apply(Integer input) {
             return "createPageType: " + input;
+        }
+
+        public int getCreatePageType(Integer input) {
+            return input;
         }
     });
 

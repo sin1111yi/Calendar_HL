@@ -9,11 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HandleLife">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".create.CreateActivity"
+            android:launchMode="singleTask"
+            android:label="@string/title_activity_create">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.example.handlelife.CREATE_DOCUMENT" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="com.example.handlelife.CREATE_DIVERSE_ITEMS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:label="MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.example.handlelife.BEGINNING_ACTIVITY" />
             </intent-filter>
         </activity>
     </application>

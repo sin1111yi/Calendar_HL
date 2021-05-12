@@ -12,7 +12,7 @@ public class ItemFragment extends Fragment {
     private String itemUpdateTime;
 
     private enum itemDataType{
-        isNode,           //笔记
+        isCustomNode,           //笔记
         isSpecialDate,    //特别日期
         isAccountBook,    //账本
         isEventReminder,  //事件提醒
