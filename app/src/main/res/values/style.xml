@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Here is the style of floatingactionbutton's title-->
+    <style name="floatingActionsMenu_fab_style">
+        <item name="android:background">@drawable/fab_text_style</item> //文字背景的样式
+        <item name="android:textColor">@color/text_color_black</item> //文字的颜色
+    </style>
+
+</resources>
