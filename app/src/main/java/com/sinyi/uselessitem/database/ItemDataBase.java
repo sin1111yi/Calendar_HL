@@ -6,32 +6,32 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class ItemDataBase extends SQLiteOpenHelper {
 
-    public static final String ITEM_TABLE_NAME = "items";
-//    public static final String ITEM_CONTENT = "content";
-//    public static final String ITEM_ID = "id";
-//    public static final String ITEM_CREATE_TIME = "create time";
-//    public static final String ITEM_UPDATE_TIME = "update time";
-//    public static final String ITEM_DATA_TYPE = "data type";
+    private static final String ITEM_ID = "id";
+    private static final String ITEM_TABLE_NAME = "items";
+    private static final String ITEM_CONTENT = "content";
+    private static final String ITEM_CREATE_TIME = "create_time";
+    private static final String ITEM_UPDATE_TIME = "update_time";
+    private static final String ITEM_DATA_TYPE = "data_type";
 
     public ItemDataBase(Context context) {
         super(context, ITEM_TABLE_NAME, null, 1);
     }
 
+    private static final String CREATE_USELESS_DATABASE =
+            "create table UselessDatabase (" +
+                    ITEM_ID + " integer primary key autoincrement, " +
+                    ITEM_TABLE_NAME + " text, " +
+                    ITEM_CONTENT + " text, " +
+                    ITEM_CREATE_TIME + " text, " +
+                    ITEM_UPDATE_TIME + " text, " +
+                    ITEM_DATA_TYPE + " integer default 0 )";
+
     @Override
+    //TODO: complete the database
+
     public void onCreate(SQLiteDatabase database) {
-        database.execSQL("CREATE TABLE " + ITEM_TABLE_NAME
-                        + "(ITEM_ID INTEGER PRIMARY KEY AUTOINCREMENT,"
-                        + "ITEM_CONTENT char(20) not NULL,"
-                        + "ITEM_CREATE_TIME char(20) not NULL,"
-                        + "ITEM_UPDATE_TIME char(20) not NULL,"
-                        + "ITEM_DATA_TYPE INTEGER DEFAULT 1)"
-//                + "("
-//                + ITEM_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-//                + ITEM_CONTENT + " TEXT NOT NULL, "
-//                + ITEM_CREATE_TIME + " TEXT NOT NULL,"
-//                + ITEM_UPDATE_TIME+" TEXT NOT　NULL,"
-//                + ITEM_DATA_TYPE + " INTEGER DEFAULT 1)"
-        );
+        database.execSQL(CREATE_USELESS_DATABASE);
+
     }
 
     @Override

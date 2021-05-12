@@ -1,13 +1,11 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.haibin.calendarview"
-4    android:versionCode="371"
-5    android:versionName="3.7.1" >
-6
-7    <uses-sdk
-8        android:minSdkVersion="14"
-8-->H:\Android_workspace\Calendar_HL\calendarview\src\main\AndroidManifest.xml
-9        android:targetSdkVersion="30" />
-9-->H:\Android_workspace\Calendar_HL\calendarview\src\main\AndroidManifest.xml
-10
-11</manifest>
+3    package="com.haibin.calendarview" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="14"
+6-->H:\Android_workspace\Calendar_HL\calendarview\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="30" />
+7-->H:\Android_workspace\Calendar_HL\calendarview\src\main\AndroidManifest.xml
+8
+9</manifest>

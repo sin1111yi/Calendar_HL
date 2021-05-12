@@ -20,7 +20,29 @@
         <item>周六</item>
     </string-array>
 
+    <string-array name="complete_week_string_array">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+    <string-array name="alarm_clock_ring_duration_value_array">
+        <item>1 min</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+        <item>20 min</item>
+        <item>30 min</item>
+    </string-array>
+
     <string name="Filled_with_nothing">None</string>
+
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
 
     <string-array name="list_dialog_items">
         <item>Change week start with sun</item>
@@ -46,5 +68,39 @@
     <string name="list_dialog_title">Dynamic Update</string>
 
     <string name="func_dialog_title">Function</string>
+
+    <string name="item_empty_text">It is empty</string>
+
+    <string name="item_default_time">Create on 1970.1.1 00:00</string>
+
+    <string name="title_activity_create">CreateActivity</string>
+
+    <string name="item_custom_note">custom note</string>
+    <string name="item_special_date">special date</string>
+    <string name="item_account_book">account book</string>
+    <string name="item_event_reminder">event reminder</string>
+    <string name="item_alarm_clock">alarm clock</string>
+    <string name="create_custom_note_title">Please enter a title</string>
+    <string name="create_custom_note_text">Please enter content</string>
+    <string name="on_custom_note_create_page_show">Create a new note</string>
+    <string name="on_special_day_create_page_show">Create a special date</string>
+    <string name="on_account_book_create_page_show">Create a account book</string>
+    <string name="on_event_reminder_create_page_show">Create a new event reminder</string>
+    <string name="on_alarm_clock_create_page_show">Create a alarm clock</string>
+
+    <string name="useless_item_simple_content">words at beginning</string>
+
+    <string name="alarm_clock_default_title">Alarm clock title</string>
+    <string name="alarm_clock_default_description">Alarm clock description</string>
+
+    <string name="alarm_clock_repeat">Repeat</string>
+    <string name="alarm_clock_sound">Sound</string>
+    <string name="alarm_clock_vibrate_no">No</string>
+    <string name="alarm_clock_vibrate_yes">Yes</string>
+    <string name="alarm_clock_ring_duration">Ring duration</string>
+    <string name="alarm_clock_snooze_duration">Snooze duration</string>
+    <string name="alarm_clock_ignore_holiday">Ignore holiday</string>
+    <string name="Text_to_show">T2S</string>
+
 
 </resources>

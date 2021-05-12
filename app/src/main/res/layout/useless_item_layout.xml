@@ -31,9 +31,20 @@
 
         </RelativeLayout>
 
+        <TextView
+            android:id="@+id/useless_item_simple_content"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="35dp"
+            android:paddingStart="10dp"
+            android:text="@string/useless_item_simple_content"
+            android:textSize="20dp"/>
+
 
         <TextView
-            android:id="@+id/useless_item_create_time"
+            android:id="@+id/useless_item_update_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -53,7 +64,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
-            android:background="@drawable/ic_linear_folder" />
+            android:src="@drawable/ic_linear_img" />
 
 
     </RelativeLayout>

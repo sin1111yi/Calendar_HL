@@ -1,3 +1,14 @@
+2021/5/14
+
+完成了部分Adapter的编写
+
+2021/5/11 17:56
+
+更新计划：
+（1）使用Fragment对CalendarView点击事件进行响应，动态切换Fragment
+（2）新建Activity对FloatingActionButton点击事件进行响应
+（3）完成数据库增删改查
+（4）基于数据库动态显示Fragment
 
 2021/4/27 14:34
 

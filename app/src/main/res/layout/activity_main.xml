@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,6 +11,86 @@
     tools:context="com.example.handlelife.MainActivity"
     tools:ignore="RtlHardcoded,HardcodedText,RtlSymmetry,SmallSp">
 
+    <RelativeLayout
+        android:id="@+id/rl_tool"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tv_month_day"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:textColor="#000000"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_month_day"
+            android:orientation="vertical"
+            android:paddingLeft="6dp"
+            android:paddingTop="12dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="12dp"
+            tools:ignore="RelativeOverlap">
+
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_lunar"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_current"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/bg_ripple">
+
+            <ImageView
+                android:id="@+id/ib_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_calendar"
+                app:tint="#000000" />
+
+            <TextView
+                android:id="@+id/tv_current_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="13"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -17,10 +98,11 @@
         <com.haibin.calendarview.CalendarLayout
             android:id="@+id/calendarLayout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="#fff"
             android:orientation="vertical"
-            app:calendar_content_view_id="@+id/recyclerView">
+            app:calendar_content_view_id="@+id/nestedScrollView"
+            app:calendar_show_mode="both_month_week_view">
 
             <com.haibin.calendarview.CalendarView
                 android:id="@+id/calendarView"
@@ -29,11 +111,13 @@
                 android:layout_marginLeft="12dp"
                 android:layout_marginRight="12dp"
                 android:background="#fff"
-                app:current_month_lunar_text_color="#CFCFCF"
-                app:current_month_text_color="#333333"
+                app:current_day_lunar_text_color="@color/deep_gray"
+                app:current_day_text_color="@color/deep_gray"
+                app:current_month_lunar_text_color="#6f6f6f"
+                app:current_month_text_color="#555555"
                 app:day_text_size="16sp"
                 app:lunar_text_size="8sp"
-                app:min_year="2004"
+                app:min_year="1970"
                 app:month_view_show_mode="mode_fix"
                 app:other_month_text_color="#e1e1e1"
                 app:scheme_text="假"
@@ -41,108 +125,70 @@
                 app:scheme_theme_color="#128c4b"
                 app:selected_lunar_text_color="#CFCFCF"
                 app:selected_text_color="#333"
-                app:selected_theme_color="#80cfcfcf"
+                app:selected_theme_color="#803f3f3f"
                 app:week_background="#fff"
                 app:week_text_color="#111"
-                app:year_view_day_text_color="#333333"
+                app:year_view_day_text_color="#ff666666"
                 app:year_view_day_text_size="9sp"
-                app:year_view_month_text_color="#ff0000"
+                app:year_view_month_text_color="#ff222222"
                 app:year_view_month_text_size="20sp"
                 app:year_view_scheme_color="#f17706">
 
-                <RelativeLayout
-                    android:id="@+id/rl_tool"
-                    android:layout_width="match_parent"
-                    android:layout_height="52dp"
-                    android:background="@color/colorPrimary">
-
-                    <TextView
-                        android:id="@+id/tv_month_day"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:gravity="center_vertical"
-                        android:paddingLeft="16dp"
-                        android:textColor="#000000"
-                        android:textSize="26sp"
-                        android:textStyle="bold"
-                        tools:ignore="RtlSymmetry" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_toRightOf="@+id/tv_month_day"
-                        android:orientation="vertical"
-                        android:paddingLeft="6dp"
-                        android:paddingTop="12dp"
-                        android:paddingRight="6dp"
-                        android:paddingBottom="12dp"
-                        tools:ignore="RelativeOverlap">
-
-                        <TextView
-                            android:id="@+id/tv_year"
-                            android:layout_width="wrap_content"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:textColor="#000000"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:id="@+id/tv_lunar"
-                            android:layout_width="wrap_content"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:textColor="#000000"
-                            android:textSize="10sp"
-                            tools:ignore="SmallSp" />
-                    </LinearLayout>
-
-                    <FrameLayout
-                        android:id="@+id/fl_current"
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="12dp"
-                        android:background="@drawable/bg_ripple">
-
-                        <ImageView
-                            android:id="@+id/ib_calendar"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:contentDescription="@string/app_name"
-                            android:scaleType="centerInside"
-                            android:src="@mipmap/ic_calendar"
-                            app:tint="#000000" />
-
-                        <TextView
-                            android:id="@+id/tv_current_day"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="2dp"
-                            android:gravity="center"
-                            android:text="13"
-                            android:textColor="#000000"
-                            android:textSize="12sp" />
-                    </FrameLayout>
-
-                </RelativeLayout>
             </com.haibin.calendarview.CalendarView>
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nestedScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/useless_item_list_layout"/>
+
+            </androidx.core.widget.NestedScrollView>
 
         </com.haibin.calendarview.CalendarLayout>
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/super_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/fab_expand_menu_button"
+            android:layout_width="78dp"
+            android:layout_height="239dp"
             android:layout_gravity="bottom|end"
             android:layout_margin="16dp"
             app:elevation="8dp"
-            app:backgroundTint="@color/gray"
-            android:contentDescription="TODO" />
+            fab:fab_addButtonColorNormal="@color/gray"
+            fab:fab_addButtonColorPressed="@color/deep_gray"
+            fab:fab_expandDirection="up"
+            fab:fab_labelStyle="@style/floatingActionsMenu_fab_style">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/gray"
+                fab:fab_colorPressed="@color/deep_gray"
+                fab:fab_size="mini"
+                fab:fab_icon="@drawable/ic_linear_pen"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_manage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/gray"
+                fab:fab_colorPressed="@color/deep_gray"
+                fab:fab_size="mini"
+                fab:fab_icon="@drawable/ic_linear_class"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/gray"
+                fab:fab_colorPressed="@color/deep_gray"
+                fab:fab_size="mini"
+                fab:fab_icon="@drawable/ic_linear_data"/>
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </LinearLayout>
+

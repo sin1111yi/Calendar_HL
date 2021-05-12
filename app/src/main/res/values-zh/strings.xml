@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">手中生活</string>
+    <string name="app_name">手中</string>
     <string-array name="english_week_string_array">
         <item>Sun</item>
         <item>Mon</item>
@@ -19,6 +19,28 @@
         <item>周五</item>
         <item>周六</item>
     </string-array>
+
+    <string-array name="complete_week_string_array">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+
+    <string-array name="alarm_clock_ring_duration_value_array">
+        <item>1 分钟</item>
+        <item>5 分钟</item>
+        <item>10 分钟</item>
+        <item>15 分钟</item>
+        <item>20 分钟</item>
+        <item>30 分钟</item>
+    </string-array>
+
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
 
     <string name="Filled_with_nothing">None</string>
 
@@ -46,5 +68,41 @@
     <string name="list_dialog_title">Dynamic Update</string>
 
     <string name="func_dialog_title">Function</string>
+
+    <string name="item_empty_text">It is empty</string>
+
+    <string name="item_default_time">创建于 1970.1.1 00:00</string>
+
+    <string name="title_activity_create">CreateActivity</string>
+
+    <string name="item_custom_note">笔记</string>
+    <string name="item_special_date">特殊日期</string>
+    <string name="item_account_book">记账本</string>
+    <string name="item_event_reminder">事件提醒</string>
+    <string name="item_alarm_clock">闹钟</string>
+    <string name="create_custom_note_title">请输入标题</string>
+    <string name="create_custom_note_text">请输入内容</string>
+    <string name="on_custom_note_create_page_show">创建一个新的笔记</string>
+    <string name="on_special_day_create_page_show">创建一个新的特殊日期</string>
+    <string name="on_account_book_create_page_show">创建一个新的记账本</string>
+    <string name="on_event_reminder_create_page_show">创建一个新的事件提醒</string>
+    <string name="on_alarm_clock_create_page_show">创建一个新的闹钟</string>
+
+    <string name="useless_item_simple_content">正文内容的开头十个字</string>
+
+    <string name="alarm_clock_default_title">闹钟标题</string>
+    <string name="alarm_clock_default_description">闹钟描述</string>
+
+    <string name="alarm_clock_repeat">重复</string>
+    <string name="alarm_clock_sound">铃声</string>
+    <string name="alarm_clock_vibrate_no">否</string>
+    <string name="alarm_clock_vibrate_yes">是</string>
+    <string name="alarm_clock_ring_duration">响铃时长</string>
+    <string name="alarm_clock_snooze_duration">响铃间隔</string>
+    <string name="alarm_clock_ignore_holiday">忽略节假日</string>
+
+    <string name="Text_to_show">T2S</string>
+
+
 
 </resources>
