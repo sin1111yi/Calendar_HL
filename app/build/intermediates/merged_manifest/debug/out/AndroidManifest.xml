@@ -22,7 +22,7 @@
         <activity
             android:name="com.example.handlelife.create.CreateActivity"
             android:label="@string/title_activity_create"
-            android:launchMode="singleTask" >
+            android:launchMode="singleInstance" >
             <intent-filter>
                 <action android:name="com.example.handlelife.CREATE_DOCUMENT" />
 

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
+            "outputFile": "C:\\Users\\xiao\\Calendar_HL\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\48521\\.gradle\\caches\\transforms-2\\files-2.1\\c760d563d65ad1895d06621e36f2e77b\\material-1.2.1\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\xiao\\.gradle\\caches\\transforms-2\\files-2.1\\7e5b6cf970b6ee458e94f0de4554e685\\material-1.2.1\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

@@ -5,8 +5,8 @@ com/getbase/floatingactionbutton/FloatingActionButton.java
  com.getbase.floatingactionbutton.FloatingActionButton$TranslucentLayerDrawable
 com/example/handlelife/EnglishWeekBar.java
  com.example.handlelife.EnglishWeekBar
-com/example/handlelife/base/fragment/FragmentAdapter.java
- com.example.handlelife.base.fragment.FragmentAdapter
+com/example/handlelife/create/CreateActivity.java
+ com.example.handlelife.create.CreateActivity
 com/sinyi/uselessitem/base/UselessItem.java
  com.sinyi.uselessitem.base.UselessItem
  com.sinyi.uselessitem.base.UselessItem$itemDataType
@@ -32,8 +32,9 @@ com/sinyi/uselessitem/base/ItemListFragment.java
  com.sinyi.uselessitem.base.ItemListFragment
 com/example/handlelife/SimpleWeekView.java
  com.example.handlelife.SimpleWeekView
-com/example/handlelife/create/fragment/AlarmClockFragment.java
- com.example.handlelife.create.fragment.AlarmClockFragment
+com/example/handlelife/create/fragment/SpecialDateFragment.java
+ com.example.handlelife.create.fragment.SpecialDateFragment
+ com.example.handlelife.create.fragment.SpecialDateFragment$1
 com/example/handlelife/create/CreatePagerAdapter.java
  com.example.handlelife.create.CreatePagerAdapter
 com/example/handlelife/group/GroupRecyclerView.java
@@ -81,8 +82,7 @@ com/sinyi/uselessitem/base/UselessItemAdapter.java
  com.sinyi.uselessitem.base.UselessItemAdapter$UselessItemViewHolder
 com/example/handlelife/group/GroupRecyclerAdapter.java
  com.example.handlelife.group.GroupRecyclerAdapter
-com/example/handlelife/create/fragment/SpecialDateFragment.java
- com.example.handlelife.create.fragment.SpecialDateFragment
- com.example.handlelife.create.fragment.SpecialDateFragment$1
-com/example/handlelife/create/CreateActivity.java
- com.example.handlelife.create.CreateActivity
+com/example/handlelife/base/fragment/FragmentAdapter.java
+ com.example.handlelife.base.fragment.FragmentAdapter
+com/example/handlelife/create/fragment/AlarmClockFragment.java
+ com.example.handlelife.create.fragment.AlarmClockFragment

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
+            "outputFile": "C:\\Users\\xiao\\Calendar_HL\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
             "map": [
                 {
-                    "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\values-zh\\strings.xml",
+                    "source": "C:\\Users\\xiao\\Calendar_HL\\app\\src\\main\\res\\values-zh\\strings.xml",
                     "from": {
                         "startLines": "32,12,22,2,57,46,44,103,93,92,101,95,99,100,96,97,98,1,42,41,83,82,69,79,81,77,73,71,80,78,67,86,88,84,87,85,75,90",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "H:\\Android_workspace\\Calendar_HL\\calendarview\\build\\intermediates\\packaged_res\\debug\\values-zh\\values-zh.xml",
+                    "source": "C:\\Users\\xiao\\Calendar_HL\\calendarview\\build\\intermediates\\packaged_res\\debug\\values-zh\\values-zh.xml",
                     "from": {
                         "startLines": "2,16,31,45,77,91,111,137,142,151,164,176,185,194,195,196,197,198,199,200,201",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
