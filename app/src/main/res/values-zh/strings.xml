@@ -76,6 +76,7 @@
     <string name="item_default_time">创建于 1970.1.1 00:00</string>
 
     <string name="title_activity_create">CreateActivity</string>
+    <string name="title_activity_overview">OverViewActivity</string>
 
     <string name="item_custom_note">笔记</string>
     <string name="item_special_date">特殊日期</string>

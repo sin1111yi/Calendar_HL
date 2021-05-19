@@ -1,8 +1,9 @@
 2021/5/19
 
 将CreateActivity和对应的CreatePageAdapter更改为OverViewActivity和OverViewPageAdapter
-计划：再OverViewActivity中显示合适的控件、ListView与add按键，点击添加按键弹出创建对应项的Fragment
-可以参照新的结构图
+重构说明：原本的example.handlelife.create包由example.handlelife.overview包替换
+        新建了example.handlelife.create包
+计划：在overview中显示各个列表，使用悬浮按键跳转到新的CreateActivity中创建新的item
 
 2021/5/17
 

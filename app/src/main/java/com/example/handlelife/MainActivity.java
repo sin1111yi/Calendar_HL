@@ -157,8 +157,8 @@ public class MainActivity extends BaseActivity implements
     public void onClick(View v) {
         if (v.getId() == R.id.fab_create) {
             // use implicit intent to jump to create activity
-            Intent intent = new Intent("com.example.handlelife.CREATE_DOCUMENT");
-            intent.addCategory("com.example.handlelife.CREATE_DIVERSE_ITEMS");
+            Intent intent = new Intent("com.example.handlelife.OVERVIEW_PAGES");
+            intent.addCategory("com.example.handlelife.OVERVIEW_ALL_ITEMS");
             startActivity(intent);
         } else if (v.getId() == R.id.fab_manage) {
             // manage fragment

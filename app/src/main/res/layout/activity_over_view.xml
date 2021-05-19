@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".create.OverViewActivity">
+    tools:context=".overview.OverViewActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -13,24 +14,34 @@
 
 
         <com.google.android.material.tabs.TabLayout
-            android:id="@+id/over_view_tabs_title"
+            android:id="@+id/overview_tabs_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:tabBackground="@color/deep_gray"
-            app:tabSelectedTextColor="@color/black"
             app:tabIndicatorColor="@color/white"
-            app:tabTextColor="@color/white"
             app:tabMinWidth="100dp"
-            app:tabMode="scrollable">
-        </com.google.android.material.tabs.TabLayout>
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextColor="@color/white"></com.google.android.material.tabs.TabLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/over_view_view_pager"
+        android:id="@+id/overview_view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/create_current_page_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        fab:fab_colorNormal="@color/light_gray"
+        fab:fab_colorPressed="@color/deep_gray"
+        fab:fab_icon="@drawable/ali_nav_list" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

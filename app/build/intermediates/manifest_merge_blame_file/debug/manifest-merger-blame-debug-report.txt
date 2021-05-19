@@ -11,7 +11,7 @@
 9-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:5:5-36:19
+11-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:5:5-48:19
 12        android:allowBackup="true"
 12-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -26,55 +26,78 @@
 18-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:9:9-54
 19        android:supportsRtl="true"
 19-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:10:9-35
-20        android:theme="@style/Theme.HandleLife" >
-20-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:11:9-48
-21        <activity
-21-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:12:9-22:20
-22            android:name="com.example.handlelife.create.OverViewActivity"
-22-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:13:13-52
-23            android:label="@string/title_activity_create"
-23-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:15:13-58
-24            android:launchMode="singleInstance" >
-24-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:14:13-48
-25            <intent-filter>
-25-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:16:13-21:29
-26                <action android:name="com.example.handlelife.CREATE_DOCUMENT" />
-26-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:17:17-81
-26-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:17:25-78
-27
-28                <category android:name="com.example.handlelife.CREATE_DIVERSE_ITEMS" />
-28-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:19:17-88
-28-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:19:27-85
-29                <category android:name="android.intent.category.DEFAULT" />
-29-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:20:17-76
-29-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:20:27-73
-30            </intent-filter>
-31        </activity>
-32        <activity
-32-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:24:9-35:20
-33            android:name="com.example.handlelife.MainActivity"
-33-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:25:13-41
-34            android:label="@string/app_name"
-34-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:27:13-45
-35            android:launchMode="singleTask" >
-35-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:26:13-44
-36            <intent-filter>
-36-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:28:13-34:29
-37                <action android:name="android.intent.action.MAIN" />
-37-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:29:17-69
-37-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:29:25-66
-38
-39                <category android:name="android.intent.category.LAUNCHER" />
-39-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:31:17-77
-39-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:31:27-74
-40                <category android:name="android.intent.category.DEFAULT" />
-40-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:20:17-76
-40-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:20:27-73
-41                <category android:name="com.example.handlelife.BEGINNING_ACTIVITY" />
-41-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:33:17-86
-41-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:33:27-83
+20        android:testOnly="true"
+21        android:theme="@style/Theme.HandleLife" >
+21-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:11:9-48
+22        <activity
+22-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:13:9-23:20
+23            android:name="com.example.handlelife.create.CreateActivity"
+23-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:14:13-50
+24            android:label="@string/title_activity_create"
+24-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:15:13-58
+25            android:launchMode="singleInstance" >
+25-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:16:13-48
+26            <intent-filter>
+26-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:17:13-22:29
+27                <action android:name="com.example.handlelife.CREATE_PAGE" />
+27-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:18:17-77
+27-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:18:25-74
+28
+29                <category android:name="com.example.handlelife.CREATE_DIVERSE_ITEMS" />
+29-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:20:17-88
+29-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:20:27-85
+30                <category android:name="android.intent.category.DEFAULT" />
+30-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:21:17-76
+30-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:21:27-73
+31            </intent-filter>
+32        </activity>
+33        <activity
+33-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:25:9-35:20
+34            android:name="com.example.handlelife.overview.OverViewActivity"
+34-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:26:13-54
+35            android:label="@string/title_activity_overview"
+35-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:27:13-60
+36            android:launchMode="singleTask" >
+36-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:28:13-44
+37            <intent-filter>
+37-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:29:13-34:29
+38                <action android:name="com.example.handlelife.OVERVIEW_PAGES" />
+38-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:30:17-80
+38-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:30:25-77
+39
+40                <category android:name="com.example.handlelife.OVERVIEW_ALL_ITEMS" />
+40-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:32:17-86
+40-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:32:27-83
+41                <category android:name="android.intent.category.DEFAULT" />
+41-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:21:17-76
+41-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:21:27-73
 42            </intent-filter>
 43        </activity>
-44    </application>
-45
-46</manifest>
+44        <activity
+44-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:36:9-47:20
+45            android:name="com.example.handlelife.MainActivity"
+45-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:37:13-41
+46            android:label="@string/app_name"
+46-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:38:13-45
+47            android:launchMode="singleTask" >
+47-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:39:13-44
+48            <intent-filter>
+48-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:40:13-46:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:41:17-69
+49-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:41:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:43:17-77
+51-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:43:27-74
+52                <category android:name="android.intent.category.DEFAULT" />
+52-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:21:17-76
+52-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:21:27-73
+53                <category android:name="com.example.handlelife.BEGINNING_ACTIVITY" />
+53-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:45:17-86
+53-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:45:27-83
+54            </intent-filter>
+55        </activity>
+56    </application>
+57
+58</manifest>

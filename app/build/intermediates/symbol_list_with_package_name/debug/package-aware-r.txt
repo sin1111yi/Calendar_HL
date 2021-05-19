@@ -1898,7 +1898,6 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
-id account_book_expand_page
 id account_book_tv_info
 id action0
 id action_bar
@@ -1922,7 +1921,6 @@ id actions
 id activity_chooser_view_content
 id add
 id alarm_clock_build
-id alarm_clock_expend_page
 id alarm_clock_holiday
 id alarm_clock_repeat
 id alarm_clock_ring_duration
@@ -1930,7 +1928,6 @@ id alarm_clock_set_title
 id alarm_clock_snooze_duration
 id alarm_clock_sound
 id alarm_clock_time_picker
-id alarm_clock_tv_info
 id alertTitle
 id aligned
 id all
@@ -1986,10 +1983,9 @@ id contentPanel
 id content_container
 id coordinator
 id cos
-id create_alarm_clock
+id create_current_page_item
 id custom
 id customPanel
-id custom_note_expand_page
 id custom_note_tv_info
 id cut
 id date_picker_actions
@@ -2028,7 +2024,6 @@ id end
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
-id event_reminder_expand_page
 id event_reminder_tv_info
 id exitUntilCollapsed
 id expand
@@ -2038,6 +2033,7 @@ id fab_create
 id fab_expand_menu_button
 id fab_label
 id fab_manage
+id fab_return_overview
 id fab_stat
 id fade
 id fill
@@ -2155,8 +2151,8 @@ id options3
 id optionspicker
 id outline
 id outmost_container
-id over_view_tabs_title
-id over_view_view_pager
+id overview_tabs_title
+id overview_view_pager
 id packed
 id parallax
 id parent
@@ -2226,7 +2222,6 @@ id snackbar_text
 id snap
 id snapMargins
 id spacer
-id special_date_expand_page
 id special_date_tv_info
 id spline
 id split_action_bar
@@ -2379,6 +2374,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_create
 layout activity_main
 layout activity_over_view
 layout button_with_info
@@ -2614,6 +2610,7 @@ string status_bar_notification_info_overflow
 string sun
 string thu
 string title_activity_create
+string title_activity_overview
 string tue
 string useless_item_simple_content
 string wed
