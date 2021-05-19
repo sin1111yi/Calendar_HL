@@ -1,3 +1,9 @@
+2021/5/19
+
+将CreateActivity和对应的CreatePageAdapter更改为OverViewActivity和OverViewPageAdapter
+计划：再OverViewActivity中显示合适的控件、ListView与add按键，点击添加按键弹出创建对应项的Fragment
+可以参照新的结构图
+
 2021/5/17
 
 完成了部分闹钟界面的编写

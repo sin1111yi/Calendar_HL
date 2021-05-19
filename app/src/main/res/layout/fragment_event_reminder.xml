@@ -5,10 +5,22 @@
     android:layout_height="match_parent"
     tools:context=".create.fragment.EventReminderFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/on_event_reminder_create_page_show" />
+        android:layout_height="50dp"
+        android:background="@color/deep_gray">
+
+        <TextView
+            android:id="@+id/event_reminder_tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:paddingStart="15dp"
+            android:text="@string/on_event_reminder_create_page_show"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
 
 </FrameLayout>

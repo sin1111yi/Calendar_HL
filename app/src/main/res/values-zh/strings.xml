@@ -42,6 +42,8 @@
     <string name="confirm">确认</string>
     <string name="cancel">取消</string>
 
+    <string name="comma">，</string>
+
     <string name="Filled_with_nothing">None</string>
 
     <string-array name="list_dialog_items">

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HandleLife">
         <activity
-            android:name=".create.CreateActivity"
+            android:name=".create.OverViewActivity"
             android:launchMode="singleInstance"
             android:label="@string/title_activity_create">
             <intent-filter>

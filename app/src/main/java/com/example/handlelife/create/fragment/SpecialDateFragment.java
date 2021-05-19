@@ -26,7 +26,7 @@ public class SpecialDateFragment extends Fragment {
     View rootView;
 
     TimePickerView timePickerView;
-    TextView tvTime;
+    //TextView tvTime;
     Context mContext;
 
     public SpecialDateFragment() {
@@ -52,7 +52,7 @@ public class SpecialDateFragment extends Fragment {
             @Override
             public void onTimeSelect(Date date, View v) {//选中事件回调
                 SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-                tvTime.setText(format.format(date));
+                //tvTime.setText(format.format(date));
             }
         }).build();
         timePickerView.show();
@@ -65,7 +65,7 @@ public class SpecialDateFragment extends Fragment {
             rootView = inflater.inflate(R.layout.fragment_special_date, container, false);
         }
 
-        tvTime = rootView.findViewById(R.id.special_date_selected);
+        //tvTime = rootView.findViewById(R.id.special_date_selected);
 
         return rootView;
     }

@@ -11,16 +11,17 @@ import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.example.handlelife.R;
+import com.example.handlelife.customui.FragmentGetPosition;
 
 import java.util.List;
 
-public class CreatePagerAdapter extends FragmentStateAdapter {
+public class OverViewPagerAdapter extends FragmentStateAdapter{
 
     List<Fragment> fragmentList;
 
-    public CreatePagerAdapter(@NonNull FragmentManager fragmentManager,
-                              @NonNull Lifecycle lifecycle,
-                              List<Fragment> fragments) {
+    public OverViewPagerAdapter(@NonNull FragmentManager fragmentManager,
+                                @NonNull Lifecycle lifecycle,
+                                List<Fragment> fragments) {
         super(fragmentManager, lifecycle);
         fragmentList=fragments;
     }
@@ -36,4 +37,5 @@ public class CreatePagerAdapter extends FragmentStateAdapter {
     public int getItemCount() {
         return fragmentList.size();
     }
+
 }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".create.CreateActivity">
+    tools:context=".create.OverViewActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -13,7 +13,7 @@
 
 
         <com.google.android.material.tabs.TabLayout
-            android:id="@+id/create_tabs_title"
+            android:id="@+id/over_view_tabs_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:tabBackground="@color/deep_gray"
@@ -27,20 +27,10 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/create_view_pager"
+        android:id="@+id/over_view_view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-
-    <com.getbase.floatingactionbutton.FloatingActionButton
-        android:id="@+id/create_fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center"
-        android:layout_margin="@dimen/fab_margin"
-        app:fab_colorNormal="@color/light_gray"
-        app:fab_colorPressed="@color/deep_gray"
-        app:fab_icon="@drawable/ic_linear_complete" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

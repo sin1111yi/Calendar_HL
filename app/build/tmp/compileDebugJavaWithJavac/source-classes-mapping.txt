@@ -1,5 +1,3 @@
-com/example/handlelife/note/Note.java
- com.example.handlelife.note.Note
 com/getbase/floatingactionbutton/FloatingActionButton.java
  com.getbase.floatingactionbutton.FloatingActionButton
  com.getbase.floatingactionbutton.FloatingActionButton$1
@@ -7,8 +5,6 @@ com/getbase/floatingactionbutton/FloatingActionButton.java
  com.getbase.floatingactionbutton.FloatingActionButton$TranslucentLayerDrawable
 com/example/handlelife/EnglishWeekBar.java
  com.example.handlelife.EnglishWeekBar
-com/example/handlelife/create/fragment/AlarmClockFragment.java
- com.example.handlelife.create.fragment.AlarmClockFragment
 com/sinyi/uselessitem/base/UselessItem.java
  com.sinyi.uselessitem.base.UselessItem
  com.sinyi.uselessitem.base.UselessItem$itemDataType
@@ -18,10 +14,11 @@ com/example/handlelife/customui/InfoDialogButton.java
  com.example.handlelife.customui.InfoDialogButton$2
  com.example.handlelife.customui.InfoDialogButton$3
  com.example.handlelife.customui.InfoDialogButton$InfoDialogType
+com/example/handlelife/create/fragment/CreateAcFragment.java
+ com.example.handlelife.create.fragment.CreateAcFragment
+ com.example.handlelife.create.fragment.CreateAcFragment$1
 com/example/handlelife/BuildConfig.java
  com.example.handlelife.BuildConfig
-com/example/handlelife/note/BasenoteActivity.java
- com.example.handlelife.note.BasenoteActivity
 com/getbase/floatingactionbutton/FloatingActionsMenu.java
  com.getbase.floatingactionbutton.FloatingActionsMenu
  com.getbase.floatingactionbutton.FloatingActionsMenu$1
@@ -39,13 +36,11 @@ com/example/handlelife/SimpleWeekView.java
 com/example/handlelife/create/fragment/SpecialDateFragment.java
  com.example.handlelife.create.fragment.SpecialDateFragment
  com.example.handlelife.create.fragment.SpecialDateFragment$1
-com/example/handlelife/create/CreatePagerAdapter.java
- com.example.handlelife.create.CreatePagerAdapter
+com/example/handlelife/customui/HandleLinearlayout.java
+ com.example.handlelife.customui.HandleLinearlayout
 com/example/handlelife/group/GroupRecyclerView.java
  com.example.handlelife.group.GroupRecyclerView
  com.example.handlelife.group.GroupRecyclerView$OnGroupChangeListener
-com/example/handlelife/note/CRUD.java
- com.example.handlelife.note.CRUD
 com/example/handlelife/create/fragment/EventReminderFragment.java
  com.example.handlelife.create.fragment.EventReminderFragment
 com/getbase/floatingactionbutton/AddFloatingActionButton.java
@@ -62,9 +57,6 @@ com/example/handlelife/base/activity/BaseActivity.java
  com.example.handlelife.base.activity.BaseActivity
 com/example/handlelife/group/GroupItemDecoration.java
  com.example.handlelife.group.GroupItemDecoration
-com/example/handlelife/note/NoteAdapter.java
- com.example.handlelife.note.NoteAdapter
- com.example.handlelife.note.NoteAdapter$MyFilter
 com/example/handlelife/create/PageViewModel.java
  com.example.handlelife.create.PageViewModel
 com/example/handlelife/base/adapter/BaseRecyclerAdapter.java
@@ -77,32 +69,29 @@ com/sinyi/uselessitem/base/ItemRecyclerViewAdapter.java
  com.sinyi.uselessitem.base.ItemRecyclerViewAdapter$ViewHolder
 com/example/handlelife/base/fragment/BaseFragment.java
  com.example.handlelife.base.fragment.BaseFragment
-com/example/handlelife/note/EditActivity.java
- com.example.handlelife.note.EditActivity
- com.example.handlelife.note.EditActivity$1
- com.example.handlelife.note.EditActivity$2
- com.example.handlelife.note.EditActivity$3
 com/getbase/floatingactionbutton/TouchDelegateGroup.java
  com.getbase.floatingactionbutton.TouchDelegateGroup
 com/example/handlelife/create/fragment/AccountBookFragment.java
  com.example.handlelife.create.fragment.AccountBookFragment
-com/example/handlelife/note/NoteDatabase.java
- com.example.handlelife.note.NoteDatabase
-com/example/handlelife/base/fragment/FragmentAdapter.java
- com.example.handlelife.base.fragment.FragmentAdapter
+com/example/handlelife/create/OverViewActivity.java
+ com.example.handlelife.create.OverViewActivity
+com/example/handlelife/create/fragment/CustomNoteFragment.java
+ com.example.handlelife.create.fragment.CustomNoteFragment
 com/sinyi/uselessitem/database/ItemDataBase.java
  com.sinyi.uselessitem.database.ItemDataBase
+com/example/handlelife/customui/FragmentTransfer.java
+ com.example.handlelife.customui.FragmentTransfer
 com/sinyi/uselessitem/base/UselessItemAdapter.java
  com.sinyi.uselessitem.base.UselessItemAdapter
  com.sinyi.uselessitem.base.UselessItemAdapter$1
  com.sinyi.uselessitem.base.UselessItemAdapter$UselessItemViewHolder
+com/example/handlelife/customui/HandleTimePicker.java
+ com.example.handlelife.customui.HandleTimePicker
 com/example/handlelife/group/GroupRecyclerAdapter.java
  com.example.handlelife.group.GroupRecyclerAdapter
-com/example/handlelife/create/CreateActivity.java
- com.example.handlelife.create.CreateActivity
-com/example/handlelife/create/fragment/CustomNoteFragment.java
- com.example.handlelife.create.fragment.CustomNoteFragment
- com.example.handlelife.create.fragment.CustomNoteFragment$1
- com.example.handlelife.create.fragment.CustomNoteFragment$2
- com.example.handlelife.create.fragment.CustomNoteFragment$3
- com.example.handlelife.create.fragment.CustomNoteFragment$4
+com/example/handlelife/base/fragment/FragmentAdapter.java
+ com.example.handlelife.base.fragment.FragmentAdapter
+com/example/handlelife/create/OverViewPagerAdapter.java
+ com.example.handlelife.create.OverViewPagerAdapter
+com/example/handlelife/create/fragment/AlarmClockFragment.java
+ com.example.handlelife.create.fragment.AlarmClockFragment

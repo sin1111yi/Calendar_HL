@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -20,13 +19,12 @@ import java.util.List;
 public class InfoDialogButton extends RelativeLayout {
 
     private InfoDialogType DialogType = InfoDialogType.UNSET_TYPE;
-    private TextView btnName;
-    private TextView btnSet;
-    private Button btnDialog;
+    private final TextView btnName;
+    private final TextView btnSet;
     private String getBtnName;
     private String getBtnSet;
 
-    List<String> getSelected = new ArrayList<>();
+    private StringBuilder getSelected = new StringBuilder();
     private String[] itemToShow;
     private int itemNum;
     private String dialogTitle;
@@ -38,7 +36,8 @@ public class InfoDialogButton extends RelativeLayout {
     public enum InfoDialogType {
         UNSET_TYPE,
         COMMON_INFO,
-        MULTI_SELECT
+        SINGLE_SELECT,
+        MULTI_SELECT,
     }
 
     private final String TAG = "InfoDialogButton";
@@ -50,8 +49,8 @@ public class InfoDialogButton extends RelativeLayout {
 
         this.btnName = findViewById(R.id.btn_info_option_name);
         this.btnSet = findViewById(R.id.btn_info_option_set);
-        this.btnDialog = findViewById(R.id.btn_start_dialog);
-        this.btnDialog.setOnClickListener(new OnClickListener() {
+        Button btnDialog = findViewById(R.id.btn_start_dialog);
+        btnDialog.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
                 InfoButtonClickEvent();
@@ -74,6 +73,10 @@ public class InfoDialogButton extends RelativeLayout {
         this.btnSet.setText(getBtnSet);
     }
 
+    public void setBtnSet(String str) {
+        this.btnSet.setText(str);
+    }
+
     public String getBtnName() {
         return this.getBtnName;
     }
@@ -88,6 +91,8 @@ public class InfoDialogButton extends RelativeLayout {
         }
         if (this.DialogType == InfoDialogType.COMMON_INFO) {
             showCommonInfoDialog();
+        } else if (this.DialogType == InfoDialogType.SINGLE_SELECT) {
+            showSingleSelectDialog();
         } else if (this.DialogType == InfoDialogType.MULTI_SELECT) {
             showMultiSelectDialog();
         }
@@ -95,6 +100,12 @@ public class InfoDialogButton extends RelativeLayout {
 
     private void showCommonInfoDialog() {
         Log.d(TAG, "prepare to show common info dialog");
+    }
+
+    private void showSingleSelectDialog()
+    {
+        Log.d(TAG, "prepare to show single select dialog");
+        //TODO: complete this method
     }
 
     private void showMultiSelectDialog() {
@@ -107,25 +118,29 @@ public class InfoDialogButton extends RelativeLayout {
         for (int i = 0; i < this.itemNum; i++)
             isSelected[i] = false;
 
-        dialogBuilder = new AlertDialog.Builder(mContext).setTitle(R.string.alarm_clock_repeat)
+        dialogBuilder = new AlertDialog.Builder(mContext).setTitle(dialogTitle)
                 .setMultiChoiceItems(items, isSelected, new DialogInterface.OnMultiChoiceClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which, boolean isChecked) {
                         if (isChecked) {
                             choice.add(which);
                         } else {
-                            choice.remove(choice.indexOf(which));
+                            choice.remove((Integer) which);
                         }
                     }
                 }).setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // get selected item(s) in the array
+                        getSelected = new StringBuilder();
                         for (int j = 0; j < choice.size(); j++) {
-                            getSelected.add(items[choice.get(j)]);
+                            getSelected.append(items[choice.get(j)]);
+                            if (j < choice.size() - 1)
+                                getSelected.append(getResources().getString(R.string.comma));
                         }
 
                         Log.d(TAG, getSelected + " has been selected!");
+                        showMultiSelectResult();
                     }
                 });
         dialogBuilder.create().show();
@@ -133,17 +148,33 @@ public class InfoDialogButton extends RelativeLayout {
 
     /**
      * @param items : 用作初始化的字符串数组
-     * @param num   : 选项总数
-     * @param title : Dialog title
+     * @param titleId : Dialog title
      */
-    public void setMultiSelectDialogContent(String[] items, int num, String title) {
+    public void setMultiSelectDialogContent(String[] items, int titleId) {
         this.itemToShow = items;
-        this.itemNum = num;
-        this.dialogTitle = title;
+        this.itemNum=items.length;
+        this.dialogTitle = getResources().getString(titleId);
     }
 
+    public void showMultiSelectResult() {
+        this.getBtnSet = this.getSelected.toString();
+        setBtnSet(this.getBtnSet);
+    }
 
-    public List<String> getMultiSelectResult() {
-        return this.getSelected;
+    /**
+     * @param items : 用作初始化的字符串数组
+     * @param titleId : Dialog title
+     */
+    public void setSingleSelectDialogContent(String[] items,int titleId)
+    {
+        this.itemToShow=items;
+        this.itemNum=items.length;
+        this.dialogTitle=getResources().getString(titleId);
+    }
+
+    public void showSingleSelectResult()
+    {
+        this.getBtnSet = this.getSelected.toString();
+        setBtnSet(this.getBtnSet);
     }
 }
