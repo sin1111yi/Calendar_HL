@@ -30,6 +30,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.handlelife.note.EditActivity" />
+        <activity android:name="com.example.handlelife.note.BasenoteActivity" />
         <activity
             android:name="com.example.handlelife.MainActivity"
             android:label="@string/app_name"

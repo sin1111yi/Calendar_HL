@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-38:12
+ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-41:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\xiao\.gradle\caches\transforms-2\files-2.1\bd6b1c45a89fcd0f59a0d3667b9c7977\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\xiao\.gradle\caches\transforms-2\files-2.1\d9c8547f43bfc98a7c33c7a922993a2d\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-ui:2.3.0] C:\Users\xiao\.gradle\caches\transforms-2\files-2.1\3dee8500d6881694b19870eccb5b0621\navigation-ui-2.3.0\AndroidManifest.xml:17:1-24:12
@@ -58,25 +58,25 @@ MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\xiao\.gradle\caches
 MERGED from [com.haibin:calendarview:3.7.1] C:\Users\xiao\.gradle\caches\transforms-2\files-2.1\63e8221da5fbffea0e837f55c431456b\jetified-calendarview-3.7.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.zcweng:switch-button:0.0.3] C:\Users\xiao\.gradle\caches\transforms-2\files-2.1\9a104f7b7896f2177812129c5e79bf3a\jetified-switch-button-0.0.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\xiao\.gradle\caches\transforms-2\files-2.1\3fd5b4b866d23b43b0e15439a0ee99e7\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-41:12
 	package
 		ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:3:5-37
 		INJECTED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-38:12
+		ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-41:12
 		INJECTED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-38:12
+		ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-41:12
 		INJECTED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:5:5-36:19
+ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:5:5-39:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\xiao\.gradle\caches\transforms-2\files-2.1\bd6b1c45a89fcd0f59a0d3667b9c7977\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\xiao\.gradle\caches\transforms-2\files-2.1\bd6b1c45a89fcd0f59a0d3667b9c7977\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\xiao\.gradle\caches\transforms-2\files-2.1\7e5b6cf970b6ee458e94f0de4554e685\material-1.2.1\AndroidManifest.xml:22:5-20
@@ -125,28 +125,36 @@ category#android.intent.category.DEFAULT
 ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:20:17-76
 	android:name
 		ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:20:27-73
+activity#com.example.handlelife.note.EditActivity
+ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:23:9-24:48
+	android:name
+		ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:24:13-46
+activity#com.example.handlelife.note.BasenoteActivity
+ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:25:9-58
+	android:name
+		ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:25:19-56
 activity#com.example.handlelife.MainActivity
-ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:24:9-35:20
+ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:27:9-38:20
 	android:label
-		ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:27:13-45
+		ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:30:13-45
 	android:launchMode
-		ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:26:13-44
+		ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:29:13-44
 	android:name
-		ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:25:13-41
+		ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:28:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.LAUNCHER+category:name:com.example.handlelife.BEGINNING_ACTIVITY
-ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:28:13-34:29
+ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:31:13-37:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:29:17-69
+ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:29:25-66
+		ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:32:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:31:17-77
+ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:31:27-74
+		ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:34:27-74
 category#com.example.handlelife.BEGINNING_ACTIVITY
-ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:33:17-86
+ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:36:17-86
 	android:name
-		ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:33:27-83
+		ADDED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml:36:27-83
 uses-sdk
 INJECTED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\xiao\Calendar_HL\app\src\main\AndroidManifest.xml
