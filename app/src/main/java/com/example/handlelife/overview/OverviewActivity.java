@@ -52,7 +52,7 @@ public class OverviewActivity extends AppCompatActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Objects.requireNonNull(getSupportActionBar()).hide();
-        setContentView(R.layout.activity_over_view);
+        setContentView(R.layout.activity_overview);
         tabLayout = findViewById(R.id.overview_tabs_title);
         viewPager = findViewById(R.id.overview_view_pager);
         fabCreateCurrentItem = findViewById(R.id.create_current_page_item);

@@ -22,7 +22,7 @@
             app:tabMinWidth="100dp"
             app:tabMode="scrollable"
             app:tabSelectedTextColor="@color/black"
-            app:tabTextColor="@color/white"></com.google.android.material.tabs.TabLayout>
+            app:tabTextColor="@color/white"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
