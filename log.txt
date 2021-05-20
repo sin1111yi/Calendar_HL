@@ -1,5 +1,14 @@
 2021/5/19
 
+v0.2.2
+
+完成了文件结构重写
+现在的结构是在OverviewActivity中点击按钮时会将标签通过intent传递给CreateActivity，随后CreateActivity根据intent中的标签启动对应的Fragment
+下一步计划：在CreateActivity中完成数据库的添加，在OverviewActivity中完成数据库的删改查
+
+
+2021/5/19
+
 v0.2.1
 
 将CreateActivity和对应的CreatePageAdapter更改为OverViewActivity和OverViewPageAdapter
