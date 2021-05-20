@@ -61,7 +61,7 @@ public class SpecialDateFragment extends Fragment {
     public View onCreateView(@NotNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         if (rootView == null) {
-            rootView = inflater.inflate(R.layout.fragment_special_date, container, false);
+            rootView = inflater.inflate(R.layout.fragment_sd_show, container, false);
         }
 
         //tvTime = rootView.findViewById(R.id.special_date_selected);

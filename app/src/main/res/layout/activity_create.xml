@@ -11,6 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <LinearLayout
+            android:id="@+id/show_fragment_zone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"/>
+
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_return_overview"
             android:layout_width="wrap_content"
@@ -21,7 +27,7 @@
             android:layout_marginBottom="15dp"
             fab:fab_colorNormal="@color/light_gray"
             fab:fab_colorPressed="@color/deep_gray"
-            fab:fab_icon="@drawable/ali_nav_list" />
+            fab:fab_icon="@drawable/ali_save" />
 
     </RelativeLayout>
 

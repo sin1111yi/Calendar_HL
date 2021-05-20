@@ -1,3 +1,5 @@
+com/example/handlelife/note/Note.java
+ com.example.handlelife.note.Note
 com/example/handlelife/overview/PageViewModel.java
  com.example.handlelife.overview.PageViewModel
 com/getbase/floatingactionbutton/FloatingActionButton.java
@@ -7,13 +9,20 @@ com/getbase/floatingactionbutton/FloatingActionButton.java
  com.getbase.floatingactionbutton.FloatingActionButton$TranslucentLayerDrawable
 com/example/handlelife/EnglishWeekBar.java
  com.example.handlelife.EnglishWeekBar
+com/example/handlelife/create/fragment/CreateErFragment.java
+ com.example.handlelife.create.fragment.CreateErFragment
 com/example/handlelife/overview/fragment/CustomNoteFragment.java
  com.example.handlelife.overview.fragment.CustomNoteFragment
+ com.example.handlelife.overview.fragment.CustomNoteFragment$1
+ com.example.handlelife.overview.fragment.CustomNoteFragment$2
+ com.example.handlelife.overview.fragment.CustomNoteFragment$3
 com/example/handlelife/base/fragment/FragmentAdapter.java
  com.example.handlelife.base.fragment.FragmentAdapter
 com/sinyi/uselessitem/base/UselessItem.java
  com.sinyi.uselessitem.base.UselessItem
  com.sinyi.uselessitem.base.UselessItem$itemDataType
+com/example/handlelife/create/fragment/CreateAbFragment.java
+ com.example.handlelife.create.fragment.CreateAbFragment
 com/example/handlelife/customui/InfoDialogButton.java
  com.example.handlelife.customui.InfoDialogButton
  com.example.handlelife.customui.InfoDialogButton$1
@@ -24,6 +33,8 @@ com/example/handlelife/create/fragment/CreateAcFragment.java
  com.example.handlelife.create.fragment.CreateAcFragment
 com/example/handlelife/BuildConfig.java
  com.example.handlelife.BuildConfig
+com/example/handlelife/note/BasenoteActivity.java
+ com.example.handlelife.note.BasenoteActivity
 com/example/handlelife/overview/fragment/AccountBookFragment.java
  com.example.handlelife.overview.fragment.AccountBookFragment
 com/getbase/floatingactionbutton/FloatingActionsMenu.java
@@ -38,6 +49,8 @@ com/getbase/floatingactionbutton/FloatingActionsMenu.java
  com.getbase.floatingactionbutton.FloatingActionsMenu$SavedState$1
 com/sinyi/uselessitem/base/ItemListFragment.java
  com.sinyi.uselessitem.base.ItemListFragment
+com/example/handlelife/create/fragment/CreateSdFragment.java
+ com.example.handlelife.create.fragment.CreateSdFragment
 com/example/handlelife/SimpleWeekView.java
  com.example.handlelife.SimpleWeekView
 com/example/handlelife/customui/HandleLinearlayout.java
@@ -47,6 +60,8 @@ com/example/handlelife/overview/fragment/EventReminderFragment.java
 com/example/handlelife/group/GroupRecyclerView.java
  com.example.handlelife.group.GroupRecyclerView
  com.example.handlelife.group.GroupRecyclerView$OnGroupChangeListener
+com/example/handlelife/note/CRUD.java
+ com.example.handlelife.note.CRUD
 com/example/handlelife/overview/fragment/AlarmClockFragment.java
  com.example.handlelife.overview.fragment.AlarmClockFragment
 com/getbase/floatingactionbutton/AddFloatingActionButton.java
@@ -57,8 +72,6 @@ com/sinyi/uselessitem/dummy/DummyContent.java
  com.sinyi.uselessitem.dummy.DummyContent$DummyItem
 com/example/handlelife/SimpleMonthView.java
  com.example.handlelife.SimpleMonthView
-com/example/handlelife/customui/FragmentGetPosition.java
- com.example.handlelife.customui.FragmentGetPosition
 com/example/handlelife/MainActivity.java
  com.example.handlelife.MainActivity
 com/example/handlelife/base/activity/BaseActivity.java
@@ -68,6 +81,11 @@ com/example/handlelife/group/GroupItemDecoration.java
 com/example/handlelife/overview/fragment/SpecialDateFragment.java
  com.example.handlelife.overview.fragment.SpecialDateFragment
  com.example.handlelife.overview.fragment.SpecialDateFragment$1
+com/example/handlelife/create/fragment/CreateNoteFragment.java
+ com.example.handlelife.create.fragment.CreateNoteFragment
+com/example/handlelife/note/NoteAdapter.java
+ com.example.handlelife.note.NoteAdapter
+ com.example.handlelife.note.NoteAdapter$MyFilter
 com/example/handlelife/base/adapter/BaseRecyclerAdapter.java
  com.example.handlelife.base.adapter.BaseRecyclerAdapter
  com.example.handlelife.base.adapter.BaseRecyclerAdapter$1
@@ -78,12 +96,17 @@ com/sinyi/uselessitem/base/ItemRecyclerViewAdapter.java
  com.sinyi.uselessitem.base.ItemRecyclerViewAdapter$ViewHolder
 com/example/handlelife/base/fragment/BaseFragment.java
  com.example.handlelife.base.fragment.BaseFragment
+com/example/handlelife/note/EditActivity.java
+ com.example.handlelife.note.EditActivity
+ com.example.handlelife.note.EditActivity$1
+ com.example.handlelife.note.EditActivity$2
+ com.example.handlelife.note.EditActivity$3
 com/getbase/floatingactionbutton/TouchDelegateGroup.java
  com.getbase.floatingactionbutton.TouchDelegateGroup
+com/example/handlelife/note/NoteDatabase.java
+ com.example.handlelife.note.NoteDatabase
 com/sinyi/uselessitem/database/ItemDataBase.java
  com.sinyi.uselessitem.database.ItemDataBase
-com/example/handlelife/customui/FragmentTransfer.java
- com.example.handlelife.customui.FragmentTransfer
 com/sinyi/uselessitem/base/UselessItemAdapter.java
  com.sinyi.uselessitem.base.UselessItemAdapter
  com.sinyi.uselessitem.base.UselessItemAdapter$1

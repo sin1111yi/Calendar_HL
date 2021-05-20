@@ -7,7 +7,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
@@ -21,13 +20,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.handlelife.R;
 import com.example.handlelife.note.CRUD;
-import com.example.handlelife.note.EditActivity;
 import com.example.handlelife.note.Note;
 import com.example.handlelife.note.NoteAdapter;
 import com.example.handlelife.note.NoteDatabase;
@@ -244,9 +241,10 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         if (rootView == null) {
-            rootView = inflater.inflate(R.layout.fragment_custom_note, container, false);
+            rootView = inflater.inflate(R.layout.fragment_note_show, container, false);
         }
 
+        /*
         setHasOptionsMenu(true);
 
         //========================
@@ -258,10 +256,10 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
         adapter = new NoteAdapter(getContext(), noteList);
         refreshListView();
         lv.setAdapter(adapter);
-//        setSupportActionBar(myToolbar);
-//        getSupportActionBar().setHomeButtonEnabled(true);
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true); //设置toolbar取代actionBar
-//        myToolbar.setNavigationIcon(R.drawable.ic_menu_black_24dp);
+        setSupportActionBar(myToolbar);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); //设置toolbar取代actionBar
+        myToolbar.setNavigationIcon(R.drawable.ic_menu_black_24dp);
 
         lv.setOnItemClickListener(this);
 
@@ -275,6 +273,7 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
 //                startActivityForResult(intent, 0);
             }
         });
+        */
         return rootView;
     }
 

@@ -63,7 +63,7 @@ public class AccountBookFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         if (rootView == null) {
-            rootView = inflater.inflate(R.layout.fragment_account_book, container, false);
+            rootView = inflater.inflate(R.layout.fragment_ab_show, container, false);
         }
         return rootView;
     }

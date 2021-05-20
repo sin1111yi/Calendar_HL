@@ -63,7 +63,7 @@ public class EventReminderFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         if (rootView == null) {
-            rootView = inflater.inflate(R.layout.fragment_event_reminder, container, false);
+            rootView = inflater.inflate(R.layout.fragment_er_show, container, false);
         }
         return rootView;
     }
