@@ -16,8 +16,8 @@ com/example/handlelife/overview/fragment/CustomNoteFragment.java
  com.example.handlelife.overview.fragment.CustomNoteFragment$1
  com.example.handlelife.overview.fragment.CustomNoteFragment$2
  com.example.handlelife.overview.fragment.CustomNoteFragment$3
-com/example/handlelife/base/fragment/FragmentAdapter.java
- com.example.handlelife.base.fragment.FragmentAdapter
+com/example/handlelife/overview/OverviewPagerAdapter.java
+ com.example.handlelife.overview.OverviewPagerAdapter
 com/sinyi/uselessitem/base/UselessItem.java
  com.sinyi.uselessitem.base.UselessItem
  com.sinyi.uselessitem.base.UselessItem$itemDataType
@@ -37,6 +37,8 @@ com/example/handlelife/note/BasenoteActivity.java
  com.example.handlelife.note.BasenoteActivity
 com/example/handlelife/overview/fragment/AccountBookFragment.java
  com.example.handlelife.overview.fragment.AccountBookFragment
+com/example/handlelife/base/fragment/FragmentAdapter.java
+ com.example.handlelife.base.fragment.FragmentAdapter
 com/getbase/floatingactionbutton/FloatingActionsMenu.java
  com.getbase.floatingactionbutton.FloatingActionsMenu
  com.getbase.floatingactionbutton.FloatingActionsMenu$1
@@ -111,13 +113,11 @@ com/sinyi/uselessitem/base/UselessItemAdapter.java
  com.sinyi.uselessitem.base.UselessItemAdapter
  com.sinyi.uselessitem.base.UselessItemAdapter$1
  com.sinyi.uselessitem.base.UselessItemAdapter$UselessItemViewHolder
-com/example/handlelife/overview/OverViewActivity.java
- com.example.handlelife.overview.OverViewActivity
 com/example/handlelife/customui/HandleTimePicker.java
  com.example.handlelife.customui.HandleTimePicker
 com/example/handlelife/group/GroupRecyclerAdapter.java
  com.example.handlelife.group.GroupRecyclerAdapter
-com/example/handlelife/overview/OverViewPagerAdapter.java
- com.example.handlelife.overview.OverViewPagerAdapter
+com/example/handlelife/overview/OverviewActivity.java
+ com.example.handlelife.overview.OverviewActivity
 com/example/handlelife/create/CreateActivity.java
  com.example.handlelife.create.CreateActivity

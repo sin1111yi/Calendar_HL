@@ -11,9 +11,13 @@
         android:theme="@style/Theme.HandleLife">
 
         <activity
+            android:name=".note.EditActivity"/>
+        <activity android:name=".note.BasenoteActivity"/>
+
+        <activity
             android:name=".create.CreateActivity"
             android:label="@string/title_activity_create"
-            android:launchMode="singleInstance">
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="com.example.handlelife.CREATE_PAGE" />
 
@@ -21,12 +25,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".note.EditActivity"/>
-        <activity android:name=".note.BasenoteActivity"/>
 
         <activity
-            android:name=".overview.OverViewActivity"
+            android:name=".overview.OverviewActivity"
             android:label="@string/title_activity_overview"
             android:launchMode="singleTask">
             <intent-filter>

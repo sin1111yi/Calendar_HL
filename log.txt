@@ -1,5 +1,7 @@
 2021/5/19
 
+v0.2.1
+
 将CreateActivity和对应的CreatePageAdapter更改为OverViewActivity和OverViewPageAdapter
 重构说明：原本的example.handlelife.create包由example.handlelife.overview包替换
         新建了example.handlelife.create包

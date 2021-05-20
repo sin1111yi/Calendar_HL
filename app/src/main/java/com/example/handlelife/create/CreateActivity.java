@@ -24,7 +24,6 @@ public class CreateActivity extends AppCompatActivity implements
     private static final String TAG = "CreateActivity";
 
     FloatingActionButton fabReturnOverView;
-    int overviewPosition;
 
     @Override
     protected void onDestroy() {
@@ -35,9 +34,12 @@ public class CreateActivity extends AppCompatActivity implements
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d(TAG, "Resume: get position from OverviewActivity " + overviewPosition);
+
+        int overviewPosition;
+
         Intent intent = getIntent();
         overviewPosition = intent.getIntExtra("OverviewPosition", 0);
+        Log.d(TAG, "Resume: get position from OverviewActivity " + overviewPosition);
         startBoostFragment(overviewPosition);
     }
 

@@ -8,11 +8,11 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import java.util.List;
 
-public class OverViewPagerAdapter extends FragmentStateAdapter{
+public class OverviewPagerAdapter extends FragmentStateAdapter{
 
     List<Fragment> fragmentList;
 
-    public OverViewPagerAdapter(@NonNull FragmentManager fragmentManager,
+    public OverviewPagerAdapter(@NonNull FragmentManager fragmentManager,
                                 @NonNull Lifecycle lifecycle,
                                 List<Fragment> fragments) {
         super(fragmentManager, lifecycle);

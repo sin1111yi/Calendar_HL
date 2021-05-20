@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class OverviewActivity extends AppCompatActivity implements
-        View.OnClickListener{
+        View.OnClickListener {
 
     private static final int[] TAB_TITLES = new int[]{
             R.string.item_custom_note,
@@ -90,15 +90,15 @@ public class OverviewActivity extends AppCompatActivity implements
     public void onClick(View v) {
         if (v.getId() == R.id.create_current_page_item) {
             Log.d(TAG, "Now position is " + viewPager.getCurrentItem());
+
             Intent intent = new Intent("com.example.handlelife.CREATE_PAGE");
             intent.addCategory("com.example.handlelife.CREATE_DIVERSE_ITEMS");
             // I prefer apparent everything
-            Bundle bundle=new Bundle();
-            bundle.putInt("OverviewPosition",viewPager.getCurrentItem());
+            Bundle bundle = new Bundle();
+            bundle.putInt("OverviewPosition", viewPager.getCurrentItem());
 
             intent.putExtras(bundle);
             startActivity(intent);
         }
     }
-
 }
