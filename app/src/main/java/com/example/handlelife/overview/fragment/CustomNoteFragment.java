@@ -33,12 +33,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.ArrayList;
 import java.util.List;
 
-
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link CustomNoteFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class CustomNoteFragment extends Fragment implements AdapterView.OnItemClickListener {
 
     View rootView;

@@ -1,6 +1,5 @@
 package com.example.handlelife.overview.fragment;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 
@@ -10,22 +9,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.bigkoo.pickerview.builder.TimePickerBuilder;
-import com.bigkoo.pickerview.listener.OnTimeSelectListener;
-import com.bigkoo.pickerview.view.TimePickerView;
 import com.example.handlelife.R;
 
 import org.jetbrains.annotations.NotNull;
-
-import java.util.Date;
-import java.text.SimpleDateFormat;
 
 public class SpecialDateFragment extends Fragment {
 
     View rootView;
 
-    TimePickerView timePickerView;
-    //TextView tvTime;
     Context mContext;
 
     public SpecialDateFragment() {
@@ -46,15 +37,6 @@ public class SpecialDateFragment extends Fragment {
         }
         mContext = getActivity();
 
-        timePickerView = new TimePickerBuilder(mContext, new OnTimeSelectListener() {
-            @SuppressLint("SimpleDateFormat")
-            @Override
-            public void onTimeSelect(Date date, View v) {//选中事件回调
-                SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-                //tvTime.setText(format.format(date));
-            }
-        }).build();
-        timePickerView.show();
     }
 
     @Override
@@ -64,8 +46,10 @@ public class SpecialDateFragment extends Fragment {
             rootView = inflater.inflate(R.layout.fragment_sd_show, container, false);
         }
 
-        //tvTime = rootView.findViewById(R.id.special_date_selected);
 
         return rootView;
     }
+
+
+
 }

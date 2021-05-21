@@ -1,49 +1,48 @@
 package com.example.handlelife.create.fragment;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
+import com.bigkoo.pickerview.builder.TimePickerBuilder;
+import com.bigkoo.pickerview.listener.OnTimeSelectListener;
+import com.bigkoo.pickerview.view.TimePickerView;
 import com.example.handlelife.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link CreateSdFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class CreateSdFragment extends Fragment {
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+public class CreateSdFragment extends Fragment implements
+        View.OnClickListener {
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private final String TAG = "CreateSdFragment";
+
+    private View rootView;
+    private Button callTimePicker;
+    private TextView tvSelectTip;
+    private TextView tvSelectedDate;
+
+    private String selectedDate;
+
+    Context mContext;
 
     public CreateSdFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment CreateSdFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static CreateSdFragment newInstance(String param1, String param2) {
+    public static CreateSdFragment newInstance() {
         CreateSdFragment fragment = new CreateSdFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -52,15 +51,43 @@ public class CreateSdFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+        mContext = getActivity();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sd_create, container, false);
+        if (rootView == null) {
+            rootView = inflater.inflate(R.layout.fragment_sd_create, container, false);
+        }
+
+        callTimePicker = rootView.findViewById(R.id.sd_btn_select_date);
+        tvSelectTip = rootView.findViewById(R.id.sd_select_tip);
+        tvSelectedDate = rootView.findViewById(R.id.sd_selected_date);
+        tvSelectTip.setText(getResources().getText(R.string.select_date));
+
+        callTimePicker.setOnClickListener(this);
+
+        return rootView;
     }
+
+    @Override
+    public void onClick(View v) {
+        if (v.getId() == R.id.sd_btn_select_date) {
+            Log.d(TAG, "select date through time picker");
+            TimePickerView timePickerView = new TimePickerBuilder(mContext, new OnTimeSelectListener() {
+                @SuppressLint("SimpleDateFormat")
+                @Override
+                public void onTimeSelect(Date date, View v) {
+                    SimpleDateFormat format = new SimpleDateFormat(getResources().getString(R.string.date_format));
+                    tvSelectedDate.setText(format.format(date));
+                    Log.d(TAG, format.format(date));
+                }
+            }).build();
+            timePickerView.show();
+        }
+    }
+
 }

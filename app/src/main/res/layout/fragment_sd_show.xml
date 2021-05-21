@@ -6,6 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".overview.fragment.SpecialDateFragment">
 
+    <com.example.handlelife.customui.HandleLinearlayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CalendarView
+            android:id="@+id/sd_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:firstDayOfWeek="3"
+            android:shownWeekCount="4"
+            android:selectedWeekBackgroundColor="#aff"
+            android:focusedMonthDateColor="#f00"
+            android:weekSeparatorLineColor="#ff0"
+            android:unfocusedMonthDateColor="#f9f"/>
+
+    </com.example.handlelife.customui.HandleLinearlayout>
+
+
 
 
 </FrameLayout>

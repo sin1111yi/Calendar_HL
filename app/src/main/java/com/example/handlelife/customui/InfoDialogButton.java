@@ -16,20 +16,21 @@ import com.example.handlelife.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class InfoDialogButton extends RelativeLayout {
+public class InfoDialogButton extends RelativeLayout{
 
     private InfoDialogType DialogType = InfoDialogType.UNSET_TYPE;
-    private final TextView btnName;
-    private final TextView btnSet;
+
+    private TextView btnName;
+    private TextView btnSet;
     private String getBtnName;
     private String getBtnSet;
+
+    private Context mContext;
 
     private StringBuilder getSelected = new StringBuilder();
     private String[] itemToShow;
     private int itemNum;
     private String dialogTitle;
-
-    Context mContext;
 
     private AlertDialog.Builder dialogBuilder;
 
@@ -45,18 +46,19 @@ public class InfoDialogButton extends RelativeLayout {
     public InfoDialogButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         LayoutInflater.from(context).inflate(R.layout.button_with_info, this);
+        Button btnDialog = findViewById(R.id.btn_start_dialog);
         this.mContext = context;
 
         this.btnName = findViewById(R.id.btn_info_option_name);
         this.btnSet = findViewById(R.id.btn_info_option_set);
-        Button btnDialog = findViewById(R.id.btn_start_dialog);
+
         btnDialog.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
                 InfoButtonClickEvent();
             }
         });
-        Log.d(TAG, "new InfoDialogButton has been set");
+        Log.d(TAG, "new "+DialogType+" InfoDialogButton has been set");
     }
 
     public void setDialogType(InfoDialogType dialogType) {
@@ -177,4 +179,5 @@ public class InfoDialogButton extends RelativeLayout {
         this.getBtnSet = this.getSelected.toString();
         setBtnSet(this.getBtnSet);
     }
+
 }

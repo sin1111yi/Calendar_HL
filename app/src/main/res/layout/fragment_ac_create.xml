@@ -44,22 +44,17 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <com.example.handlelife.customui.HandleLinearlayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
 
-                        <com.example.handlelife.customui.HandleTimePicker
-                            android:id="@+id/alarm_clock_time_picker"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@color/white"
-                            android:headerBackground="@color/deep_gray"
-                            android:headerTimeTextAppearance="@color/white"
-                            android:numbersBackgroundColor="#e5e5e5"
-                            android:numbersSelectorColor="@color/deep_gray"
-                            android:timePickerMode="clock" />
-
-                    </com.example.handlelife.customui.HandleLinearlayout>
+                    <com.example.handlelife.customui.HandleTimePicker
+                        android:id="@+id/alarm_clock_time_picker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:headerBackground="@color/deep_gray"
+                        android:headerTimeTextAppearance="@color/white"
+                        android:numbersBackgroundColor="#e5e5e5"
+                        android:numbersSelectorColor="@color/deep_gray"
+                        android:timePickerMode="clock" />
 
                     <include layout="@layout/view_line" />
 

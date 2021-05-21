@@ -8,12 +8,12 @@
         "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ali_ellipsis.xml.flat",
-        "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\drawable\\ali_ellipsis.xml"
-    },
-    {
         "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_create.xml.flat",
         "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\layout\\activity_create.xml"
+    },
+    {
+        "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ali_ellipsis.xml.flat",
+        "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\drawable\\ali_ellipsis.xml"
     },
     {
         "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\color_week_bar_color.xml.flat",
@@ -68,6 +68,10 @@
         "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\layout\\fragment_er_create.xml"
     },
     {
+        "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_hour_pointer.png.flat",
+        "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\mipmap-xxxhdpi\\hour_pointer.png"
+    },
+    {
         "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ali_arrow_right.xml.flat",
         "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\drawable\\ali_arrow_right.xml"
     },
@@ -86,6 +90,10 @@
     {
         "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_fab_bg_normal.png.flat",
         "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\drawable-mdpi\\fab_bg_normal.png"
+    },
+    {
+        "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_linear_category.xml.flat",
+        "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\drawable\\ic_linear_category.xml"
     },
     {
         "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ali_confirm.xml.flat",
@@ -108,16 +116,20 @@
         "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_er_show.xml.flat",
-        "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\layout\\fragment_er_show.xml"
+        "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_fab_bg_mini.png.flat",
+        "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\drawable-xxhdpi\\fab_bg_mini.png"
     },
     {
         "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ali_dollar.xml.flat",
         "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\drawable\\ali_dollar.xml"
     },
     {
-        "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_fab_bg_mini.png.flat",
-        "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\drawable-xxhdpi\\fab_bg_mini.png"
+        "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_er_show.xml.flat",
+        "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\layout\\fragment_er_show.xml"
+    },
+    {
+        "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable_github_icon.xml.flat",
+        "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\drawable\\github_icon.xml"
     },
     {
         "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ali_editor.xml.flat",
@@ -136,6 +148,10 @@
         "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\drawable\\ic_home_black_24dp.xml"
     },
     {
+        "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_linear_order.xml.flat",
+        "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\drawable\\ic_linear_order.xml"
+    },
+    {
         "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_fab_bg_normal.png.flat",
         "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\drawable-xhdpi\\fab_bg_normal.png"
     },
@@ -144,12 +160,12 @@
         "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\drawable\\ic_delete_black_24dp.xml"
     },
     {
-        "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_linear_pen.xml.flat",
-        "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\drawable\\ic_linear_pen.xml"
-    },
-    {
         "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_sd_create.xml.flat",
         "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\layout\\fragment_sd_create.xml"
+    },
+    {
+        "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_linear_pen.xml.flat",
+        "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\drawable\\ic_linear_pen.xml"
     },
     {
         "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_black_24dp.xml.flat",
@@ -200,12 +216,12 @@
         "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\drawable-xxhdpi\\fab_bg_normal.png"
     },
     {
-        "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ali_arrow_right_white.xml.flat",
-        "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\drawable\\ali_arrow_right_white.xml"
-    },
-    {
         "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\layout_english_week_bar.xml.flat",
         "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\layout\\english_week_bar.xml"
+    },
+    {
+        "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ali_arrow_right_white.xml.flat",
+        "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\drawable\\ali_arrow_right_white.xml"
     },
     {
         "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_dashboard_black_24dp.xml.flat",
@@ -272,6 +288,14 @@
         "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\layout\\edit_layout.xml"
     },
     {
+        "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_second_pointer.png.flat",
+        "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\mipmap-xxxhdpi\\second_pointer.png"
+    },
+    {
+        "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_clock_bg.png.flat",
+        "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\mipmap-xxxhdpi\\clock_bg.png"
+    },
+    {
         "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ali_save.xml.flat",
         "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\drawable\\ali_save.xml"
     },
@@ -290,10 +314,6 @@
     {
         "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\anim_simple_expand_anim.xml.flat",
-        "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\anim\\simple_expand_anim.xml"
     },
     {
         "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_fab_bg_mini.png.flat",
@@ -338,6 +358,10 @@
     {
         "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ali_all.xml.flat",
         "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\drawable\\ali_all.xml"
+    },
+    {
+        "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_minute_pointer.png.flat",
+        "source": "H:\\Android_workspace\\Calendar_HL\\app\\src\\main\\res\\mipmap-xxxhdpi\\minute_pointer.png"
     },
     {
         "merged": "H:\\Android_workspace\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ali_rmb.xml.flat",

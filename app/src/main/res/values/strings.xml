@@ -103,6 +103,11 @@
     <string name="alarm_clock_snooze_duration">Snooze duration</string>
     <string name="alarm_clock_ignore_holiday">Ignore holiday</string>
     <string name="Text_to_show">T2S</string>
+    
+    <string name="enter_tip_sd">Enter special date name</string>
+    <string name="select_date">Select date</string>
+
+    <string name="date_format">yyyy-MM-dd</string>
 
 
 </resources>

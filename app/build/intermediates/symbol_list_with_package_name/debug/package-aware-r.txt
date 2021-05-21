@@ -45,7 +45,6 @@ anim pickerview_dialog_scale_in
 anim pickerview_dialog_scale_out
 anim pickerview_slide_in_bottom
 anim pickerview_slide_out_bottom
-anim simple_expand_anim
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -1828,6 +1827,7 @@ drawable design_snackbar_background
 drawable fab_bg_mini
 drawable fab_bg_normal
 drawable fab_text_style
+drawable github_icon
 drawable ic_baseline_add_24
 drawable ic_dashboard_black_24dp
 drawable ic_delete_black_24dp
@@ -1838,11 +1838,13 @@ drawable ic_launcher_foreground
 drawable ic_linear_alarm_clock
 drawable ic_linear_bell
 drawable ic_linear_calendar
+drawable ic_linear_category
 drawable ic_linear_class
 drawable ic_linear_complete
 drawable ic_linear_data
 drawable ic_linear_folder
 drawable ic_linear_img
+drawable ic_linear_order
 drawable ic_linear_pen
 drawable ic_linear_three_line
 drawable ic_menu_black_24dp
@@ -1902,6 +1904,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id ac_analog_clock
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -2072,8 +2075,8 @@ id expand_activities_button
 id expanded_menu
 id fab_create
 id fab_expand_menu_button
+id fab_github
 id fab_label
-id fab_manage
 id fab_return_overview
 id fab_stat
 id fade
@@ -2236,6 +2239,12 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id sd_btn_select_date
+id sd_calendar
+id sd_create_editText
+id sd_select_btn_img
+id sd_select_tip
+id sd_selected_date
 id search_badge
 id search_bar
 id search_button
@@ -2526,9 +2535,13 @@ layout useless_item_list_layout
 layout view_line
 menu edit_menu
 menu main_menu
+mipmap clock_bg
+mipmap hour_pointer
 mipmap ic_calendar
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap minute_pointer
+mipmap second_pointer
 plurals mtrl_badge_content_description
 string Filled_with_nothing
 string Text_to_show
@@ -2582,6 +2595,8 @@ string confirm
 string create_custom_note_text
 string create_custom_note_title
 string cv_app_name
+string date_format
+string enter_tip_sd
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -2659,6 +2674,7 @@ string pickerview_submit
 string pickerview_year
 string sat
 string search_menu_title
+string select_date
 string status_bar_notification_info_overflow
 string sun
 string thu

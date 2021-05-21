@@ -95,57 +95,56 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.haibin.calendarview.CalendarLayout
-            android:id="@+id/calendarLayout"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:orientation="vertical"
-            app:calendar_content_view_id="@+id/nestedScrollView"
-            app:calendar_show_mode="both_month_week_view">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <com.haibin.calendarview.CalendarView
-                android:id="@+id/calendarView"
+            <com.haibin.calendarview.CalendarLayout
+                android:id="@+id/calendarLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="12dp"
                 android:background="#fff"
-                app:current_day_lunar_text_color="@color/deep_gray"
-                app:current_day_text_color="@color/deep_gray"
-                app:current_month_lunar_text_color="#6f6f6f"
-                app:current_month_text_color="#555555"
-                app:day_text_size="16sp"
-                app:lunar_text_size="8sp"
-                app:min_year="1970"
-                app:month_view_show_mode="mode_fix"
-                app:other_month_text_color="#e1e1e1"
-                app:scheme_text="假"
-                app:scheme_text_color="#333"
-                app:scheme_theme_color="#128c4b"
-                app:selected_lunar_text_color="#CFCFCF"
-                app:selected_text_color="#333"
-                app:selected_theme_color="#803f3f3f"
-                app:week_background="#fff"
-                app:week_text_color="#111"
-                app:year_view_day_text_color="#ff666666"
-                app:year_view_day_text_size="9sp"
-                app:year_view_month_text_color="#ff222222"
-                app:year_view_month_text_size="20sp"
-                app:year_view_scheme_color="#f17706">
+                android:orientation="vertical"
+                app:calendar_content_view_id="@+id/nestedScrollView"
+                app:calendar_show_mode="both_month_week_view">
 
-            </com.haibin.calendarview.CalendarView>
+                <com.haibin.calendarview.CalendarView
+                    android:id="@+id/calendarView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="#fff"
+                    app:current_day_lunar_text_color="@color/deep_gray"
+                    app:current_day_text_color="@color/deep_gray"
+                    app:current_month_lunar_text_color="#6f6f6f"
+                    app:current_month_text_color="#555555"
+                    app:day_text_size="16sp"
+                    app:lunar_text_size="8sp"
+                    app:min_year="1970"
+                    app:month_view_show_mode="mode_fix"
+                    app:other_month_text_color="#e1e1e1"
+                    app:scheme_text="假"
+                    app:scheme_text_color="#333"
+                    app:scheme_theme_color="#128c4b"
+                    app:selected_lunar_text_color="#CFCFCF"
+                    app:selected_text_color="#333"
+                    app:selected_theme_color="#803f3f3f"
+                    app:week_background="#fff"
+                    app:week_text_color="#111"
+                    app:year_view_day_text_color="#ff666666"
+                    app:year_view_day_text_size="9sp"
+                    app:year_view_month_text_color="#ff222222"
+                    app:year_view_month_text_size="20sp"
+                    app:year_view_scheme_color="#f17706">
 
-            <androidx.core.widget.NestedScrollView
-                android:id="@+id/nestedScrollView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                </com.haibin.calendarview.CalendarView>
 
-                <include layout="@layout/useless_item_list_layout"/>
 
-            </androidx.core.widget.NestedScrollView>
+            </com.haibin.calendarview.CalendarLayout>
 
-        </com.haibin.calendarview.CalendarLayout>
+        </LinearLayout>
 
         <com.getbase.floatingactionbutton.FloatingActionsMenu
             android:id="@+id/fab_expand_menu_button"
@@ -163,19 +162,11 @@
                 android:id="@+id/fab_create"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:scaleType="fitXY"
                 fab:fab_colorNormal="@color/gray"
                 fab:fab_colorPressed="@color/deep_gray"
-                fab:fab_size="mini"
-                fab:fab_icon="@drawable/ic_linear_pen"/>
-
-            <com.getbase.floatingactionbutton.FloatingActionButton
-                android:id="@+id/fab_manage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                fab:fab_colorNormal="@color/gray"
-                fab:fab_colorPressed="@color/deep_gray"
-                fab:fab_size="mini"
-                fab:fab_icon="@drawable/ic_linear_class"/>
+                fab:fab_icon="@drawable/ic_linear_order"
+                fab:fab_size="mini" />
 
             <com.getbase.floatingactionbutton.FloatingActionButton
                 android:id="@+id/fab_stat"
@@ -183,8 +174,18 @@
                 android:layout_height="wrap_content"
                 fab:fab_colorNormal="@color/gray"
                 fab:fab_colorPressed="@color/deep_gray"
-                fab:fab_size="mini"
-                fab:fab_icon="@drawable/ic_linear_data"/>
+                fab:fab_icon="@drawable/ic_linear_data"
+                fab:fab_size="mini" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_github"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/gray"
+                fab:fab_colorPressed="@color/deep_gray"
+                fab:fab_icon="@drawable/github_icon"
+                fab:fab_size="mini" />
+
 
         </com.getbase.floatingactionbutton.FloatingActionsMenu>
 

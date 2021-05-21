@@ -3,6 +3,7 @@ package com.example.handlelife;
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -78,7 +79,7 @@ public class MainActivity extends BaseActivity implements
         mCalendarView = (CalendarView) findViewById(R.id.calendarView);
         mTextCurrentDay = (TextView) findViewById(R.id.tv_current_day);
         fabCreateItem = (FloatingActionButton) findViewById(R.id.fab_create);
-        fabManageItem = (FloatingActionButton) findViewById(R.id.fab_manage);
+        fabManageItem = (FloatingActionButton) findViewById(R.id.fab_github);
         fabStatData = (FloatingActionButton) findViewById(R.id.fab_stat);
 
         mTextMonthDay.setOnClickListener(v -> {
@@ -160,8 +161,11 @@ public class MainActivity extends BaseActivity implements
             Intent intent = new Intent("com.example.handlelife.OVERVIEW_PAGES");
             intent.addCategory("com.example.handlelife.OVERVIEW_ALL_ITEMS");
             startActivity(intent);
-        } else if (v.getId() == R.id.fab_manage) {
-            // manage fragment
+        } else if (v.getId() == R.id.fab_github) {
+            // show github
+            Uri uri = Uri.parse("https://github.com/sin1111yi/Calendar_HL");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
 
         } else if (v.getId() == R.id.fab_stat) {
             // data statistics
