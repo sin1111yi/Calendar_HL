@@ -67,7 +67,7 @@ public class CreateActivity extends AppCompatActivity implements
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         if (fragmentNum == 0) {
-            transaction.replace(R.id.show_fragment_zone, new CreateNoteFragment()).commit();
+            //transaction.replace(R.id.show_fragment_zone, new CreateNoteFragment()).commit();
         } else if (fragmentNum == 1) {
             transaction.replace(R.id.show_fragment_zone, new CreateSdFragment()).commit();
         } else if (fragmentNum == 2) {

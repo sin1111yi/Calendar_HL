@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
@@ -20,11 +21,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.lifeisfaceemptiness.handlelife.R;
+import com.lifeisfaceemptiness.handlelife.create.fragment.CreateNoteFragment;
 import com.lifeisfaceemptiness.handlelife.note.CRUD;
+import com.lifeisfaceemptiness.handlelife.note.EditActivity;
 import com.lifeisfaceemptiness.handlelife.note.Note;
 import com.lifeisfaceemptiness.handlelife.note.NoteAdapter;
 import com.lifeisfaceemptiness.handlelife.note.NoteDatabase;
@@ -42,13 +47,18 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
     private Context mContext;
 
     final String TAG = "CustomNodeFragment";
-    FloatingActionButton btn;
+    Button btn;
+    Button btn2;
+    FloatingActionButton btn3;
+
     TextView tv;
     private ListView lv;
+    private EditText search_note;
 
     private NoteAdapter adapter;
     private List<Note> noteList = new ArrayList<Note>();
     private Toolbar myToolbar;
+    //private Toolbar myToolbar;
 
 
 
@@ -109,9 +119,13 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         Log.d(TAG, "111");
+        menu.clear();
+
 
         inflater.inflate(R.menu.main_menu, menu);
+
         super.onCreateOptionsMenu(menu, inflater);
+        Log.d(TAG, "111");
 
 
         //search setting
@@ -131,36 +145,35 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
                 return false;
             }
         });
-
     }
 
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.menu_clear:
-                new AlertDialog.Builder(mContext)
-                        .setMessage("删除全部吗？")
-                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                dbHelper = new NoteDatabase(mContext);
-                                SQLiteDatabase db = dbHelper.getWritableDatabase();
-                                db.delete("notes", null, null);
-                                db.execSQL("update sqlite_sequence set seq=0 where name='notes'");
-                                refreshListView();
-                            }
-                        }).setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                }).create().show();
-                break;
-
-        }
-        return super.onOptionsItemSelected(item);
-    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+//        switch (item.getItemId()){
+//            case R.id.menu_clear:
+//                new AlertDialog.Builder(mContext)
+//                        .setMessage("删除全部吗？")
+//                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+//                            @Override
+//                            public void onClick(DialogInterface dialog, int which) {
+//                                dbHelper = new NoteDatabase(mContext);
+//                                SQLiteDatabase db = dbHelper.getWritableDatabase();
+//                                db.delete("notes", null, null);
+//                                db.execSQL("update sqlite_sequence set seq=0 where name='notes'");
+//                                refreshListView();
+//                            }
+//                        }).setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        dialog.dismiss();
+//                    }
+//                }).create().show();
+//                break;
+//
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
 
     public void refreshListView(){
 
@@ -174,24 +187,25 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
     }
 
 
-//
-//    @Override
-//    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//        switch (parent.getId()) {
-//            case R.id.lv:
-//                Note curNote = (Note) parent.getItemAtPosition(position);
-//                Intent intent = new Intent(CustomNoteFragment.this, EditActivity.class);
-//                intent.putExtra("content", curNote.getContent());
-//                intent.putExtra("id", curNote.getId());
-//                intent.putExtra("time", curNote.getTime());
-//                intent.putExtra("mode", 3);     // MODE of 'click to edit'
-//                intent.putExtra("tag", curNote.getTag());
-//                startActivityForResult(intent, 1);      //collect data from edit
-//                Log.d(TAG, "onItemClick: " + position);
-//                break;
-//        }
-//    }
-//
+
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        switch (parent.getId()) {
+            case R.id.lv:
+                Note curNote = (Note) parent.getItemAtPosition(position);
+                Intent intent = new Intent(mContext, EditActivity.class);
+                intent.putExtra("content", curNote.getContent());
+                intent.putExtra("id", curNote.getId());
+                intent.putExtra("time", curNote.getTime());
+                intent.putExtra("mode", 3);     // MODE of 'click to edit'
+                intent.putExtra("tag", curNote.getTag());
+                startActivityForResult(intent, 1);      //collect data from edit
+                Log.d(TAG, "onItemClick: " + position);
+                break;
+        }
+    }
+
 
 
 
@@ -221,6 +235,8 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        setHasOptionsMenu(true);
+
 
         //setContentView(R.layout.fragment_custom_note);
         if (getArguments() != null) {
@@ -235,25 +251,30 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         if (rootView == null) {
-            rootView = inflater.inflate(R.layout.fragment_note_show, container, false);
+            rootView = inflater.inflate(R.layout.fragment_note_create, container, false);
         }
 
-        /*
         setHasOptionsMenu(true);
+
 
         //========================
         mContext=getContext();
-        btn = (FloatingActionButton) rootView.findViewById(R.id.fab);
+
+        btn = rootView.findViewById(R.id.fab);
+        btn2 = rootView.findViewById(R.id.fab2);
+        //search_note = rootView.findViewById((R.id.search_note));
+        //btn3 = (FloatingActionButton) rootView.findViewById(R.id.fab3);
+
         //tv = findViewById(R.id.tv);
         lv = (ListView)rootView.findViewById(R.id.lv);
         //myToolbar = rootView.findViewById(R.id.myToolbar);
         adapter = new NoteAdapter(getContext(), noteList);
         refreshListView();
         lv.setAdapter(adapter);
-        setSupportActionBar(myToolbar);
-        getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true); //设置toolbar取代actionBar
-        myToolbar.setNavigationIcon(R.drawable.ic_menu_black_24dp);
+//        setSupportActionBar(myToolbar);
+//        getSupportActionBar().setHomeButtonEnabled(true);
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true); //设置toolbar取代actionBar
+//        myToolbar.setNavigationIcon(R.drawable.ic_menu_black_24dp);
 
         lv.setOnItemClickListener(this);
 
@@ -262,30 +283,54 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onClick: click");
-//                Intent intent = new Intent(CustomNoteFragment.this, EditActivity.class);
-//                intent.putExtra("mode", 4);
-//                startActivityForResult(intent, 0);
+                Intent intent = new Intent(mContext, EditActivity.class);
+                intent.putExtra("mode", 4);
+                startActivityForResult(intent, 0);
             }
         });
-        */
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new AlertDialog.Builder(mContext)
+                        .setMessage("删除全部吗？")
+                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dbHelper = new NoteDatabase(mContext);
+                                SQLiteDatabase db = dbHelper.getWritableDatabase();
+                                db.delete("notes", null, null);
+                                db.execSQL("update sqlite_sequence set seq=0 where name='notes'");
+                                refreshListView();
+                            }
+                        }).setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                }).create().show();
+            }
+        });
+
         return rootView;
     }
-
-    @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-    }
+//
+//    @Override
+//    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//
+//    }
 
 
     //===========================================
 
 
-//    @Override
-//    public void onActivityCreated(@Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
-//        super.onActivityCreated(savedInstanceState);
-//
-//
-//    }
+    @Override
+    public void onActivityCreated(@Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        //add toolbar
+        //myToolbar.inflateMenu(R.menu.main_menu);
+        //myToolbar.setTitle("笔记");
+    }
 
 
 

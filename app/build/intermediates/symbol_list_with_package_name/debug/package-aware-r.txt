@@ -2048,7 +2048,6 @@ id cos
 id create_current_page_item
 id custom
 id customPanel
-id custom_note_tv_info
 id cut
 id date_picker_actions
 id day
@@ -2097,6 +2096,8 @@ id exitUntilCollapsed
 id expand
 id expand_activities_button
 id expanded_menu
+id fab
+id fab2
 id fab_create
 id fab_expand_menu_button
 id fab_github
@@ -2157,6 +2158,7 @@ id list
 id listMode
 id list_item
 id ll_week
+id lv
 id masked
 id media_actions
 id menu_clear
@@ -2718,6 +2720,7 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
+style AppTheme
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog

@@ -66,6 +66,9 @@ com/lifeisfaceemptiness/handlelife/SimpleWeekView.java
  com.lifeisfaceemptiness.handlelife.SimpleWeekView
 com/lifeisfaceemptiness/handlelife/create/fragment/CreateNoteFragment.java
  com.lifeisfaceemptiness.handlelife.create.fragment.CreateNoteFragment
+ com.lifeisfaceemptiness.handlelife.create.fragment.CreateNoteFragment$1
+ com.lifeisfaceemptiness.handlelife.create.fragment.CreateNoteFragment$2
+ com.lifeisfaceemptiness.handlelife.create.fragment.CreateNoteFragment$3
 com/lifeisfaceemptiness/handlelife/base/adapter/BaseRecyclerAdapter.java
  com.lifeisfaceemptiness.handlelife.base.adapter.BaseRecyclerAdapter
  com.lifeisfaceemptiness.handlelife.base.adapter.BaseRecyclerAdapter$1
@@ -126,6 +129,8 @@ com/lifeisfaceemptiness/handlelife/overview/fragment/CustomNoteFragment.java
  com.lifeisfaceemptiness.handlelife.overview.fragment.CustomNoteFragment$1
  com.lifeisfaceemptiness.handlelife.overview.fragment.CustomNoteFragment$2
  com.lifeisfaceemptiness.handlelife.overview.fragment.CustomNoteFragment$3
+ com.lifeisfaceemptiness.handlelife.overview.fragment.CustomNoteFragment$3$1
+ com.lifeisfaceemptiness.handlelife.overview.fragment.CustomNoteFragment$3$2
 com/lifeisfaceemptiness/handlelife/create/fragment/CreateErFragment.java
  com.lifeisfaceemptiness.handlelife.create.fragment.CreateErFragment
  com.lifeisfaceemptiness.handlelife.create.fragment.CreateErFragment$1
