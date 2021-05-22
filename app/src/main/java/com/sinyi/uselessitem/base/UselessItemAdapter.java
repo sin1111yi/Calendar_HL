@@ -7,11 +7,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.handlelife.BuildConfig;
-import com.example.handlelife.R;
-
-import com.sinyi.uselessitem.base.UselessItem;
-import com.sinyi.uselessitem.base.UselessItem.itemDataType;
+import com.lifeisfaceemptiness.handlelife.BuildConfig;
+import com.lifeisfaceemptiness.handlelife.R;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-com.example.handlelife
+com.lifeisfaceemptiness.handlelife
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -1829,6 +1829,14 @@ drawable fab_bg_normal
 drawable fab_text_style
 drawable github_icon
 drawable ic_baseline_add_24
+drawable ic_color_bill
+drawable ic_color_food
+drawable ic_color_gift
+drawable ic_color_income
+drawable ic_color_medical
+drawable ic_color_movie
+drawable ic_color_store
+drawable ic_color_travel
 drawable ic_dashboard_black_24dp
 drawable ic_delete_black_24dp
 drawable ic_delete_forever_black_24dp
@@ -1904,6 +1912,14 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id ab_btn_bill
+id ab_btn_food
+id ab_btn_gift
+id ab_btn_income
+id ab_btn_medical
+id ab_btn_movie
+id ab_btn_store
+id ab_btn_travel
 id ac_analog_clock
 id accelerate
 id accessibility_action_clickable_span
@@ -2067,6 +2083,10 @@ id end
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id er_btn_select_date
+id er_create_editText
+id er_select_tip
+id er_selected_time
 id et
 id event_reminder_tv_info
 id exitUntilCollapsed
@@ -2596,6 +2616,7 @@ string create_custom_note_text
 string create_custom_note_title
 string cv_app_name
 string date_format
+string enter_tip_er
 string enter_tip_sd
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -2675,9 +2696,11 @@ string pickerview_year
 string sat
 string search_menu_title
 string select_date
+string select_time
 string status_bar_notification_info_overflow
 string sun
 string thu
+string time_format
 string title_activity_create
 string title_activity_overview
 string tue

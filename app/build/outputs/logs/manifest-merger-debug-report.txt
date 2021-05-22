@@ -57,12 +57,13 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\48521\.g
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\d5bf5d996d4f8c184f67d9a87d8531c0\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.haibin:calendarview:3.7.1] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\63e8221da5fbffea0e837f55c431456b\jetified-calendarview-3.7.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.zcweng:switch-button:0.0.3] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\9a104f7b7896f2177812129c5e79bf3a\jetified-switch-button-0.0.3\AndroidManifest.xml:2:1-11:12
+MERGED from [org.litepal.guolindev:core:3.2.3] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\e59fca9ff0140b1667667f5d4a780d83\jetified-core-3.2.3\AndroidManifest.xml:2:1-14:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\3fd5b4b866d23b43b0e15439a0ee99e7\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
 INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-54:12
 INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-54:12
 INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:2:1-54:12
 	package
-		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:3:5-37
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:3:5-49
 		INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml
 		INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -89,6 +90,8 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\48521\.gradle
 MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\259d6ac788dc5ebe081349befc6dd85e\jetified-gifdecoder-4.12.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\1b49f6b12087442447a2c9046372b97f\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\1b49f6b12087442447a2c9046372b97f\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [org.litepal.guolindev:core:3.2.3] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\e59fca9ff0140b1667667f5d4a780d83\jetified-core-3.2.3\AndroidManifest.xml:11:5-12:19
+MERGED from [org.litepal.guolindev:core:3.2.3] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\e59fca9ff0140b1667667f5d4a780d83\jetified-core-3.2.3\AndroidManifest.xml:11:5-12:19
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.1] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\8dbd859d1cd89239b42e7382b4fc40d7\core-1.3.1\AndroidManifest.xml:24:18-86
 	android:supportsRtl
@@ -103,22 +106,22 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\48
 		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:11:9-48
-activity#com.example.handlelife.note.EditActivity
-ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:13:9-14:48
+activity#com.lifeisfaceemptiness.handlelife.note.EditActivity
+ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:13:9-14:82
 	android:name
-		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:14:13-46
-activity#com.example.handlelife.note.BasenoteActivity
-ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:15:9-58
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:14:13-80
+activity#com.lifeisfaceemptiness.handlelife.note.BasenoteActivity
+ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:15:9-92
 	android:name
-		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:15:19-56
-activity#com.example.handlelife.create.CreateActivity
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:15:19-90
+activity#com.lifeisfaceemptiness.handlelife.create.CreateActivity
 ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:17:9-27:20
 	android:label
 		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:19:13-58
 	android:launchMode
 		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:20:13-44
 	android:name
-		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:18:13-50
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:18:13-84
 intent-filter#action:name:com.example.handlelife.CREATE_PAGE+category:name:android.intent.category.DEFAULT+category:name:com.example.handlelife.CREATE_DIVERSE_ITEMS
 ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:21:13-26:29
 action#com.example.handlelife.CREATE_PAGE
@@ -133,14 +136,14 @@ category#android.intent.category.DEFAULT
 ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:25:17-76
 	android:name
 		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:25:27-73
-activity#com.example.handlelife.overview.OverviewActivity
+activity#com.lifeisfaceemptiness.handlelife.overview.OverviewActivity
 ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:29:9-39:20
 	android:label
 		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:31:13-60
 	android:launchMode
 		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:32:13-44
 	android:name
-		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:30:13-54
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:30:13-88
 intent-filter#action:name:com.example.handlelife.OVERVIEW_PAGES+category:name:android.intent.category.DEFAULT+category:name:com.example.handlelife.OVERVIEW_ALL_ITEMS
 ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:33:13-38:29
 action#com.example.handlelife.OVERVIEW_PAGES
@@ -151,14 +154,14 @@ category#com.example.handlelife.OVERVIEW_ALL_ITEMS
 ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:36:17-86
 	android:name
 		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:36:27-83
-activity#com.example.handlelife.MainActivity
+activity#com.lifeisfaceemptiness.handlelife.MainActivity
 ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:40:9-51:20
 	android:label
 		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:42:13-45
 	android:launchMode
 		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:43:13-44
 	android:name
-		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:41:13-41
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:41:13-75
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.LAUNCHER+category:name:com.example.handlelife.BEGINNING_ACTIVITY
 ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:44:13-50:29
 action#android.intent.action.MAIN
@@ -283,6 +286,8 @@ MERGED from [com.haibin:calendarview:3.7.1] C:\Users\48521\.gradle\caches\transf
 MERGED from [com.haibin:calendarview:3.7.1] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\63e8221da5fbffea0e837f55c431456b\jetified-calendarview-3.7.1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.zcweng:switch-button:0.0.3] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\9a104f7b7896f2177812129c5e79bf3a\jetified-switch-button-0.0.3\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.zcweng:switch-button:0.0.3] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\9a104f7b7896f2177812129c5e79bf3a\jetified-switch-button-0.0.3\AndroidManifest.xml:7:5-9:41
+MERGED from [org.litepal.guolindev:core:3.2.3] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\e59fca9ff0140b1667667f5d4a780d83\jetified-core-3.2.3\AndroidManifest.xml:7:5-9:41
+MERGED from [org.litepal.guolindev:core:3.2.3] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\e59fca9ff0140b1667667f5d4a780d83\jetified-core-3.2.3\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\3fd5b4b866d23b43b0e15439a0ee99e7\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\3fd5b4b866d23b43b0e15439a0ee99e7\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
 INJECTED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml

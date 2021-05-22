@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.handlelife">
+    package="com.lifeisfaceemptiness.handlelife">
 
     <application
         android:allowBackup="true"
@@ -11,11 +11,11 @@
         android:theme="@style/Theme.HandleLife">
 
         <activity
-            android:name=".note.EditActivity"/>
-        <activity android:name=".note.BasenoteActivity"/>
+            android:name="com.lifeisfaceemptiness.handlelife.note.EditActivity"/>
+        <activity android:name="com.lifeisfaceemptiness.handlelife.note.BasenoteActivity"/>
 
         <activity
-            android:name=".create.CreateActivity"
+            android:name="com.lifeisfaceemptiness.handlelife.create.CreateActivity"
             android:label="@string/title_activity_create"
             android:launchMode="singleTask">
             <intent-filter>
@@ -27,7 +27,7 @@
         </activity>
 
         <activity
-            android:name=".overview.OverviewActivity"
+            android:name="com.lifeisfaceemptiness.handlelife.overview.OverviewActivity"
             android:label="@string/title_activity_overview"
             android:launchMode="singleTask">
             <intent-filter>
@@ -38,7 +38,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.lifeisfaceemptiness.handlelife.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask">
             <intent-filter>

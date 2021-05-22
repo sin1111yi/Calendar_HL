@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".create.fragment.CreateErFragment">
+    android:orientation="vertical"
+    tools:context="com.lifeisfaceemptiness.handlelife.create.fragment.CreateErFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -23,4 +24,65 @@
 
     </RelativeLayout>
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/er_create_editText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:hint="@string/enter_tip_er" />
+
+        <include layout="@layout/view_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/er_btn_select_date"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:id="@+id/sd_select_btn_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ali_arrow_right" />
+
+            <TextView
+                android:id="@+id/er_select_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:gravity="center|start"
+                android:textColor="@color/deep_gray"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/er_selected_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/sd_select_btn_img"
+                android:gravity="center|end"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/view_line" />
+
+    </LinearLayout>
+
+</LinearLayout>

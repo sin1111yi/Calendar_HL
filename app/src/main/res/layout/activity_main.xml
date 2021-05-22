@@ -8,7 +8,7 @@
     android:background="#ffffff"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context="com.example.handlelife.MainActivity"
+    tools:context="com.lifeisfaceemptiness.handlelife.MainActivity"
     tools:ignore="RtlHardcoded,HardcodedText,RtlSymmetry,SmallSp">
 
     <RelativeLayout

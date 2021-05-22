@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.handlelife.R;
+import com.lifeisfaceemptiness.handlelife.R;
 import com.sinyi.uselessitem.dummy.DummyContent.DummyItem;
 
 import java.util.List;

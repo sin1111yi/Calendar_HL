@@ -105,9 +105,12 @@
     <string name="Text_to_show">T2S</string>
     
     <string name="enter_tip_sd">Enter special date name</string>
+    <string name="enter_tip_er">Enter event name</string>
     <string name="select_date">Select date</string>
+    <string name="select_time">Select time</string>
 
     <string name="date_format">yyyy-MM-dd</string>
+    <string name="time_format">yyyy-MM-dd HH:mm:ss</string>
 
 
 </resources>

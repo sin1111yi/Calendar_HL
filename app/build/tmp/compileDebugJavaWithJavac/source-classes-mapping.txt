@@ -1,44 +1,37 @@
-com/example/handlelife/note/Note.java
- com.example.handlelife.note.Note
-com/example/handlelife/overview/PageViewModel.java
- com.example.handlelife.overview.PageViewModel
+com/lifeisfaceemptiness/handlelife/base/activity/BaseActivity.java
+ com.lifeisfaceemptiness.handlelife.base.activity.BaseActivity
+com/lifeisfaceemptiness/handlelife/group/GroupItemDecoration.java
+ com.lifeisfaceemptiness.handlelife.group.GroupItemDecoration
+com/lifeisfaceemptiness/handlelife/create/fragment/CreateNoteFragment.java
+ com.lifeisfaceemptiness.handlelife.create.fragment.CreateNoteFragment
+com/lifeisfaceemptiness/handlelife/note/Note.java
+ com.lifeisfaceemptiness.handlelife.note.Note
+com/lifeisfaceemptiness/handlelife/base/adapter/BaseRecyclerAdapter.java
+ com.lifeisfaceemptiness.handlelife.base.adapter.BaseRecyclerAdapter
+ com.lifeisfaceemptiness.handlelife.base.adapter.BaseRecyclerAdapter$1
+ com.lifeisfaceemptiness.handlelife.base.adapter.BaseRecyclerAdapter$OnClickListener
+ com.lifeisfaceemptiness.handlelife.base.adapter.BaseRecyclerAdapter$OnItemClickListener
+com/lifeisfaceemptiness/handlelife/group/GroupRecyclerView.java
+ com.lifeisfaceemptiness.handlelife.group.GroupRecyclerView
+ com.lifeisfaceemptiness.handlelife.group.GroupRecyclerView$OnGroupChangeListener
 com/getbase/floatingactionbutton/FloatingActionButton.java
  com.getbase.floatingactionbutton.FloatingActionButton
  com.getbase.floatingactionbutton.FloatingActionButton$1
  com.getbase.floatingactionbutton.FloatingActionButton$FAB_SIZE
  com.getbase.floatingactionbutton.FloatingActionButton$TranslucentLayerDrawable
-com/example/handlelife/EnglishWeekBar.java
- com.example.handlelife.EnglishWeekBar
-com/example/handlelife/create/fragment/CreateErFragment.java
- com.example.handlelife.create.fragment.CreateErFragment
-com/example/handlelife/overview/fragment/CustomNoteFragment.java
- com.example.handlelife.overview.fragment.CustomNoteFragment
- com.example.handlelife.overview.fragment.CustomNoteFragment$1
- com.example.handlelife.overview.fragment.CustomNoteFragment$2
- com.example.handlelife.overview.fragment.CustomNoteFragment$3
-com/example/handlelife/create/CreateActivity.java
- com.example.handlelife.create.CreateActivity
+com/lifeisfaceemptiness/handlelife/note/CRUD.java
+ com.lifeisfaceemptiness.handlelife.note.CRUD
 com/sinyi/uselessitem/base/UselessItem.java
  com.sinyi.uselessitem.base.UselessItem
  com.sinyi.uselessitem.base.UselessItem$itemDataType
-com/example/handlelife/create/fragment/CreateAbFragment.java
- com.example.handlelife.create.fragment.CreateAbFragment
-com/example/handlelife/customui/InfoDialogButton.java
- com.example.handlelife.customui.InfoDialogButton
- com.example.handlelife.customui.InfoDialogButton$1
- com.example.handlelife.customui.InfoDialogButton$2
- com.example.handlelife.customui.InfoDialogButton$3
- com.example.handlelife.customui.InfoDialogButton$InfoDialogType
-com/example/handlelife/create/fragment/CreateAcFragment.java
- com.example.handlelife.create.fragment.CreateAcFragment
-com/example/handlelife/BuildConfig.java
- com.example.handlelife.BuildConfig
-com/example/handlelife/note/BasenoteActivity.java
- com.example.handlelife.note.BasenoteActivity
-com/example/handlelife/overview/fragment/AccountBookFragment.java
- com.example.handlelife.overview.fragment.AccountBookFragment
-com/example/handlelife/overview/OverviewActivity.java
- com.example.handlelife.overview.OverviewActivity
+com/lifeisfaceemptiness/handlelife/overview/fragment/EventReminderFragment.java
+ com.lifeisfaceemptiness.handlelife.overview.fragment.EventReminderFragment
+com/lifeisfaceemptiness/handlelife/SimpleWeekView.java
+ com.lifeisfaceemptiness.handlelife.SimpleWeekView
+com/lifeisfaceemptiness/handlelife/overview/PageViewModel.java
+ com.lifeisfaceemptiness.handlelife.overview.PageViewModel
+com/lifeisfaceemptiness/handlelife/base/fragment/BaseFragment.java
+ com.lifeisfaceemptiness.handlelife.base.fragment.BaseFragment
 com/getbase/floatingactionbutton/FloatingActionsMenu.java
  com.getbase.floatingactionbutton.FloatingActionsMenu
  com.getbase.floatingactionbutton.FloatingActionsMenu$1
@@ -49,75 +42,83 @@ com/getbase/floatingactionbutton/FloatingActionsMenu.java
  com.getbase.floatingactionbutton.FloatingActionsMenu$RotatingDrawable
  com.getbase.floatingactionbutton.FloatingActionsMenu$SavedState
  com.getbase.floatingactionbutton.FloatingActionsMenu$SavedState$1
+com/lifeisfaceemptiness/handlelife/MainActivity.java
+ com.lifeisfaceemptiness.handlelife.MainActivity
 com/sinyi/uselessitem/base/ItemListFragment.java
  com.sinyi.uselessitem.base.ItemListFragment
-com/example/handlelife/create/fragment/CreateSdFragment.java
- com.example.handlelife.create.fragment.CreateSdFragment
- com.example.handlelife.create.fragment.CreateSdFragment$1
-com/example/handlelife/SimpleWeekView.java
- com.example.handlelife.SimpleWeekView
-com/example/handlelife/customui/HandleLinearlayout.java
- com.example.handlelife.customui.HandleLinearlayout
-com/example/handlelife/overview/fragment/EventReminderFragment.java
- com.example.handlelife.overview.fragment.EventReminderFragment
-com/example/handlelife/group/GroupRecyclerView.java
- com.example.handlelife.group.GroupRecyclerView
- com.example.handlelife.group.GroupRecyclerView$OnGroupChangeListener
-com/example/handlelife/note/CRUD.java
- com.example.handlelife.note.CRUD
-com/example/handlelife/overview/fragment/AlarmClockFragment.java
- com.example.handlelife.overview.fragment.AlarmClockFragment
+com/lifeisfaceemptiness/handlelife/overview/OverviewActivity.java
+ com.lifeisfaceemptiness.handlelife.overview.OverviewActivity
+com/lifeisfaceemptiness/handlelife/overview/OverviewPagerAdapter.java
+ com.lifeisfaceemptiness.handlelife.overview.OverviewPagerAdapter
+com/lifeisfaceemptiness/handlelife/customui/InfoDialogButton.java
+ com.lifeisfaceemptiness.handlelife.customui.InfoDialogButton
+ com.lifeisfaceemptiness.handlelife.customui.InfoDialogButton$1
+ com.lifeisfaceemptiness.handlelife.customui.InfoDialogButton$2
+ com.lifeisfaceemptiness.handlelife.customui.InfoDialogButton$3
+ com.lifeisfaceemptiness.handlelife.customui.InfoDialogButton$InfoDialogType
 com/getbase/floatingactionbutton/AddFloatingActionButton.java
  com.getbase.floatingactionbutton.AddFloatingActionButton
  com.getbase.floatingactionbutton.AddFloatingActionButton$1
+com/lifeisfaceemptiness/handlelife/customui/HandleLinearlayout.java
+ com.lifeisfaceemptiness.handlelife.customui.HandleLinearlayout
+com/lifeisfaceemptiness/handlelife/EnglishWeekBar.java
+ com.lifeisfaceemptiness.handlelife.EnglishWeekBar
+com/lifeisfaceemptiness/handlelife/note/BasenoteActivity.java
+ com.lifeisfaceemptiness.handlelife.note.BasenoteActivity
+com/lifeisfaceemptiness/handlelife/note/NoteAdapter.java
+ com.lifeisfaceemptiness.handlelife.note.NoteAdapter
+ com.lifeisfaceemptiness.handlelife.note.NoteAdapter$MyFilter
 com/sinyi/uselessitem/dummy/DummyContent.java
  com.sinyi.uselessitem.dummy.DummyContent
  com.sinyi.uselessitem.dummy.DummyContent$DummyItem
-com/example/handlelife/SimpleMonthView.java
- com.example.handlelife.SimpleMonthView
-com/example/handlelife/MainActivity.java
- com.example.handlelife.MainActivity
-com/example/handlelife/base/activity/BaseActivity.java
- com.example.handlelife.base.activity.BaseActivity
-com/example/handlelife/group/GroupItemDecoration.java
- com.example.handlelife.group.GroupItemDecoration
-com/example/handlelife/overview/fragment/SpecialDateFragment.java
- com.example.handlelife.overview.fragment.SpecialDateFragment
-com/example/handlelife/create/fragment/CreateNoteFragment.java
- com.example.handlelife.create.fragment.CreateNoteFragment
-com/example/handlelife/note/NoteAdapter.java
- com.example.handlelife.note.NoteAdapter
- com.example.handlelife.note.NoteAdapter$MyFilter
-com/example/handlelife/base/adapter/BaseRecyclerAdapter.java
- com.example.handlelife.base.adapter.BaseRecyclerAdapter
- com.example.handlelife.base.adapter.BaseRecyclerAdapter$1
- com.example.handlelife.base.adapter.BaseRecyclerAdapter$OnClickListener
- com.example.handlelife.base.adapter.BaseRecyclerAdapter$OnItemClickListener
+com/lifeisfaceemptiness/handlelife/group/GroupRecyclerAdapter.java
+ com.lifeisfaceemptiness.handlelife.group.GroupRecyclerAdapter
+com/lifeisfaceemptiness/handlelife/note/NoteDatabase.java
+ com.lifeisfaceemptiness.handlelife.note.NoteDatabase
+com/lifeisfaceemptiness/handlelife/overview/fragment/AlarmClockFragment.java
+ com.lifeisfaceemptiness.handlelife.overview.fragment.AlarmClockFragment
+com/lifeisfaceemptiness/handlelife/create/fragment/CreateAcFragment.java
+ com.lifeisfaceemptiness.handlelife.create.fragment.CreateAcFragment
+com/lifeisfaceemptiness/handlelife/note/EditActivity.java
+ com.lifeisfaceemptiness.handlelife.note.EditActivity
+ com.lifeisfaceemptiness.handlelife.note.EditActivity$1
+ com.lifeisfaceemptiness.handlelife.note.EditActivity$2
+ com.lifeisfaceemptiness.handlelife.note.EditActivity$3
 com/sinyi/uselessitem/base/ItemRecyclerViewAdapter.java
  com.sinyi.uselessitem.base.ItemRecyclerViewAdapter
  com.sinyi.uselessitem.base.ItemRecyclerViewAdapter$ViewHolder
-com/example/handlelife/base/fragment/BaseFragment.java
- com.example.handlelife.base.fragment.BaseFragment
-com/example/handlelife/note/EditActivity.java
- com.example.handlelife.note.EditActivity
- com.example.handlelife.note.EditActivity$1
- com.example.handlelife.note.EditActivity$2
- com.example.handlelife.note.EditActivity$3
+com/lifeisfaceemptiness/handlelife/BuildConfig.java
+ com.lifeisfaceemptiness.handlelife.BuildConfig
 com/getbase/floatingactionbutton/TouchDelegateGroup.java
  com.getbase.floatingactionbutton.TouchDelegateGroup
-com/example/handlelife/note/NoteDatabase.java
- com.example.handlelife.note.NoteDatabase
+com/lifeisfaceemptiness/handlelife/overview/fragment/SpecialDateFragment.java
+ com.lifeisfaceemptiness.handlelife.overview.fragment.SpecialDateFragment
+com/lifeisfaceemptiness/handlelife/create/fragment/CreateSdFragment.java
+ com.lifeisfaceemptiness.handlelife.create.fragment.CreateSdFragment
+ com.lifeisfaceemptiness.handlelife.create.fragment.CreateSdFragment$1
+com/lifeisfaceemptiness/handlelife/customui/HandleTimePicker.java
+ com.lifeisfaceemptiness.handlelife.customui.HandleTimePicker
+com/lifeisfaceemptiness/handlelife/SimpleMonthView.java
+ com.lifeisfaceemptiness.handlelife.SimpleMonthView
 com/sinyi/uselessitem/database/ItemDataBase.java
  com.sinyi.uselessitem.database.ItemDataBase
+com/lifeisfaceemptiness/handlelife/base/fragment/FragmentAdapter.java
+ com.lifeisfaceemptiness.handlelife.base.fragment.FragmentAdapter
+com/lifeisfaceemptiness/handlelife/overview/fragment/CustomNoteFragment.java
+ com.lifeisfaceemptiness.handlelife.overview.fragment.CustomNoteFragment
+ com.lifeisfaceemptiness.handlelife.overview.fragment.CustomNoteFragment$1
+ com.lifeisfaceemptiness.handlelife.overview.fragment.CustomNoteFragment$2
+ com.lifeisfaceemptiness.handlelife.overview.fragment.CustomNoteFragment$3
+com/lifeisfaceemptiness/handlelife/create/fragment/CreateErFragment.java
+ com.lifeisfaceemptiness.handlelife.create.fragment.CreateErFragment
+ com.lifeisfaceemptiness.handlelife.create.fragment.CreateErFragment$1
 com/sinyi/uselessitem/base/UselessItemAdapter.java
  com.sinyi.uselessitem.base.UselessItemAdapter
  com.sinyi.uselessitem.base.UselessItemAdapter$1
  com.sinyi.uselessitem.base.UselessItemAdapter$UselessItemViewHolder
-com/example/handlelife/customui/HandleTimePicker.java
- com.example.handlelife.customui.HandleTimePicker
-com/example/handlelife/group/GroupRecyclerAdapter.java
- com.example.handlelife.group.GroupRecyclerAdapter
-com/example/handlelife/overview/OverviewPagerAdapter.java
- com.example.handlelife.overview.OverviewPagerAdapter
-com/example/handlelife/base/fragment/FragmentAdapter.java
- com.example.handlelife.base.fragment.FragmentAdapter
+com/lifeisfaceemptiness/handlelife/overview/fragment/AccountBookFragment.java
+ com.lifeisfaceemptiness.handlelife.overview.fragment.AccountBookFragment
+com/lifeisfaceemptiness/handlelife/create/CreateActivity.java
+ com.lifeisfaceemptiness.handlelife.create.CreateActivity
+com/lifeisfaceemptiness/handlelife/create/fragment/CreateAbFragment.java
+ com.lifeisfaceemptiness.handlelife.create.fragment.CreateAbFragment

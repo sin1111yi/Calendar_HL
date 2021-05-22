@@ -1,3 +1,14 @@
+2021/5/22
+
+为CreateAbFragment添加了几个类型选择按键，具体功能逻辑还未编写
+加入了winlin.roomdb包，基于room的数据库
+
+2021/5/22
+
+将example包更改为lifeisfaceemptiness包（Life是Life is face emptiness的递归表达，并没有实际的用处）
+
+计划：首先完成五个用于创建的Fragment
+
 2021/5/21
 
 计划：

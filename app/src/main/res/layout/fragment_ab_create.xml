@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".create.fragment.CreateAbFragment">
+    android:orientation="vertical"
+    tools:context="com.lifeisfaceemptiness.handlelife.create.fragment.CreateAbFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/deep_gray">
+        android:background="#5be8cc">
 
         <TextView
             android:id="@+id/account_book_tv_info"
@@ -16,11 +18,127 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_centerInParent="true"
-            android:paddingStart="15dp"
+            android:layout_marginStart="15dp"
             android:text="@string/on_account_book_create_page_show"
             android:textColor="@color/white"
             android:textSize="18sp" />
 
     </RelativeLayout>
 
-</FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ab_btn_income"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_color_income"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ab_btn_bill"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_color_bill"
+            app:layout_constraintStart_toEndOf="@+id/ab_btn_income"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ab_btn_food"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_color_food"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ab_btn_medical"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_color_medical"
+            app:layout_constraintEnd_toStartOf="@+id/ab_btn_food"
+            app:layout_constraintStart_toEndOf="@+id/ab_btn_bill"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ab_btn_store"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_color_store"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ab_btn_income" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ab_btn_travel"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_color_travel"
+            app:layout_constraintStart_toEndOf="@+id/ab_btn_store"
+            app:layout_constraintTop_toBottomOf="@+id/ab_btn_bill" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ab_btn_gift"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_color_gift"
+            app:layout_constraintStart_toEndOf="@+id/ab_btn_travel"
+            app:layout_constraintTop_toBottomOf="@+id/ab_btn_medical" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ab_btn_movie"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_color_movie"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ab_btn_food" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ab_btn_study"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_color_study"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ab_btn_store" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ab_btn_clothe"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_color_clothe"
+            app:layout_constraintStart_toEndOf="@+id/ab_btn_study"
+            app:layout_constraintTop_toBottomOf="@+id/ab_btn_travel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

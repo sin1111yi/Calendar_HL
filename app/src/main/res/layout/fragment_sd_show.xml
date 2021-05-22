@@ -1,29 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".overview.fragment.SpecialDateFragment">
+    android:orientation="vertical"
+    tools:context="com.lifeisfaceemptiness.handlelife.overview.fragment.SpecialDateFragment">
 
-    <com.example.handlelife.customui.HandleLinearlayout
+    <com.lifeisfaceemptiness.handlelife.customui.HandleLinearlayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <CalendarView
-            android:id="@+id/sd_calendar"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:firstDayOfWeek="3"
-            android:shownWeekCount="4"
-            android:selectedWeekBackgroundColor="#aff"
-            android:focusedMonthDateColor="#f00"
-            android:weekSeparatorLineColor="#ff0"
-            android:unfocusedMonthDateColor="#f9f"/>
+    </com.lifeisfaceemptiness.handlelife.customui.HandleLinearlayout>
 
-    </com.example.handlelife.customui.HandleLinearlayout>
+    <CalendarView
+        android:id="@+id/sd_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:firstDayOfWeek="3"
+        android:shownWeekCount="6"/>
 
 
-
-
-</FrameLayout>
+</LinearLayout>

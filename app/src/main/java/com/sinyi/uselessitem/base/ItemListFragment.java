@@ -12,7 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.handlelife.R;
+import com.lifeisfaceemptiness.handlelife.R;
 import com.sinyi.uselessitem.dummy.DummyContent;
 
 /**

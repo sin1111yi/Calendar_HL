@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".overview.fragment.AlarmClockFragment">
+    tools:context="com.lifeisfaceemptiness.handlelife.overview.fragment.AlarmClockFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -45,7 +45,7 @@
                     android:orientation="vertical">
 
 
-                    <com.example.handlelife.customui.HandleTimePicker
+                    <com.lifeisfaceemptiness.handlelife.customui.HandleTimePicker
                         android:id="@+id/alarm_clock_time_picker"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
 
                     <include layout="@layout/view_line" />
 
-                    <com.example.handlelife.customui.InfoDialogButton
+                    <com.lifeisfaceemptiness.handlelife.customui.InfoDialogButton
                         android:id="@+id/alarm_clock_set_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
@@ -96,28 +96,28 @@
 
                     <include layout="@layout/view_line" />
 
-                    <com.example.handlelife.customui.InfoDialogButton
+                    <com.lifeisfaceemptiness.handlelife.customui.InfoDialogButton
                         android:id="@+id/alarm_clock_repeat"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
                     <include layout="@layout/view_line" />
 
-                    <com.example.handlelife.customui.InfoDialogButton
+                    <com.lifeisfaceemptiness.handlelife.customui.InfoDialogButton
                         android:id="@+id/alarm_clock_sound"
                         android:layout_width="match_parent"
                         android:layout_height="50dp" />
 
                     <include layout="@layout/view_line" />
 
-                    <com.example.handlelife.customui.InfoDialogButton
+                    <com.lifeisfaceemptiness.handlelife.customui.InfoDialogButton
                         android:id="@+id/alarm_clock_ring_duration"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
                     <include layout="@layout/view_line" />
 
-                    <com.example.handlelife.customui.InfoDialogButton
+                    <com.lifeisfaceemptiness.handlelife.customui.InfoDialogButton
                         android:id="@+id/alarm_clock_snooze_duration"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />

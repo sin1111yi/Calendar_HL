@@ -47,12 +47,23 @@ dependencies {
 
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'com.github.bumptech.glide:glide:4.12.0'
+    // Calendar
     implementation 'com.haibin:calendarview:3.7.1'
+    // Switch button
     implementation 'com.github.zcweng:switch-button:0.0.3@aar'
+    // TimePicker
     implementation 'com.contrarywind:Android-PickerView:4.1.9'
+    // LitePal
+    implementation 'org.litepal.guolindev:core:3.2.3'
     testImplementation 'junit:junit:4.13.2'
 
     implementation project(':calendarview')
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
+
+    // for room database
+    def room_version = "2.3.0"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
 }

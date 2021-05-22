@@ -32,7 +32,7 @@ import androidx.appcompat.widget.AppCompatImageButton;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-import com.example.handlelife.R;
+import com.lifeisfaceemptiness.handlelife.R;
 
 public class FloatingActionButton extends AppCompatImageButton {
 

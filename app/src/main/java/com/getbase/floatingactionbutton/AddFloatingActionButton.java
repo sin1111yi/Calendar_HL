@@ -12,7 +12,7 @@ import androidx.annotation.ColorRes;
 import androidx.annotation.DrawableRes;
 import android.util.AttributeSet;
 
-import com.example.handlelife.R;
+import com.lifeisfaceemptiness.handlelife.R;
 
 public class AddFloatingActionButton extends FloatingActionButton {
   int mPlusColor;
