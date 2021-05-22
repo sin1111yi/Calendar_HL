@@ -55,6 +55,11 @@
                 <category android:name="com.example.handlelife.BEGINNING_ACTIVITY" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
     </application>
 
 </manifest>

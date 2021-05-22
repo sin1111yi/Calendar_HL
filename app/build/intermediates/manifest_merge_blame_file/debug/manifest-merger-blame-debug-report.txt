@@ -104,6 +104,15 @@
 55-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:49:27-83
 56            </intent-filter>
 57        </activity>
-58    </application>
-59
-60</manifest>
+58
+59        <service
+59-->[androidx.room:room-runtime:2.3.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\541ffbf97242aa478b0dba37d1c82311\room-runtime-2.3.0\AndroidManifest.xml:25:9-28:40
+60            android:name="androidx.room.MultiInstanceInvalidationService"
+60-->[androidx.room:room-runtime:2.3.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\541ffbf97242aa478b0dba37d1c82311\room-runtime-2.3.0\AndroidManifest.xml:26:13-74
+61            android:directBootAware="true"
+61-->[androidx.room:room-runtime:2.3.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\541ffbf97242aa478b0dba37d1c82311\room-runtime-2.3.0\AndroidManifest.xml:27:13-43
+62            android:exported="false" />
+62-->[androidx.room:room-runtime:2.3.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\541ffbf97242aa478b0dba37d1c82311\room-runtime-2.3.0\AndroidManifest.xml:28:13-37
+63    </application>
+64
+65</manifest>
