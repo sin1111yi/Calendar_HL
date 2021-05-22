@@ -1950,6 +1950,7 @@ id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
 id account_book_tv_info
+id account_book_type
 id action0
 id action_bar
 id action_bar_activity_content
@@ -2554,6 +2555,7 @@ menu main_menu
 mipmap clock_bg
 mipmap hour_pointer
 mipmap ic_calendar
+mipmap ic_ccalendar
 mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap minute_pointer
@@ -2588,6 +2590,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string account_type_hint
 string alarm_clock_default_description
 string alarm_clock_default_title
 string alarm_clock_ignore_holiday

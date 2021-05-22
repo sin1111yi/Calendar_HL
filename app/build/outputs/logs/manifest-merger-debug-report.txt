@@ -104,9 +104,9 @@ MERGED from [com.githang:status-bar-compat:0.7] C:\Users\48521\.gradle\caches\tr
 	android:label
 		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:9:9-49
 	android:icon
-		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:7:9-44
 	android:allowBackup
 		ADDED from H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme

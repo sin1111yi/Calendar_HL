@@ -25,6 +25,8 @@
 
     </RelativeLayout>
 
+    <!--TODO:通过该布局尝试进行屏幕适配，现在在部分手机屏幕上会有显示问题-->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="320dp">
@@ -55,21 +57,21 @@
             android:id="@+id/ab_btn_food"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
             android:background="@color/white"
             android:src="@drawable/ic_food"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ab_btn_medical"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/ab_btn_medical"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="16dp"
             android:background="@color/white"
             android:src="@drawable/ic_medical"
-            app:layout_constraintEnd_toStartOf="@+id/ab_btn_food"
             app:layout_constraintStart_toEndOf="@+id/ab_btn_bill"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -110,11 +112,11 @@
             android:id="@+id/ab_btn_leisure"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
             android:background="@color/white"
             android:src="@drawable/ic_leisure"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ab_btn_gift"
             app:layout_constraintTop_toBottomOf="@+id/ab_btn_food" />
 
         <androidx.appcompat.widget.AppCompatImageButton
@@ -154,11 +156,11 @@
             android:id="@+id/ab_btn_other"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
             android:background="@color/white"
             android:src="@drawable/ic_other"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ab_btn_server"
             app:layout_constraintTop_toBottomOf="@+id/ab_btn_leisure" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -51,8 +51,8 @@ com/winlin/roomdb/manager/DBEngine.java
  com.winlin.roomdb.manager.DBEngine$InsertAsyncTask
  com.winlin.roomdb.manager.DBEngine$QueryAllAsyncTask
  com.winlin.roomdb.manager.DBEngine$UpdateAsyncTask
-com/winlin/roomdb/dao.java
- com.winlin.roomdb.dao
+com/lifeisfaceemptiness/handlelife/create/fragment/CreateAbFragment.java
+ com.lifeisfaceemptiness.handlelife.create.fragment.CreateAbFragment
 com/lifeisfaceemptiness/handlelife/base/fragment/FragmentAdapter.java
  com.lifeisfaceemptiness.handlelife.base.fragment.FragmentAdapter
 com/lifeisfaceemptiness/handlelife/overview/fragment/AccountBookFragment.java
@@ -106,10 +106,8 @@ com/winlin/roomdb/database.java
  com.winlin.roomdb.database
 com/lifeisfaceemptiness/handlelife/note/NoteDatabase.java
  com.lifeisfaceemptiness.handlelife.note.NoteDatabase
-com/sinyi/uselessitem/base/UselessItemAdapter.java
- com.sinyi.uselessitem.base.UselessItemAdapter
- com.sinyi.uselessitem.base.UselessItemAdapter$1
- com.sinyi.uselessitem.base.UselessItemAdapter$UselessItemViewHolder
+com/lifeisfaceemptiness/handlelife/create/CreateActivity.java
+ com.lifeisfaceemptiness.handlelife.create.CreateActivity
 com/lifeisfaceemptiness/handlelife/note/EditActivity.java
  com.lifeisfaceemptiness.handlelife.note.EditActivity
  com.lifeisfaceemptiness.handlelife.note.EditActivity$1
@@ -136,7 +134,9 @@ com/lifeisfaceemptiness/handlelife/overview/fragment/CustomNoteFragment.java
 com/lifeisfaceemptiness/handlelife/create/fragment/CreateErFragment.java
  com.lifeisfaceemptiness.handlelife.create.fragment.CreateErFragment
  com.lifeisfaceemptiness.handlelife.create.fragment.CreateErFragment$1
-com/lifeisfaceemptiness/handlelife/create/CreateActivity.java
- com.lifeisfaceemptiness.handlelife.create.CreateActivity
-com/lifeisfaceemptiness/handlelife/create/fragment/CreateAbFragment.java
- com.lifeisfaceemptiness.handlelife.create.fragment.CreateAbFragment
+com/winlin/roomdb/dao.java
+ com.winlin.roomdb.dao
+com/sinyi/uselessitem/base/UselessItemAdapter.java
+ com.sinyi.uselessitem.base.UselessItemAdapter
+ com.sinyi.uselessitem.base.UselessItemAdapter$1
+ com.sinyi.uselessitem.base.UselessItemAdapter$UselessItemViewHolder
