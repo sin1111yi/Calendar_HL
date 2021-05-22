@@ -8,17 +8,17 @@ import android.widget.LinearLayout;
 
 // https://blog.csdn.net/An_nAl/article/details/76256219
 
-public class HandleLinearlayout extends LinearLayout {
+public class HandleLinearLayout extends LinearLayout {
 
-    public HandleLinearlayout(Context context) {
+    public HandleLinearLayout(Context context) {
         super(context);
     }
 
-    public HandleLinearlayout(Context context, AttributeSet attrs) {
+    public HandleLinearLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public HandleLinearlayout(Context context, AttributeSet attrs, int defStyle) {
+    public HandleLinearLayout(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
 

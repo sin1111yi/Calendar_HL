@@ -10,7 +10,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#5be8cc">
+        android:background="@color/deep_gray">
 
         <TextView
             android:id="@+id/account_book_tv_info"
@@ -36,7 +36,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:background="@color/white"
-            android:src="@drawable/ic_color_income"
+            android:src="@drawable/ic_income"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -47,7 +47,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="16dp"
             android:background="@color/white"
-            android:src="@drawable/ic_color_bill"
+            android:src="@drawable/ic_bill"
             app:layout_constraintStart_toEndOf="@+id/ab_btn_income"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -58,7 +58,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:background="@color/white"
-            android:src="@drawable/ic_color_food"
+            android:src="@drawable/ic_food"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -68,7 +68,7 @@
             android:layout_height="80dp"
             android:layout_marginTop="16dp"
             android:background="@color/white"
-            android:src="@drawable/ic_color_medical"
+            android:src="@drawable/ic_medical"
             app:layout_constraintEnd_toStartOf="@+id/ab_btn_food"
             app:layout_constraintStart_toEndOf="@+id/ab_btn_bill"
             app:layout_constraintTop_toTopOf="parent" />
@@ -80,7 +80,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:background="@color/white"
-            android:src="@drawable/ic_color_store"
+            android:src="@drawable/ic_money_pig"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ab_btn_income" />
 
@@ -91,7 +91,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="24dp"
             android:background="@color/white"
-            android:src="@drawable/ic_color_travel"
+            android:src="@drawable/ic_travel"
             app:layout_constraintStart_toEndOf="@+id/ab_btn_store"
             app:layout_constraintTop_toBottomOf="@+id/ab_btn_bill" />
 
@@ -102,29 +102,29 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="24dp"
             android:background="@color/white"
-            android:src="@drawable/ic_color_gift"
+            android:src="@drawable/ic_gift"
             app:layout_constraintStart_toEndOf="@+id/ab_btn_travel"
             app:layout_constraintTop_toBottomOf="@+id/ab_btn_medical" />
 
         <androidx.appcompat.widget.AppCompatImageButton
-            android:id="@+id/ab_btn_movie"
+            android:id="@+id/ab_btn_leisure"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
             android:background="@color/white"
-            android:src="@drawable/ic_color_movie"
+            android:src="@drawable/ic_leisure"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ab_btn_food" />
 
         <androidx.appcompat.widget.AppCompatImageButton
-            android:id="@+id/ab_btn_study"
+            android:id="@+id/ab_btn_educate"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:background="@color/white"
-            android:src="@drawable/ic_color_study"
+            android:src="@drawable/ic_educate"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ab_btn_store" />
 
@@ -135,10 +135,54 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="24dp"
             android:background="@color/white"
-            android:src="@drawable/ic_color_clothe"
-            app:layout_constraintStart_toEndOf="@+id/ab_btn_study"
+            android:src="@drawable/ic_clothe"
+            app:layout_constraintStart_toEndOf="@+id/ab_btn_educate"
             app:layout_constraintTop_toBottomOf="@+id/ab_btn_travel" />
 
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ab_btn_server"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_server"
+            app:layout_constraintStart_toEndOf="@+id/ab_btn_clothe"
+            app:layout_constraintTop_toBottomOf="@+id/ab_btn_gift" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ab_btn_other"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_other"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ab_btn_leisure" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include layout="@layout/view_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/account_book_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="15dp"
+            android:hint="@string/account_type_hint"
+            android:textColor="@color/black"
+            android:textColorHint="@color/deep_gray"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/view_line" />
 
 </LinearLayout>

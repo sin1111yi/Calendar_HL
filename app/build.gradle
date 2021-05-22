@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.handlelife"
+        applicationId "com.lifeisfaceemptiness.handlelife"
         minSdkVersion 27
         targetSdkVersion 30
         versionCode 1

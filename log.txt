@@ -4,6 +4,8 @@
 加入了winlin.roomdb包，基于room的数据库
 导入了解决状态栏颜色的包，已经加入使用
 
+记账本创建界面进一步完善
+
 2021/5/22
 
 将example包更改为lifeisfaceemptiness包（Life是Life is face emptiness的递归表达，并没有实际的用处）

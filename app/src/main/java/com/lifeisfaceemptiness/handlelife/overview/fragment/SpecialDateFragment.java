@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CalendarView;
 
 import com.lifeisfaceemptiness.handlelife.R;
 
@@ -18,7 +19,9 @@ public class SpecialDateFragment extends Fragment {
     View rootView;
 
     Context mContext;
+    CalendarView calendarView;
 
+    //TODO: 现在这个Fragment中CalendarView被选中的日期背景色为黑色，应该为深灰色
     public SpecialDateFragment() {
         // Required empty public constructor
     }
@@ -46,6 +49,7 @@ public class SpecialDateFragment extends Fragment {
             rootView = inflater.inflate(R.layout.fragment_sd_show, container, false);
         }
 
+        calendarView=rootView.findViewById(R.id.sd_calendar);
 
         return rootView;
     }

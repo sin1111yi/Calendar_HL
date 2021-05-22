@@ -149,6 +149,7 @@ public class InfoDialogButton extends RelativeLayout{
     }
 
     /**
+     * @brief : 设定多选对话内容
      * @param items : 用作初始化的字符串数组
      * @param titleId : Dialog title
      */
@@ -164,8 +165,9 @@ public class InfoDialogButton extends RelativeLayout{
     }
 
     /**
-     * @param items : 用作初始化的字符串数组
-     * @param titleId : Dialog title
+     * @brief : 设定单选对话内容
+     * @param items: 用作初始化的字符串数组
+     * @param titleId: Dialog title
      */
     public void setSingleSelectDialogContent(String[] items,int titleId)
     {

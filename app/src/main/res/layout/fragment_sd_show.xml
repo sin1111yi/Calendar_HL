@@ -7,18 +7,19 @@
     android:orientation="vertical"
     tools:context="com.lifeisfaceemptiness.handlelife.overview.fragment.SpecialDateFragment">
 
-    <com.lifeisfaceemptiness.handlelife.customui.HandleLinearlayout
+    <com.lifeisfaceemptiness.handlelife.customui.HandleLinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <!-- HandleLinearLayout 可以解决CalendarView和ViewPager的滑动冲突问题 -->
 
-    </com.lifeisfaceemptiness.handlelife.customui.HandleLinearlayout>
+        <CalendarView
+            android:id="@+id/sd_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:firstDayOfWeek="3"
+            android:shownWeekCount="6"/>
 
-    <CalendarView
-        android:id="@+id/sd_calendar"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:firstDayOfWeek="3"
-        android:shownWeekCount="6"/>
+    </com.lifeisfaceemptiness.handlelife.customui.HandleLinearLayout>
 
 
 </LinearLayout>
