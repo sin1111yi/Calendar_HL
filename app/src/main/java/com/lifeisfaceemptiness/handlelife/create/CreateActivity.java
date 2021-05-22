@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import com.githang.statusbar.StatusBarCompat;
 import com.lifeisfaceemptiness.handlelife.create.fragment.CreateSdFragment;
 import com.lifeisfaceemptiness.handlelife.R;
 import com.lifeisfaceemptiness.handlelife.create.fragment.CreateAbFragment;
@@ -46,7 +47,12 @@ public class CreateActivity extends AppCompatActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Objects.requireNonNull(getSupportActionBar()).hide();
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
+
+        StatusBarCompat.setStatusBarColor(this,
+                getResources().getColor(R.color.deep_gray, getTheme()));
         setContentView(R.layout.activity_create);
 
         fabReturnOverView = findViewById(R.id.fab_return_overview);
@@ -56,8 +62,8 @@ public class CreateActivity extends AppCompatActivity implements
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.fab_return_overview) {
-            Intent intent = new Intent("com.example.handlelife.OVERVIEW_PAGES");
-            intent.addCategory("com.example.handlelife.OVERVIEW_ALL_ITEMS");
+            Intent intent = new Intent("com.lifeisfaceemptiness.handlelife.OVERVIEW_PAGES");
+            intent.addCategory("com.lifeisfaceemptiness.handlelife.OVERVIEW_ALL_ITEMS");
             startActivity(intent);
         }
     }

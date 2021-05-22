@@ -1,19 +1,26 @@
 package com.lifeisfaceemptiness.handlelife;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.ColorInt;
+import androidx.annotation.ColorRes;
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.githang.statusbar.StatusBarCompat;
 import com.lifeisfaceemptiness.handlelife.base.activity.BaseActivity;
 import com.lifeisfaceemptiness.handlelife.group.GroupRecyclerView;
 import com.lifeisfaceemptiness.handlelife.R;
@@ -50,7 +57,7 @@ public class MainActivity extends BaseActivity implements
     GroupRecyclerView mRecyclerView;
 
     FloatingActionButton fabCreateItem;
-    FloatingActionButton fabManageItem;
+    FloatingActionButton fabGithub;
     FloatingActionButton fabStatData;
 
     public static final String TAG = "MainActivity";
@@ -67,6 +74,8 @@ public class MainActivity extends BaseActivity implements
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
+        StatusBarCompat.setStatusBarColor(this,
+                getResources().getColor(R.color.white, getTheme()));
     }
 
     @SuppressLint("SetTextI18n")
@@ -80,7 +89,7 @@ public class MainActivity extends BaseActivity implements
         mCalendarView = (CalendarView) findViewById(R.id.calendarView);
         mTextCurrentDay = (TextView) findViewById(R.id.tv_current_day);
         fabCreateItem = (FloatingActionButton) findViewById(R.id.fab_create);
-        fabManageItem = (FloatingActionButton) findViewById(R.id.fab_github);
+        fabGithub = (FloatingActionButton) findViewById(R.id.fab_github);
         fabStatData = (FloatingActionButton) findViewById(R.id.fab_stat);
 
         mTextMonthDay.setOnClickListener(v -> {
@@ -105,7 +114,7 @@ public class MainActivity extends BaseActivity implements
 
         //TODO: complete all these methods
         fabCreateItem.setOnClickListener(this);
-        fabManageItem.setOnClickListener(this);
+        fabGithub.setOnClickListener(this);
         fabStatData.setOnClickListener(this);
 
     }
@@ -159,8 +168,8 @@ public class MainActivity extends BaseActivity implements
     public void onClick(View v) {
         if (v.getId() == R.id.fab_create) {
             // use implicit intent to jump to create activity
-            Intent intent = new Intent("com.example.handlelife.OVERVIEW_PAGES");
-            intent.addCategory("com.example.handlelife.OVERVIEW_ALL_ITEMS");
+            Intent intent = new Intent("com.lifeisfaceemptiness.handlelife.OVERVIEW_PAGES");
+            intent.addCategory("com.lifeisfaceemptiness.handlelife.OVERVIEW_ALL_ITEMS");
             startActivity(intent);
         } else if (v.getId() == R.id.fab_github) {
             // show github
@@ -171,7 +180,7 @@ public class MainActivity extends BaseActivity implements
         } else if (v.getId() == R.id.fab_stat) {
             // data statistics
 
-        } else{
+        } else {
             Log.d(TAG, "there's no event for this click");
         }
     }
@@ -179,8 +188,8 @@ public class MainActivity extends BaseActivity implements
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-
     }
+
 
     /**
      * @brief 该函数可以设定指定日期的标记颜色与标记文字

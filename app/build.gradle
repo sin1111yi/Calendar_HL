@@ -53,8 +53,8 @@ dependencies {
     implementation 'com.github.zcweng:switch-button:0.0.3@aar'
     // TimePicker
     implementation 'com.contrarywind:Android-PickerView:4.1.9'
-    // LitePal
-    implementation 'org.litepal.guolindev:core:3.2.3'
+    // Status bar
+    implementation 'com.githang:status-bar-compat:0.7'
     testImplementation 'junit:junit:4.13.2'
 
     implementation project(':calendarview')

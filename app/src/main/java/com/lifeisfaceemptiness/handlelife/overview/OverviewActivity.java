@@ -3,6 +3,7 @@ package com.lifeisfaceemptiness.handlelife.overview;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.githang.statusbar.StatusBarCompat;
 import com.lifeisfaceemptiness.handlelife.overview.fragment.AccountBookFragment;
 import com.lifeisfaceemptiness.handlelife.overview.fragment.AlarmClockFragment;
 import com.lifeisfaceemptiness.handlelife.overview.fragment.CustomNoteFragment;
@@ -51,7 +52,13 @@ public class OverviewActivity extends AppCompatActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Objects.requireNonNull(getSupportActionBar()).hide();
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
+
+        StatusBarCompat.setStatusBarColor(this,
+                getResources().getColor(R.color.deep_gray, getTheme()));
+
         setContentView(R.layout.activity_overview);
         tabLayout = findViewById(R.id.overview_tabs_title);
         viewPager = findViewById(R.id.overview_view_pager);
@@ -91,8 +98,8 @@ public class OverviewActivity extends AppCompatActivity implements
         if (v.getId() == R.id.create_current_page_item) {
             Log.d(TAG, "Now position is " + viewPager.getCurrentItem());
 
-            Intent intent = new Intent("com.example.handlelife.CREATE_PAGE");
-            intent.addCategory("com.example.handlelife.CREATE_DIVERSE_ITEMS");
+            Intent intent = new Intent("com.lifeisfaceemptiness.handlelife.CREATE_PAGE");
+            intent.addCategory("com.lifeisfaceemptiness.handlelife.CREATE_DIVERSE_ITEMS");
             // I prefer apparent everything
             Bundle bundle = new Bundle();
             bundle.putInt("OverviewPosition", viewPager.getCurrentItem());
