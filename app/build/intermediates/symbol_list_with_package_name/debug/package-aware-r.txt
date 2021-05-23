@@ -1912,10 +1912,18 @@ id ab_btn_income
 id ab_btn_leisure
 id ab_btn_medical
 id ab_btn_other
+id ab_btn_select_date
+id ab_btn_select_type
 id ab_btn_server
 id ab_btn_store
 id ab_btn_travel
 id ab_description
+id ab_select_btn_img1
+id ab_select_btn_img2
+id ab_select_tip1
+id ab_select_tip2
+id ab_selected_date
+id ab_selected_type
 id ab_set_account
 id ab_set_description
 id ac_analog_clock
@@ -2387,6 +2395,7 @@ id withText
 id withinBounds
 id wrap
 id wrap_content
+id wv_dialog_view
 id year
 id zero_corner_chip
 integer abc_config_activityDefaultDur
@@ -2555,6 +2564,7 @@ layout text_view_without_line_height
 layout useless_item_layout
 layout useless_item_list_layout
 layout view_line
+layout wheelview_dialog
 menu edit_menu
 menu main_menu
 mipmap clock_bg
@@ -2631,6 +2641,7 @@ string fab_transformation_sheet_behavior
 string fri
 string func_dialog_title
 string health_wish
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_account_book
@@ -2708,6 +2719,7 @@ string status_bar_notification_info_overflow
 string sun
 string thu
 string time_format
+string time_format2
 string title_activity_create
 string title_activity_overview
 string tue

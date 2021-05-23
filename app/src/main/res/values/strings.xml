@@ -111,6 +111,7 @@
 
     <string name="date_format">yyyy-MM-dd</string>
     <string name="time_format">yyyy-MM-dd HH:mm:ss</string>
+    <string name="time_format2">yyyy-MM-dd HH:mm</string>
 
     <string name="health_wish">Get well soon!</string>
     <string name="account_type_hint">Select account type</string>

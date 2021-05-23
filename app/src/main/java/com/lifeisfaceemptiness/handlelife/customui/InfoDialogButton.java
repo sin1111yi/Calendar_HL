@@ -188,6 +188,7 @@ public class InfoDialogButton extends RelativeLayout {
                 setView(editText).setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
+                //TODO: get input
                 showEnterStringResult();
             }
         });

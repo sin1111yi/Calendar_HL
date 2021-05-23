@@ -52,7 +52,6 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginEnd="5dp"
-            android:contentDescription="@string/alarm_clock_default_description"
             android:src="@drawable/ali_arrow_right" />
 
         <TextView

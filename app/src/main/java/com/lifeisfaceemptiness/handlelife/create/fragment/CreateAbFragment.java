@@ -27,30 +27,30 @@ public class CreateAbFragment extends Fragment implements
         View.OnClickListener {
 
     private static final String TAG = "CreateAbFragment";
-    View rootView;
+    private View rootView;
 
-    AppCompatImageButton setTypeIncome;
-    AppCompatImageButton setTypeBill;
-    AppCompatImageButton setTypeMedical;
-    AppCompatImageButton setTypeFood;
-    AppCompatImageButton setTypeStore;
-    AppCompatImageButton setTypeTravel;
-    AppCompatImageButton setTypeGift;
-    AppCompatImageButton setTypeLeisure;
-    AppCompatImageButton setTypeEducate;
-    AppCompatImageButton setTypeClothe;
-    AppCompatImageButton setTypeLifeServer;
-    AppCompatImageButton setTypeOther;
+    private AppCompatImageButton setTypeIncome;
+    private AppCompatImageButton setTypeBill;
+    private AppCompatImageButton setTypeMedical;
+    private AppCompatImageButton setTypeFood;
+    private AppCompatImageButton setTypeStore;
+    private AppCompatImageButton setTypeTravel;
+    private AppCompatImageButton setTypeGift;
+    private AppCompatImageButton setTypeLeisure;
+    private AppCompatImageButton setTypeEducate;
+    private AppCompatImageButton setTypeClothe;
+    private AppCompatImageButton setTypeLifeServer;
+    private AppCompatImageButton setTypeOther;
 
-    InfoDialogButton setAccount;
-    InfoDialogButton setDescription;
-    TextView tvSelectedType;
-    String selectedType;
-    EditText abDescription;
+    private InfoDialogButton setAccount;
+    private InfoDialogButton setDescription;
+    private TextView tvSelectedType;
+    private String selectedType;
+    private EditText abDescription;
 
-    String[] accountTypesList;
+    private String[] accountTypesList;
 
-    Context mContext;
+    private Context mContext;
 
     public CreateAbFragment() {
         // Required empty public constructor

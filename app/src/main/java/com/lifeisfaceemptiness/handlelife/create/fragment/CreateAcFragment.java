@@ -27,7 +27,7 @@ public class CreateAcFragment extends Fragment implements
         TimePicker.OnTimeChangedListener,
         SwitchButton.OnCheckedChangeListener {
 
-    View rootView;
+    private View rootView;
     private static final String TAG = "CreateAlarmClock";
 
     private TimePicker timePicker;

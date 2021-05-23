@@ -113,9 +113,10 @@
 
     <string name="date_format">yyyy年MM月dd日</string>
     <string name="time_format">yyyy年MM月dd日 HH:mm:ss</string>
+    <string name="time_format2">yyyy年MM月dd日 HH:mm</string>
 
     <string name="health_wish">祝你早日康复！</string>
-    <string name="account_type_hint">请选择账目类型</string>
+    <string name="account_type_hint">选择账目类型</string>
     <string name="enter_account">输入金额</string>
     <string name="enter_description">输入描述</string>
 

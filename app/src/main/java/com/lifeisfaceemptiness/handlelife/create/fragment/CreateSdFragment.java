@@ -34,7 +34,7 @@ public class CreateSdFragment extends Fragment implements
 
     private String selectedDate;
 
-    Context mContext;
+    private Context mContext;
 
     public CreateSdFragment() {
         // Required empty public constructor

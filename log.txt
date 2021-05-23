@@ -1,3 +1,11 @@
+2021/5/23
+
+v0.3.2
+
+完成InfoDialogButton目前所需功能
+
+计划：修改Note部分
+
 2021/5/22
 
 为CreateAbFragment添加了几个类型选择按键，具体功能逻辑还未编写
