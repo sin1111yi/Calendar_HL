@@ -10,14 +10,10 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.ColorInt;
-import androidx.annotation.ColorRes;
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.githang.statusbar.StatusBarCompat;
@@ -54,7 +50,6 @@ public class MainActivity extends BaseActivity implements
     RelativeLayout mRelativeTool;
     private int mYear;
     CalendarLayout mCalendarLayout;
-    GroupRecyclerView mRecyclerView;
 
     FloatingActionButton fabCreateItem;
     FloatingActionButton fabGithub;
@@ -221,6 +216,7 @@ public class MainActivity extends BaseActivity implements
         mTextLunar.setText(calendar.getLunar());
         mYear = calendar.getYear();
         if (isClick) {
+            //TODO: 点击确定的日期的时候，会执行这里的步骤
             Toast.makeText(this, getCalendarText(calendar), Toast.LENGTH_SHORT).show();
         }
 //        Log.e("lunar "," --  " + calendar.getLunarCalendar().toString() + "\n" +
@@ -239,14 +235,13 @@ public class MainActivity extends BaseActivity implements
         Toast.makeText(this, String.format("%s : LongClickOutOfRange", calendar), Toast.LENGTH_SHORT).show();
     }
 
-    //TODO: replace getCalendarText with new method
     @Override
     public void onCalendarLongClick(Calendar calendar) {
         Toast.makeText(this, "长按不选择日期\n" + getCalendarText(calendar), Toast.LENGTH_LONG).show();
     }
 
     private static String getCalendarText(Calendar calendar) {
-        return String.format("新历%s \n 农历%s \n 公历节日：%s \n 农历节日：%s \n 节气：%s \n 是否闰月：%s",
+        return String.format(" 公历%s \n 农历%s \n 公历节日：%s \n 农历节日：%s \n 节气：%s \n 是否闰月：%s",
                 calendar.getMonth() + "月" + calendar.getDay() + "日",
                 calendar.getLunarCalendar().getMonth() + "月" + calendar.getLunarCalendar().getDay() + "日",
                 TextUtils.isEmpty(calendar.getGregorianFestival()) ? "无" : calendar.getGregorianFestival(),

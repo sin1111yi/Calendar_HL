@@ -3,20 +3,26 @@ package com.lifeisfaceemptiness.handlelife.customui;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import androidx.core.content.res.ResourcesCompat;
 
 import com.lifeisfaceemptiness.handlelife.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class InfoDialogButton extends RelativeLayout{
+public class InfoDialogButton extends RelativeLayout {
 
     private InfoDialogType DialogType = InfoDialogType.UNSET_TYPE;
 
@@ -24,6 +30,7 @@ public class InfoDialogButton extends RelativeLayout{
     private TextView btnSet;
     private String getBtnName;
     private String getBtnSet;
+    private ImageView btnImage;
 
     private Context mContext;
 
@@ -39,6 +46,7 @@ public class InfoDialogButton extends RelativeLayout{
         COMMON_INFO,
         SINGLE_SELECT,
         MULTI_SELECT,
+        ENTER_STRING
     }
 
     private final String TAG = "InfoDialogButton";
@@ -51,6 +59,7 @@ public class InfoDialogButton extends RelativeLayout{
 
         this.btnName = findViewById(R.id.btn_info_option_name);
         this.btnSet = findViewById(R.id.btn_info_option_set);
+        this.btnImage = findViewById(R.id.btn_info_pic);
 
         btnDialog.setOnClickListener(new OnClickListener() {
             @Override
@@ -58,7 +67,7 @@ public class InfoDialogButton extends RelativeLayout{
                 InfoButtonClickEvent();
             }
         });
-        Log.d(TAG, "new "+DialogType+" InfoDialogButton has been set");
+        Log.d(TAG, "new " + DialogType + " InfoDialogButton has been set");
     }
 
     public void setDialogType(InfoDialogType dialogType) {
@@ -87,6 +96,11 @@ public class InfoDialogButton extends RelativeLayout{
         return this.getBtnSet;
     }
 
+    public void setBtnImage(int id) {
+        this.btnImage.setImageDrawable(ResourcesCompat.
+                getDrawable(getResources(), id, null));
+    }
+
     private void InfoButtonClickEvent() {
         if (this.DialogType == InfoDialogType.UNSET_TYPE) {
             Log.d(TAG, "InfoButtonClickEvent: dialog type have not been set.");
@@ -97,6 +111,8 @@ public class InfoDialogButton extends RelativeLayout{
             showSingleSelectDialog();
         } else if (this.DialogType == InfoDialogType.MULTI_SELECT) {
             showMultiSelectDialog();
+        } else if (this.DialogType == InfoDialogType.ENTER_STRING) {
+            showEnterStringDialog();
         }
     }
 
@@ -104,10 +120,27 @@ public class InfoDialogButton extends RelativeLayout{
         Log.d(TAG, "prepare to show common info dialog");
     }
 
-    private void showSingleSelectDialog()
-    {
+    private void showSingleSelectDialog() {
         Log.d(TAG, "prepare to show single select dialog");
-        //TODO: complete this method
+        String[] items = this.itemToShow;
+        final int[] choice = {-1};
+        dialogBuilder = new AlertDialog.Builder(mContext).setTitle(this.dialogTitle)
+                .setSingleChoiceItems(items, 0, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        choice[0] = which;
+                    }
+                }).setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        if (choice[0] != -1) {
+                            getSelected.append(items[choice[0]]);
+                            Log.d(TAG, getSelected + " has been selected!");
+                            showSingleSelectResult();
+                        }
+                    }
+                });
+        dialogBuilder.create().show();
     }
 
     private void showMultiSelectDialog() {
@@ -120,7 +153,7 @@ public class InfoDialogButton extends RelativeLayout{
         for (int i = 0; i < this.itemNum; i++)
             isSelected[i] = false;
 
-        dialogBuilder = new AlertDialog.Builder(mContext).setTitle(dialogTitle)
+        dialogBuilder = new AlertDialog.Builder(mContext).setTitle(this.dialogTitle)
                 .setMultiChoiceItems(items, isSelected, new DialogInterface.OnMultiChoiceClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which, boolean isChecked) {
@@ -148,38 +181,57 @@ public class InfoDialogButton extends RelativeLayout{
         dialogBuilder.create().show();
     }
 
+    private void showEnterStringDialog() {
+        Log.d(TAG, "prepare to show enter string dialog");
+        EditText editText=new EditText(mContext);
+        dialogBuilder=new AlertDialog.Builder(mContext).setTitle(this.dialogTitle).
+                setView(editText).setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                showEnterStringResult();
+            }
+        });
+        dialogBuilder.create().show();
+    }
+
     /**
-     * @brief : 设定多选对话内容
-     * @param items : 用作初始化的字符串数组
+     * @param items   : 用作初始化的字符串数组
      * @param titleId : Dialog title
+     * @brief : 设定多选对话内容
      */
     public void setMultiSelectDialogContent(String[] items, int titleId) {
         this.itemToShow = items;
-        this.itemNum=items.length;
+        this.itemNum = items.length;
         this.dialogTitle = getResources().getString(titleId);
     }
 
-    public void showMultiSelectResult() {
+    private void showMultiSelectResult() {
         this.getBtnSet = this.getSelected.toString();
         setBtnSet(this.getBtnSet);
     }
 
     /**
-     * @brief : 设定单选对话内容
-     * @param items: 用作初始化的字符串数组
+     * @param items:   用作初始化的字符串数组
      * @param titleId: Dialog title
+     * @brief : 设定单选对话内容
      */
-    public void setSingleSelectDialogContent(String[] items,int titleId)
-    {
-        this.itemToShow=items;
-        this.itemNum=items.length;
-        this.dialogTitle=getResources().getString(titleId);
+    public void setSingleSelectDialogContent(String[] items, int titleId) {
+        this.itemToShow = items;
+        this.itemNum = items.length;
+        this.dialogTitle = getResources().getString(titleId);
     }
 
-    public void showSingleSelectResult()
-    {
+    private void showSingleSelectResult() {
         this.getBtnSet = this.getSelected.toString();
         setBtnSet(this.getBtnSet);
+    }
+
+
+    private void setEnterStringDialogContent(int titleId) {
+        this.dialogTitle = getResources().getString(titleId);
+    }
+
+    private void showEnterStringResult() {
     }
 
 }

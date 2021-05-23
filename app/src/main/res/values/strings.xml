@@ -113,6 +113,24 @@
     <string name="time_format">yyyy-MM-dd HH:mm:ss</string>
 
     <string name="health_wish">Get well soon!</string>
-    <string name="account_type_hint">Please select account type</string>
+    <string name="account_type_hint">Select account type</string>
+    <string name="enter_account">Enter account</string>
+    <string name="enter_description">Enter description</string>
+
+    <string-array name="account_types">
+        <item>Income</item>
+        <item>Bill</item>
+        <item>Medical</item>
+        <item>Food</item>
+        <item>Save</item>
+        <item>Travel</item>
+        <item>Gift</item>
+        <item>Leisure</item>
+        <item>Educate</item>
+        <item>Clothe</item>
+        <item>Life server</item>
+        <item>Others</item>
+    </string-array>
+
 
 </resources>

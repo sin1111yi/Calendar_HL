@@ -116,5 +116,22 @@
 
     <string name="health_wish">祝你早日康复！</string>
     <string name="account_type_hint">请选择账目类型</string>
+    <string name="enter_account">输入金额</string>
+    <string name="enter_description">输入描述</string>
+
+    <string-array name="account_types">
+        <item>收入</item>
+        <item>账单</item>
+        <item>医疗</item>
+        <item>食物</item>
+        <item>储蓄</item>
+        <item>旅行</item>
+        <item>礼物</item>
+        <item>休闲</item>
+        <item>教育</item>
+        <item>服装</item>
+        <item>生活服务</item>
+        <item>其他</item>
+    </string-array>
 
 </resources>

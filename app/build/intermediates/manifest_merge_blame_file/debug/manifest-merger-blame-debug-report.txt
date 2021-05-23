@@ -26,92 +26,93 @@
 18-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:9:9-49
 19        android:supportsRtl="true"
 19-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:10:9-35
-20        android:theme="@style/Theme.HandleLife" >
-20-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:11:9-48
-21        <activity android:name="com.lifeisfaceemptiness.handlelife.note.EditActivity" />
-21-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:13:9-14:82
-21-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:14:13-80
-22        <activity android:name="com.lifeisfaceemptiness.handlelife.note.BasenoteActivity" />
-22-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:15:9-92
-22-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:15:19-90
-23        <activity
-23-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:17:9-27:20
-24            android:name="com.lifeisfaceemptiness.handlelife.create.CreateActivity"
-24-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:18:13-84
-25            android:label="@string/title_activity_create"
-25-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:19:13-58
-26            android:launchMode="singleTask" >
-26-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:20:13-44
-27            <intent-filter>
-27-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:21:13-26:29
-28                <action android:name="com.lifeisfaceemptiness.handlelife.CREATE_PAGE" />
-28-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:22:17-89
-28-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:22:25-86
-29
-30                <category android:name="com.lifeisfaceemptiness.handlelife.CREATE_DIVERSE_ITEMS" />
-30-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:24:17-100
-30-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:24:27-97
-31                <category android:name="android.intent.category.DEFAULT" />
-31-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:25:17-76
-31-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:25:27-73
-32            </intent-filter>
-33        </activity>
-34        <activity
-34-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:29:9-39:20
-35            android:name="com.lifeisfaceemptiness.handlelife.overview.OverviewActivity"
-35-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:30:13-88
-36            android:label="@string/title_activity_overview"
-36-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:31:13-60
-37            android:launchMode="singleTask" >
-37-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:32:13-44
-38            <intent-filter>
-38-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:33:13-38:29
-39                <action android:name="com.lifeisfaceemptiness.handlelife.OVERVIEW_PAGES" />
-39-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:34:17-92
-39-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:34:25-89
-40
-41                <category android:name="com.lifeisfaceemptiness.handlelife.OVERVIEW_ALL_ITEMS" />
-41-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:36:17-98
-41-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:36:27-95
-42                <category android:name="android.intent.category.DEFAULT" />
-42-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:25:17-76
-42-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:25:27-73
-43            </intent-filter>
-44        </activity>
-45        <activity
-45-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:40:9-51:20
-46            android:name="com.lifeisfaceemptiness.handlelife.MainActivity"
-46-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:41:13-75
-47            android:label="@string/app_name"
-47-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:42:13-45
-48            android:launchMode="singleTask" >
-48-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:43:13-44
-49            <intent-filter>
-49-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:44:13-50:29
-50                <action android:name="android.intent.action.MAIN" />
-50-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:45:17-69
-50-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:45:25-66
-51
-52                <category android:name="android.intent.category.LAUNCHER" />
-52-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:47:17-77
-52-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:47:27-74
-53                <category android:name="android.intent.category.DEFAULT" />
-53-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:25:17-76
-53-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:25:27-73
-54                <category android:name="com.lifeisfaceemptiness.handlelife.BEGINNING_ACTIVITY" />
-54-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:49:17-98
-54-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:49:27-95
-55            </intent-filter>
-56        </activity>
-57
-58        <service
-58-->[androidx.room:room-runtime:2.3.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\541ffbf97242aa478b0dba37d1c82311\room-runtime-2.3.0\AndroidManifest.xml:25:9-28:40
-59            android:name="androidx.room.MultiInstanceInvalidationService"
-59-->[androidx.room:room-runtime:2.3.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\541ffbf97242aa478b0dba37d1c82311\room-runtime-2.3.0\AndroidManifest.xml:26:13-74
-60            android:directBootAware="true"
-60-->[androidx.room:room-runtime:2.3.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\541ffbf97242aa478b0dba37d1c82311\room-runtime-2.3.0\AndroidManifest.xml:27:13-43
-61            android:exported="false" />
-61-->[androidx.room:room-runtime:2.3.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\541ffbf97242aa478b0dba37d1c82311\room-runtime-2.3.0\AndroidManifest.xml:28:13-37
-62    </application>
-63
-64</manifest>
+20        android:testOnly="true"
+21        android:theme="@style/Theme.HandleLife" >
+21-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:11:9-48
+22        <activity android:name="com.lifeisfaceemptiness.handlelife.note.EditActivity" />
+22-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:13:9-14:82
+22-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:14:13-80
+23        <activity android:name="com.lifeisfaceemptiness.handlelife.note.BasenoteActivity" />
+23-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:15:9-92
+23-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:15:19-90
+24        <activity
+24-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:17:9-27:20
+25            android:name="com.lifeisfaceemptiness.handlelife.create.CreateActivity"
+25-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:18:13-84
+26            android:label="@string/title_activity_create"
+26-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:19:13-58
+27            android:launchMode="singleTask" >
+27-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:20:13-44
+28            <intent-filter>
+28-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:21:13-26:29
+29                <action android:name="com.lifeisfaceemptiness.handlelife.CREATE_PAGE" />
+29-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:22:17-89
+29-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:22:25-86
+30
+31                <category android:name="com.lifeisfaceemptiness.handlelife.CREATE_DIVERSE_ITEMS" />
+31-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:24:17-100
+31-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:24:27-97
+32                <category android:name="android.intent.category.DEFAULT" />
+32-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:25:17-76
+32-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:25:27-73
+33            </intent-filter>
+34        </activity>
+35        <activity
+35-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:29:9-39:20
+36            android:name="com.lifeisfaceemptiness.handlelife.overview.OverviewActivity"
+36-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:30:13-88
+37            android:label="@string/title_activity_overview"
+37-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:31:13-60
+38            android:launchMode="singleTask" >
+38-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:32:13-44
+39            <intent-filter>
+39-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:33:13-38:29
+40                <action android:name="com.lifeisfaceemptiness.handlelife.OVERVIEW_PAGES" />
+40-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:34:17-92
+40-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:34:25-89
+41
+42                <category android:name="com.lifeisfaceemptiness.handlelife.OVERVIEW_ALL_ITEMS" />
+42-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:36:17-98
+42-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:36:27-95
+43                <category android:name="android.intent.category.DEFAULT" />
+43-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:25:17-76
+43-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:25:27-73
+44            </intent-filter>
+45        </activity>
+46        <activity
+46-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:40:9-51:20
+47            android:name="com.lifeisfaceemptiness.handlelife.MainActivity"
+47-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:41:13-75
+48            android:label="@string/app_name"
+48-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:42:13-45
+49            android:launchMode="singleTask" >
+49-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:43:13-44
+50            <intent-filter>
+50-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:44:13-50:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:45:17-69
+51-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:45:25-66
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:47:17-77
+53-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:47:27-74
+54                <category android:name="android.intent.category.DEFAULT" />
+54-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:25:17-76
+54-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:25:27-73
+55                <category android:name="com.lifeisfaceemptiness.handlelife.BEGINNING_ACTIVITY" />
+55-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:49:17-98
+55-->H:\Android_workspace\Calendar_HL\app\src\main\AndroidManifest.xml:49:27-95
+56            </intent-filter>
+57        </activity>
+58
+59        <service
+59-->[androidx.room:room-runtime:2.3.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\541ffbf97242aa478b0dba37d1c82311\room-runtime-2.3.0\AndroidManifest.xml:25:9-28:40
+60            android:name="androidx.room.MultiInstanceInvalidationService"
+60-->[androidx.room:room-runtime:2.3.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\541ffbf97242aa478b0dba37d1c82311\room-runtime-2.3.0\AndroidManifest.xml:26:13-74
+61            android:directBootAware="true"
+61-->[androidx.room:room-runtime:2.3.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\541ffbf97242aa478b0dba37d1c82311\room-runtime-2.3.0\AndroidManifest.xml:27:13-43
+62            android:exported="false" />
+62-->[androidx.room:room-runtime:2.3.0] C:\Users\48521\.gradle\caches\transforms-2\files-2.1\541ffbf97242aa478b0dba37d1c82311\room-runtime-2.3.0\AndroidManifest.xml:28:13-37
+63    </application>
+64
+65</manifest>

@@ -60,6 +60,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array account_types
 array alarm_clock_ring_duration_value_array
 array branch_integer_array
 array branch_string_array
@@ -1914,6 +1915,9 @@ id ab_btn_other
 id ab_btn_server
 id ab_btn_store
 id ab_btn_travel
+id ab_description
+id ab_set_account
+id ab_set_description
 id ac_analog_clock
 id accelerate
 id accessibility_action_clickable_span
@@ -1951,6 +1955,7 @@ id accessibility_custom_action_8
 id accessibility_custom_action_9
 id account_book_tv_info
 id account_book_type
+id account_book_type_selected
 id action0
 id action_bar
 id action_bar_activity_content
@@ -2615,6 +2620,8 @@ string create_custom_note_text
 string create_custom_note_title
 string cv_app_name
 string date_format
+string enter_account
+string enter_description
 string enter_tip_er
 string enter_tip_sd
 string error_icon_content_description
