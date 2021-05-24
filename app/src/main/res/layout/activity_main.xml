@@ -95,6 +95,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -140,6 +141,8 @@
                     app:year_view_scheme_color="#f17706">
 
                 </com.haibin.calendarview.CalendarView>
+
+
 
 
             </com.haibin.calendarview.CalendarLayout>
@@ -190,6 +193,7 @@
         </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
 
 </LinearLayout>
 

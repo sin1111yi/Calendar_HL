@@ -13,6 +13,8 @@ import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -58,11 +60,7 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
     private NoteAdapter adapter;
     private List<Note> noteList = new ArrayList<Note>();
     private Toolbar myToolbar;
-    //private Toolbar myToolbar;
 
-
-
-    //接收startActivtyForResult的结果
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data){
 
@@ -105,75 +103,10 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
         }
         refreshListView();
         super.onActivityResult(requestCode, resultCode, data);
-        /*String content = data.getStringExtra("content");
-        String time = data.getStringExtra("time");
-        Note note = new Note(content, time, 1);
-        CRUD op = new CRUD(context);
-        op.open();
-        op.addNote(note);
-        op.close();
-        refreshListView();*/
+
 
     }
 
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        Log.d(TAG, "111");
-        menu.clear();
-
-
-        inflater.inflate(R.menu.main_menu, menu);
-
-        super.onCreateOptionsMenu(menu, inflater);
-        Log.d(TAG, "111");
-
-
-        //search setting
-        MenuItem mSearch = menu.findItem(R.id.action_search);
-        SearchView mSearchView = (SearchView) mSearch.getActionView();
-
-        mSearchView.setQueryHint("Search");
-        mSearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                adapter.getFilter().filter(newText);
-                return false;
-            }
-        });
-    }
-
-//
-//    @Override
-//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-//        switch (item.getItemId()){
-//            case R.id.menu_clear:
-//                new AlertDialog.Builder(mContext)
-//                        .setMessage("删除全部吗？")
-//                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-//                            @Override
-//                            public void onClick(DialogInterface dialog, int which) {
-//                                dbHelper = new NoteDatabase(mContext);
-//                                SQLiteDatabase db = dbHelper.getWritableDatabase();
-//                                db.delete("notes", null, null);
-//                                db.execSQL("update sqlite_sequence set seq=0 where name='notes'");
-//                                refreshListView();
-//                            }
-//                        }).setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialog, int which) {
-//                        dialog.dismiss();
-//                    }
-//                }).create().show();
-//                break;
-//
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
 
     public void refreshListView(){
 
@@ -238,7 +171,6 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
         setHasOptionsMenu(true);
 
 
-        //setContentView(R.layout.fragment_custom_note);
         if (getArguments() != null) {
         }
 
@@ -262,19 +194,16 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
 
         btn = rootView.findViewById(R.id.fab);
         btn2 = rootView.findViewById(R.id.fab2);
-        //search_note = rootView.findViewById((R.id.search_note));
-        //btn3 = (FloatingActionButton) rootView.findViewById(R.id.fab3);
 
-        //tv = findViewById(R.id.tv);
+
+        search_note = rootView.findViewById((R.id.search_note));
+
         lv = (ListView)rootView.findViewById(R.id.lv);
-        //myToolbar = rootView.findViewById(R.id.myToolbar);
+
         adapter = new NoteAdapter(getContext(), noteList);
         refreshListView();
         lv.setAdapter(adapter);
-//        setSupportActionBar(myToolbar);
-//        getSupportActionBar().setHomeButtonEnabled(true);
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true); //设置toolbar取代actionBar
-//        myToolbar.setNavigationIcon(R.drawable.ic_menu_black_24dp);
+
 
         lv.setOnItemClickListener(this);
 
@@ -294,7 +223,7 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
             public void onClick(View v) {
                 new AlertDialog.Builder(mContext)
                         .setMessage("删除全部吗？")
-                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                        .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 dbHelper = new NoteDatabase(mContext);
@@ -303,7 +232,7 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
                                 db.execSQL("update sqlite_sequence set seq=0 where name='notes'");
                                 refreshListView();
                             }
-                        }).setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                        }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
@@ -312,24 +241,35 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
             }
         });
 
+        search_note.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence newText, int arg1, int arg2, int arg3) {
+                // 文本实时变化的回调
+                adapter.getFilter().filter(newText);
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+
+        });
+
         return rootView;
     }
-//
-//    @Override
-//    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//
-//    }
 
-
-    //===========================================
 
 
     @Override
     public void onActivityCreated(@Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        //add toolbar
-        //myToolbar.inflateMenu(R.menu.main_menu);
-        //myToolbar.setTitle("笔记");
+
+
     }
 
 

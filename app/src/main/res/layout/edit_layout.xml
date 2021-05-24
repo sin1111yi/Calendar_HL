@@ -3,13 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/edit_bg">
 
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/my_Toolbar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:elevation="4dp"
         app:titleTextColor="?attr/titleColor"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
@@ -20,7 +21,7 @@
     <EditText
         android:id="@+id/et"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="100dp"
         android:gravity="top">
 
     </EditText>-

@@ -6,25 +6,7 @@
     android:orientation="vertical"
     tools:context="com.lifeisfaceemptiness.handlelife.overview.fragment.CustomNoteFragment">
 
-    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-    <!--        android:id="@+id/fab"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_alignParentEnd="true"-->
-    <!--        android:layout_alignParentBottom="true"-->
-    <!--        android:layout_marginEnd="70dp"-->
-    <!--        android:layout_marginBottom="70dp"-->
-    <!--        app:srcCompat="@drawable/ic_baseline_add_24" />-->
 
-    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-    <!--        android:id="@+id/fab2"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_alignParentEnd="true"-->
-    <!--        android:layout_alignParentBottom="true"-->
-    <!--        android:layout_marginEnd="10dp"-->
-    <!--        android:layout_marginBottom="70dp"-->
-    <!--        app:srcCompat="@drawable/ic_delete_black_24dp" />-->
 
 
     <LinearLayout
@@ -32,15 +14,16 @@
         android:layout_height="wrap_content"
 
         android:orientation="horizontal">
-        <!--        <EditText-->
+        <EditText
 
-        <!--            android:id="@+id/search_note"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="match_parent"-->
-        <!--            android:layout_weight="1"-->
-        <!--            app:actionViewClass="androidx.appcompat.widget.SearchView"-->
-        <!--            android:text="搜索"-->
-        <!--            />-->
+            android:id="@+id/search_note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:actionViewClass="androidx.appcompat.widget.SearchView"
+            android:text="搜索" />
+
+
         <Button
             android:id="@+id/fab"
             android:layout_width="match_parent"

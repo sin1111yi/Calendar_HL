@@ -1820,6 +1820,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable edit_bg
 drawable fab_bg_mini
 drawable fab_bg_normal
 drawable fab_text_style
@@ -2282,6 +2283,7 @@ id search_close_btn
 id search_edit_frame
 id search_go_btn
 id search_mag_icon
+id search_note
 id search_plate
 id search_src_text
 id search_voice_btn
@@ -2641,7 +2643,6 @@ string fab_transformation_sheet_behavior
 string fri
 string func_dialog_title
 string health_wish
-string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_account_book
