@@ -1,3 +1,10 @@
+2021/5/24
+
+v0.3.6
+
+仿照lifeisfaceemptiness.hanlelife.note编写了部分..notedepend包
+计划：使用notedepend将笔记部分的数据库独立出来并加入overview和create对应的fragment中
+
 2021/5/23
 
 v0.3.2

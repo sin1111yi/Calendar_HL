@@ -18,7 +18,7 @@ import com.lifeisfaceemptiness.handlelife.R;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class EditActivity extends BasenoteActivity {
+public class EditActivity extends BaseNoteActivity {
 
     EditText et;
 

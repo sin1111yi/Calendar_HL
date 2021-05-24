@@ -117,6 +117,10 @@
     <string name="account_type_hint">Select account type</string>
     <string name="enter_account">Enter account</string>
     <string name="enter_description">Enter description</string>
+    <string name="all">All</string>
+    <string name="delete">Delete</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 
     <string-array name="account_types">
         <item>Income</item>

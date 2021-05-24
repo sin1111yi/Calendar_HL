@@ -20,7 +20,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.HandleLife" >
         <activity android:name="com.lifeisfaceemptiness.handlelife.note.EditActivity" />
-        <activity android:name="com.lifeisfaceemptiness.handlelife.note.BasenoteActivity" />
+        <activity android:name="com.lifeisfaceemptiness.handlelife.note.BaseNoteActivity" />
         <activity
             android:name="com.lifeisfaceemptiness.handlelife.create.CreateActivity"
             android:label="@string/title_activity_create"

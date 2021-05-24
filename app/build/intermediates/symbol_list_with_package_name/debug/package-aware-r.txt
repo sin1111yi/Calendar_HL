@@ -1840,6 +1840,7 @@ drawable ic_income
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_leisure
+drawable ic_line_l
 drawable ic_linear_data
 drawable ic_linear_img
 drawable ic_linear_order
@@ -1889,6 +1890,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable rounded_edittext
 drawable selector_pickerview_btn
+drawable shape_round_corner
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -2217,6 +2219,12 @@ id never
 id noScroll
 id none
 id normal
+id note_item_content
+id note_item_id
+id note_item_line
+id note_item_no
+id note_item_time
+id note_item_title
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -2529,6 +2537,7 @@ layout mtrl_picker_header_title_text
 layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
+layout note_item_layout
 layout note_layout
 layout notification_action
 layout notification_action_tombstone
@@ -2619,6 +2628,7 @@ string alarm_clock_snooze_duration
 string alarm_clock_sound
 string alarm_clock_vibrate_no
 string alarm_clock_vibrate_yes
+string all
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -2634,6 +2644,7 @@ string create_custom_note_text
 string create_custom_note_title
 string cv_app_name
 string date_format
+string delete
 string enter_account
 string enter_description
 string enter_tip_er
@@ -2696,6 +2707,7 @@ string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
+string no
 string on_account_book_create_page_show
 string on_alarm_clock_create_page_show
 string on_custom_note_create_page_show
@@ -2728,6 +2740,7 @@ string title_activity_overview
 string tue
 string useless_item_simple_content
 string wed
+string yes
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

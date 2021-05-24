@@ -15,8 +15,6 @@ import android.widget.TimePicker;
 import com.lifeisfaceemptiness.handlelife.R;
 import com.lifeisfaceemptiness.handlelife.customui.InfoDialogButton;
 import com.lifeisfaceemptiness.handlelife.customui.InfoDialogButton.InfoDialogType;
-import com.sinyi.uselessitem.base.UselessItem;
-import com.sinyi.uselessitem.base.UselessItem.itemDataType;
 import com.suke.widget.SwitchButton;
 
 import org.jetbrains.annotations.NotNull;
@@ -34,9 +32,6 @@ public class CreateAcFragment extends Fragment implements
     private Context mContext;
 
     private String AlarmClockTime;
-
-    private final UselessItem uselessItem = new UselessItem();
-    private final itemDataType alarmClock = itemDataType.isAlarmClock;
 
     private InfoDialogButton infoButtonTitle;
     private InfoDialogButton infoButtonRepeat;
@@ -125,8 +120,6 @@ public class CreateAcFragment extends Fragment implements
     }
 
     public void SaveAllData() {
-        uselessItem.setItemContent(AlarmClockTime);
-        uselessItem.setItemDataTag(alarmClock);
     }
 
     @Override
