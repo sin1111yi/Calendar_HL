@@ -1821,6 +1821,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable edit_bg
+drawable exit_bg2
 drawable fab_bg_mini
 drawable fab_bg_normal
 drawable fab_text_style
@@ -1886,6 +1887,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable rounded_edittext
 drawable selector_pickerview_btn
 drawable test_custom_background
 drawable tooltip_frame_dark

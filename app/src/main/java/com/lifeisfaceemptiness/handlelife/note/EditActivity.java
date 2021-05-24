@@ -21,8 +21,6 @@ import java.util.Date;
 public class EditActivity extends BasenoteActivity {
 
     EditText et;
-    // private String content;
-    // private String time;
 
     private Toolbar myToolbar;
     private String old_content = "";
@@ -31,7 +29,7 @@ public class EditActivity extends BasenoteActivity {
     private long id = 0;
     private int openMode = 0;
     private int tag = 1;
-    public Intent intent = new Intent(); // message to be sent
+    public Intent intent = new Intent();
     private boolean tagChange = false;
 
 

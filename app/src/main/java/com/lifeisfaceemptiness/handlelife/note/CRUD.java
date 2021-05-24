@@ -32,7 +32,7 @@ public class CRUD {
         dbHandler.close();
     }
 
-    //把note 加入到database里面
+    //加入note
     public Note addNote(Note note){
         //add a note object to database
         ContentValues contentValues = new ContentValues();
@@ -45,7 +45,7 @@ public class CRUD {
     }
 
     public Note getNote(long id){
-        //get a note from database using cursor index
+
         Cursor cursor = db.query(NoteDatabase.TABLE_NAME, columns, NoteDatabase.ID + "=?",
                 new String[] {String.valueOf(id)}, null, null, null, null);
         if (cursor != null) cursor.moveToFirst();
@@ -71,18 +71,18 @@ public class CRUD {
     }
 
     public int updateNote(Note note) {
-        //update the info of an existing note
+
         ContentValues values = new ContentValues();
         values.put(NoteDatabase.CONTENT, note.getContent());
         values.put(NoteDatabase.TIME, note.getTime());
         values.put(NoteDatabase.MODE, note.getTag());
-        //updating row
+
         return db.update(NoteDatabase.TABLE_NAME, values,
                 NoteDatabase.ID + "=?", new String[] { String.valueOf(note.getId())});
     }
 
     public void removeNote(Note note){
-        //remove a note according to ID value
+
         db.delete(NoteDatabase.TABLE_NAME, NoteDatabase.ID + "=" + note.getId(), null);
     }
 

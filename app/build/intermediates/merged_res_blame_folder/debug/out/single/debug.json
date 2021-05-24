@@ -240,6 +240,10 @@
         "source": "C:\\Users\\xiao\\Calendar_HL\\app\\src\\main\\res\\layout\\fragment_sd_show.xml"
     },
     {
+        "merged": "C:\\Users\\xiao\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rounded_edittext.xml.flat",
+        "source": "C:\\Users\\xiao\\Calendar_HL\\app\\src\\main\\res\\drawable\\rounded_edittext.xml"
+    },
+    {
         "merged": "C:\\Users\\xiao\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_fab_bg_normal.png.flat",
         "source": "C:\\Users\\xiao\\Calendar_HL\\app\\src\\main\\res\\drawable-xxhdpi\\fab_bg_normal.png"
     },
@@ -290,6 +294,10 @@
     {
         "merged": "C:\\Users\\xiao\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_educate.xml.flat",
         "source": "C:\\Users\\xiao\\Calendar_HL\\app\\src\\main\\res\\drawable\\ic_educate.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiao\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_exit_bg2.png.flat",
+        "source": "C:\\Users\\xiao\\Calendar_HL\\app\\src\\main\\res\\drawable-xxxhdpi\\exit_bg2.png"
     },
     {
         "merged": "C:\\Users\\xiao\\Calendar_HL\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_ac_create.xml.flat",

@@ -85,7 +85,6 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
             String content = data.getExtras().getString("content");
             String time = data.getExtras().getString("time");
             int tag = data.getExtras().getInt("tag", 1);
-
             Note newNote = new Note(content, time, tag);
             CRUD op = new CRUD(mContext);
             op.open();
@@ -207,11 +206,11 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
 
         lv.setOnItemClickListener(this);
 
-        Log.d(TAG, "onClick: click");
+        //Log.d(TAG, "onClick: click");
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "onClick: click");
+                //Log.d(TAG, "onClick: click");
                 Intent intent = new Intent(mContext, EditActivity.class);
                 intent.putExtra("mode", 4);
                 startActivityForResult(intent, 0);
@@ -221,7 +220,7 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new AlertDialog.Builder(mContext)
+                new AlertDialog.Builder(v.getContext())
                         .setMessage("删除全部吗？")
                         .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                             @Override

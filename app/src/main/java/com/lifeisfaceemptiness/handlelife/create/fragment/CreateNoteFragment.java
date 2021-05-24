@@ -91,7 +91,7 @@ public class CreateNoteFragment extends BasenoteActivity {
             case R.id.delete:
                 new AlertDialog.Builder(CreateNoteFragment.this)
                         .setMessage("是否删除")
-                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                        .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 if (openMode == 4){ // new note
@@ -105,7 +105,7 @@ public class CreateNoteFragment extends BasenoteActivity {
                                 }
                                 finish();
                             }
-                        }).setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                        }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
