@@ -51,48 +51,10 @@
 
     <include layout="@layout/view_line"/>
 
-    <RelativeLayout
+    <com.lifeisfaceemptiness.handlelife.customui.InfoDialogButton
+        android:id="@+id/ab_select_query_date"
         android:layout_width="match_parent"
-        android:layout_height="50dp">
-
-        <Button
-            android:id="@+id/ab_btn_select_type"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="match_parent"
-            android:layout_height="50dp" />
-
-        <ImageView
-            android:id="@+id/ab_select_btn_img2"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="5dp"
-            android:contentDescription="@string/alarm_clock_default_description"
-            android:src="@drawable/ali_arrow_right" />
-
-        <TextView
-            android:id="@+id/ab_select_tip2"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="15dp"
-            android:gravity="center|start"
-            android:textColor="@color/deep_gray"
-            android:textSize="17sp"
-            android:text="@string/account_type_hint"/>
-
-        <TextView
-            android:id="@+id/ab_selected_type"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="5dp"
-            android:layout_toStartOf="@+id/ab_select_btn_img2"
-            android:gravity="center|end"
-            android:textColor="@color/gray"
-            android:textSize="15sp" />
-
-    </RelativeLayout>
+        android:layout_height="wrap_content"/>
 
     <include layout="@layout/view_line"/>
 

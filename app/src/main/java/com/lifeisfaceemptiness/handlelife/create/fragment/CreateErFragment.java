@@ -38,6 +38,12 @@ public class CreateErFragment extends Fragment implements
 
     Context mContext;
 
+    private class EventReminder {
+        public String Title;
+        public String Time;
+    }
+
+
     public CreateErFragment() {
         // Required empty public constructor
     }
@@ -54,7 +60,7 @@ public class CreateErFragment extends Fragment implements
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
         }
-        mContext=getActivity();
+        mContext = getActivity();
     }
 
     @Override
@@ -69,8 +75,8 @@ public class CreateErFragment extends Fragment implements
             rootView = inflater.inflate(R.layout.fragment_er_create, container, false);
         }
 
-        etEventTitle=rootView.findViewById(R.id.er_create_editText);
-        callTimePicker=rootView.findViewById(R.id.er_btn_select_date);
+        etEventTitle = rootView.findViewById(R.id.er_create_editText);
+        callTimePicker = rootView.findViewById(R.id.er_btn_select_date);
         tvSelectTip = rootView.findViewById(R.id.er_select_tip);
         tvSelectedTime = rootView.findViewById(R.id.er_selected_time);
         tvSelectTip.setText(getResources().getText(R.string.select_time));
@@ -100,5 +106,17 @@ public class CreateErFragment extends Fragment implements
                     .build();
             timePickerView.show();
         }
+    }
+
+    private void SaveAllDate() {
+        EventReminder saved = new EventReminder();
+        saved.Title = etEventTitle.getText().toString();
+        saved.Time = selectedDate;
+    }
+
+    @Override
+    public void onPause() {
+        SaveAllDate();
+        super.onPause();
     }
 }

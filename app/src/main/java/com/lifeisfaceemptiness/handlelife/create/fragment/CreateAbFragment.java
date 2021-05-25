@@ -52,6 +52,13 @@ public class CreateAbFragment extends Fragment implements
 
     private Context mContext;
 
+    private class AccountBook {
+        public String Type;
+        public String Account;
+        //public float Account;
+        public String Description;
+    }
+
     public CreateAbFragment() {
         // Required empty public constructor
     }
@@ -82,7 +89,12 @@ public class CreateAbFragment extends Fragment implements
 
         setAccount = rootView.findViewById(R.id.ab_set_account);
         setAccount.setBtnName(R.string.enter_account);
+        setAccount.setDialogType(InfoDialogButton.InfoDialogType.ENTER_STRING);
+        setAccount.setEnterStringDialogTitle(R.string.enter_account);
+
         setDescription = rootView.findViewById(R.id.ab_set_description);
+        setDescription.setDialogType(InfoDialogButton.InfoDialogType.COMMON_INFO);
+        setDescription.setCommonDialogMessage(getResources().getString(R.string.enter_below));
         setDescription.setBtnImage(R.drawable.ali_arrow_down);
         setDescription.setBtnName(R.string.enter_description);
 
@@ -221,4 +233,16 @@ public class CreateAbFragment extends Fragment implements
         setTypeOther.setBackgroundColor(getColor);
     }
 
+    private void SaveAllData() {
+        AccountBook saved = new AccountBook();
+        saved.Type = selectedType;
+        saved.Account = setAccount.getBtnSet();
+        saved.Description = abDescription.getText().toString();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        SaveAllData();
+    }
 }

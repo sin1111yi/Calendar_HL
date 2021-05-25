@@ -1,3 +1,17 @@
+2021/5/25
+
+v0.4.0
+
+在除CreateNoteFragment以外的CreateFragment中都加入了SaveAllData()函数，用于在onPause()中调用，
+将在相应的Fragment中可以获取到的所有的值使用String保存，以供调用或调整
+
+希望：
+当添加可用的数据库后，将数据存入数据库，并在OverviewActivity中相应的Fragment中使用ListView显示，
+对于事件提醒、特殊日期调用系统API发送状态栏通知，对于闹钟，应可以按照用户设定发送通知，
+对于账本，进行每周一次和每月一次的消费统计，一起显示在AccountBookFragment中，在不同的月份只显示当前月的账本
+
+删除不需要的包！
+
 2021/5/24
 
 v0.3.6

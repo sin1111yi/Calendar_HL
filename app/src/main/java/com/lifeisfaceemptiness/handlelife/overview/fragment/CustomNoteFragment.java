@@ -41,7 +41,7 @@ import java.util.List;
 public class CustomNoteFragment extends Fragment implements AdapterView.OnItemClickListener {
 
     View rootView;
-    //======================================================================
+
     private NoteDatabase dbHelper;
 
     private Context mContext;
@@ -59,8 +59,6 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
     private List<Note> noteList = new ArrayList<Note>();
     private Toolbar myToolbar;
     //private Toolbar myToolbar;
-
-
 
     //接收startActivtyForResult的结果
     @Override
@@ -186,9 +184,6 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
         adapter.notifyDataSetChanged();
     }
 
-
-
-
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         switch (parent.getId()) {
@@ -206,24 +201,10 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
         }
     }
 
-
-
-
-
-
-
     public CustomNoteFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-
-     * @return A new instance of fragment CustomNoteFragment.
-     */
-    // TODO: Rename and change types and number of parameters
     public static CustomNoteFragment newInstance() {
         CustomNoteFragment fragment = new CustomNoteFragment();
         Bundle args = new Bundle();
@@ -314,14 +295,6 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
 
         return rootView;
     }
-//
-//    @Override
-//    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//
-//    }
-
-
-    //===========================================
 
 
     @Override

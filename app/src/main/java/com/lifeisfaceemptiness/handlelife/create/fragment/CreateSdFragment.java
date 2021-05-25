@@ -36,6 +36,13 @@ public class CreateSdFragment extends Fragment implements
 
     private Context mContext;
 
+    private class SpecialDate {
+        public String Title;
+        public String Date;
+        //public Date Date;
+        public String Description;
+    }
+
     public CreateSdFragment() {
         // Required empty public constructor
     }
@@ -63,7 +70,7 @@ public class CreateSdFragment extends Fragment implements
             rootView = inflater.inflate(R.layout.fragment_sd_create, container, false);
         }
 
-        etSdTitle=rootView.findViewById(R.id.sd_create_editText);
+        etSdTitle = rootView.findViewById(R.id.sd_create_editText);
         callTimePicker = rootView.findViewById(R.id.sd_btn_select_date);
         tvSelectTip = rootView.findViewById(R.id.sd_select_tip);
         tvSelectedDate = rootView.findViewById(R.id.sd_selected_date);
@@ -95,4 +102,14 @@ public class CreateSdFragment extends Fragment implements
         }
     }
 
+    private void SaveAllData() {
+        SpecialDate saved = new SpecialDate();
+        saved.Title = etSdTitle.getText().toString();
+        saved.Date = selectedDate;
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+    }
 }

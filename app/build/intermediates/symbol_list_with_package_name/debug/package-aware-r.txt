@@ -61,11 +61,11 @@ animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
 array account_types
+array alarm_clock_day_repeat
 array alarm_clock_ring_duration_value_array
 array branch_integer_array
 array branch_string_array
 array chinese_week_string_array
-array complete_week_string_array
 array english_week_string_array
 array func_dialog_items
 array list_dialog_items
@@ -1783,6 +1783,7 @@ drawable abc_vector_test
 drawable ali_add_account
 drawable ali_all
 drawable ali_arrow_down
+drawable ali_arrow_left
 drawable ali_arrow_right
 drawable ali_arrow_right_white
 drawable ali_ashbin
@@ -1843,7 +1844,7 @@ drawable ic_leisure
 drawable ic_line_l
 drawable ic_linear_data
 drawable ic_linear_img
-drawable ic_linear_order
+drawable ic_linear_suggest
 drawable ic_medical
 drawable ic_menu_black_24dp
 drawable ic_money_pig
@@ -1918,17 +1919,14 @@ id ab_btn_leisure
 id ab_btn_medical
 id ab_btn_other
 id ab_btn_select_date
-id ab_btn_select_type
 id ab_btn_server
 id ab_btn_store
 id ab_btn_travel
 id ab_description
 id ab_select_btn_img1
-id ab_select_btn_img2
+id ab_select_query_date
 id ab_select_tip1
-id ab_select_tip2
 id ab_selected_date
-id ab_selected_type
 id ab_set_account
 id ab_set_description
 id ac_analog_clock
@@ -2112,7 +2110,6 @@ id fab_expand_menu_button
 id fab_github
 id fab_label
 id fab_return_overview
-id fab_stat
 id fade
 id fill
 id fill_horizontal
@@ -2407,7 +2404,6 @@ id withText
 id withinBounds
 id wrap
 id wrap_content
-id wv_dialog_view
 id year
 id zero_corner_chip
 integer abc_config_activityDefaultDur
@@ -2577,7 +2573,6 @@ layout text_view_without_line_height
 layout useless_item_layout
 layout useless_item_list_layout
 layout view_line
-layout wheelview_dialog
 menu edit_menu
 menu main_menu
 mipmap clock_bg
@@ -2726,6 +2721,7 @@ string pickerview_month
 string pickerview_seconds
 string pickerview_submit
 string pickerview_year
+string quit_create_tip
 string sat
 string search_menu_title
 string select_date

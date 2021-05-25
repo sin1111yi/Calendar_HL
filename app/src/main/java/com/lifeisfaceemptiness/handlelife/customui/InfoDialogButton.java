@@ -116,8 +116,21 @@ public class InfoDialogButton extends RelativeLayout {
         }
     }
 
+    /**
+     * 以下 4 个函数会通过dialog的PositiveButton的点击事件获取到用户赋予的值
+     * 用户赋予的值会先存入getBtnSet中，然后通过getBtnSet赋给btnSet
+     * */
+
     private void showCommonInfoDialog() {
         Log.d(TAG, "prepare to show common info dialog");
+        dialogBuilder = new AlertDialog.Builder(mContext).setTitle(this.dialogTitle)
+                .setMessage(this.getBtnSet).setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+        dialogBuilder.create().show();
     }
 
     private void showSingleSelectDialog() {
@@ -134,6 +147,7 @@ public class InfoDialogButton extends RelativeLayout {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         if (choice[0] != -1) {
+                            getSelected = new StringBuilder();
                             getSelected.append(items[choice[0]]);
                             Log.d(TAG, getSelected + " has been selected!");
                             showSingleSelectResult();
@@ -183,16 +197,24 @@ public class InfoDialogButton extends RelativeLayout {
 
     private void showEnterStringDialog() {
         Log.d(TAG, "prepare to show enter string dialog");
-        EditText editText=new EditText(mContext);
-        dialogBuilder=new AlertDialog.Builder(mContext).setTitle(this.dialogTitle).
-                setView(editText).setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                //TODO: get input
-                showEnterStringResult();
-            }
-        });
+        EditText editText = new EditText(mContext);
+        dialogBuilder = new AlertDialog.Builder(mContext).setTitle(this.dialogTitle)
+                .setView(editText).setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        getBtnSet=editText.getText().toString();
+                        setBtnSet(getBtnSet);
+                        Log.d(TAG, "Get string " + editText.getText().toString());
+                    }
+                });
         dialogBuilder.create().show();
+    }
+
+    /**
+     * @param msg :message to show
+     */
+    public void setCommonDialogMessage(String msg) {
+        this.getBtnSet = msg;
     }
 
     /**
@@ -204,6 +226,8 @@ public class InfoDialogButton extends RelativeLayout {
         this.itemToShow = items;
         this.itemNum = items.length;
         this.dialogTitle = getResources().getString(titleId);
+        this.getBtnSet=items[0];
+        this.setBtnSet(getBtnSet);
     }
 
     private void showMultiSelectResult() {
@@ -220,6 +244,8 @@ public class InfoDialogButton extends RelativeLayout {
         this.itemToShow = items;
         this.itemNum = items.length;
         this.dialogTitle = getResources().getString(titleId);
+        this.getBtnSet=items[0];
+        this.setBtnSet(getBtnSet);
     }
 
     private void showSingleSelectResult() {
@@ -227,12 +253,11 @@ public class InfoDialogButton extends RelativeLayout {
         setBtnSet(this.getBtnSet);
     }
 
-
-    private void setEnterStringDialogContent(int titleId) {
+    /**
+     * @param titleId:设置输入框标题
+     */
+    public void setEnterStringDialogTitle(int titleId) {
         this.dialogTitle = getResources().getString(titleId);
-    }
-
-    private void showEnterStringResult() {
     }
 
 }

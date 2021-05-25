@@ -14,6 +14,7 @@ import com.lifeisfaceemptiness.handlelife.R;
 
 import org.jetbrains.annotations.NotNull;
 
+//通过这个Fragment中的CalendarView获取到日期后，如果数据库中有SpecialDate，则显示距离最近的SpecialDate剩余时间
 public class SpecialDateFragment extends Fragment {
 
     View rootView;

@@ -85,7 +85,6 @@ public class MainActivity extends BaseActivity implements
         mTextCurrentDay = (TextView) findViewById(R.id.tv_current_day);
         fabCreateItem = (FloatingActionButton) findViewById(R.id.fab_create);
         fabGithub = (FloatingActionButton) findViewById(R.id.fab_github);
-        fabStatData = (FloatingActionButton) findViewById(R.id.fab_stat);
 
         mTextMonthDay.setOnClickListener(v -> {
             if (!mCalendarLayout.isExpand()) {
@@ -107,10 +106,8 @@ public class MainActivity extends BaseActivity implements
         mTextLunar.setText("今日");
         mTextCurrentDay.setText(String.valueOf(mCalendarView.getCurDay()));
 
-        //TODO: complete all these methods
         fabCreateItem.setOnClickListener(this);
         fabGithub.setOnClickListener(this);
-        fabStatData.setOnClickListener(this);
 
     }
 
@@ -171,9 +168,6 @@ public class MainActivity extends BaseActivity implements
             Uri uri = Uri.parse("https://github.com/sin1111yi/Calendar_HL");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
-
-        } else if (v.getId() == R.id.fab_stat) {
-            // data statistics
 
         } else {
             Log.d(TAG, "there's no event for this click");

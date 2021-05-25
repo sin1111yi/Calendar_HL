@@ -20,7 +20,8 @@
         <item>周六</item>
     </string-array>
 
-    <string-array name="complete_week_string_array">
+    <string-array name="alarm_clock_day_repeat">
+        <item>No Repeat</item>
         <item>Sunday</item>
         <item>Monday</item>
         <item>Tuesday</item>
@@ -121,6 +122,8 @@
     <string name="delete">Delete</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="quit_create_tip">Exit without saving?</string>
+    <string name="enter_below">Enter below</string>
 
     <string-array name="account_types">
         <item>Income</item>

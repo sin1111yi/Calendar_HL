@@ -19,6 +19,9 @@ import com.suke.widget.SwitchButton;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 
 public class CreateAcFragment extends Fragment implements
         View.OnClickListener,
@@ -40,6 +43,16 @@ public class CreateAcFragment extends Fragment implements
     private InfoDialogButton infoButtonSnoozeDuration;
     private SwitchButton switchButtonHoliday;
     private NestedScrollView nestedScrollViewCreate;
+
+    // 在结束Fragment时，使用这个类将InfoDialogButton获取到的值保存
+    private class AlarmClockData {
+        public String Title;
+        public String Repeat;
+        public boolean IgnoreHoliday;
+        public String RingDuration;
+        public String SnoozeDuration;
+        // get sound
+    }
 
     public CreateAcFragment() {
         // Required empty public constructor
@@ -88,19 +101,26 @@ public class CreateAcFragment extends Fragment implements
         infoButtonSnoozeDuration = rootView.findViewById(R.id.alarm_clock_snooze_duration);
 
         infoButtonTitle.setBtnName(R.string.alarm_clock_default_title);
+        infoButtonTitle.setDialogType(InfoDialogType.ENTER_STRING);
         infoButtonRepeat.setBtnName(R.string.alarm_clock_repeat);
         infoButtonRepeat.setDialogType(InfoDialogType.MULTI_SELECT);
         infoButtonSound.setBtnName(R.string.alarm_clock_sound);
         infoButtonRingDuration.setBtnName(R.string.alarm_clock_ring_duration);
         infoButtonRingDuration.setDialogType(InfoDialogType.SINGLE_SELECT);
         infoButtonSnoozeDuration.setBtnName(R.string.alarm_clock_snooze_duration);
+        infoButtonSnoozeDuration.setDialogType(InfoDialogType.SINGLE_SELECT);
+
+        infoButtonTitle.setEnterStringDialogTitle(R.string.alarm_clock_default_title);
 
         infoButtonRepeat.setMultiSelectDialogContent(getResources().
-                        getStringArray(R.array.complete_week_string_array),
+                        getStringArray(R.array.alarm_clock_day_repeat),
                 R.string.alarm_clock_repeat);
-        infoButtonRingDuration.setMultiSelectDialogContent(getResources().
+        infoButtonRingDuration.setSingleSelectDialogContent(getResources().
                         getStringArray(R.array.alarm_clock_ring_duration_value_array),
                 R.string.alarm_clock_ring_duration);
+        infoButtonSnoozeDuration.setSingleSelectDialogContent(getResources().
+                        getStringArray(R.array.alarm_clock_ring_duration_value_array),
+                R.string.alarm_clock_snooze_duration);
     }
 
     @Override
@@ -120,18 +140,30 @@ public class CreateAcFragment extends Fragment implements
     }
 
     public void SaveAllData() {
+        AlarmClockData saved = new AlarmClockData();
+        saved.Title = infoButtonTitle.getBtnSet();
+        saved.Repeat = infoButtonRepeat.getBtnSet();
+        saved.RingDuration = infoButtonRingDuration.getBtnSet();
+        saved.SnoozeDuration = infoButtonSnoozeDuration.getBtnSet();
+        saved.IgnoreHoliday = switchButtonHoliday.isChecked();
+        Log.d(TAG, saved.Title + " " +
+                saved.Repeat + " " +
+                saved.RingDuration + " " +
+                saved.SnoozeDuration + " " +
+                saved.IgnoreHoliday + " ");
     }
 
     @Override
     public void onPause() {
         super.onPause();
+        SaveAllData();
         Log.d(TAG, "AlarmClock has been paused");
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        SaveAllData();
         Log.d(TAG, "AlarmClock has been destroyed");
     }
+
 }

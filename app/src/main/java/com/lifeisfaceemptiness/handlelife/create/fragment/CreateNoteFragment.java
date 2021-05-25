@@ -2,21 +2,15 @@ package com.lifeisfaceemptiness.handlelife.create.fragment;
 
 import android.os.Bundle;
 
-import androidx.fragment.app.Fragment;
-
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 
 import com.lifeisfaceemptiness.handlelife.R;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.EditText;
 
 import androidx.annotation.NonNull;
@@ -24,12 +18,12 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.Toolbar;
 
 
-import com.lifeisfaceemptiness.handlelife.note.BasenoteActivity;
+import com.lifeisfaceemptiness.handlelife.note.BaseNoteActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class CreateNoteFragment extends BasenoteActivity {
+public class CreateNoteFragment extends BaseNoteActivity {
 
     EditText et;
     // private String content;

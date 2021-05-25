@@ -1,12 +1,15 @@
 package com.lifeisfaceemptiness.handlelife.create;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.fragment.app.FragmentManager;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 
 import com.githang.statusbar.StatusBarCompat;
@@ -35,13 +38,29 @@ public class CreateActivity extends AppCompatActivity implements
     @Override
     protected void onResume() {
         super.onResume();
-
+        //获取OverviewActivity传递的intent中的position，通过position启动Fragment
+        //当OverviewActivity中显示的AlarmClockFragment时，CreateActivity会启动CreateAcFragment
         int overviewPosition;
-
         Intent intent = getIntent();
         overviewPosition = intent.getIntExtra("OverviewPosition", 0);
         Log.d(TAG, "Resume: get position from OverviewActivity " + overviewPosition);
         startBoostFragment(overviewPosition);
+    }
+
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this).setMessage(R.string.quit_create_tip)
+                .setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        CreateActivity.this.finish();
+                    }
+                }).setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        }).show();
     }
 
     @Override
@@ -68,12 +87,11 @@ public class CreateActivity extends AppCompatActivity implements
         }
     }
 
-    //TODO: start boost fragment by this method
     public void startBoostFragment(int fragmentNum) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         if (fragmentNum == 0) {
-            transaction.replace(R.id.show_fragment_zone, new CreateNoteFragment()).commit();
+            //transaction.replace(R.id.show_fragment_zone, new CreateNoteFragment()).commit();
         } else if (fragmentNum == 1) {
             transaction.replace(R.id.show_fragment_zone, new CreateSdFragment()).commit();
         } else if (fragmentNum == 2) {

@@ -22,6 +22,7 @@ import com.bigkoo.pickerview.view.TimePickerView;
 import com.contrarywind.listener.OnItemSelectedListener;
 import com.contrarywind.view.WheelView;
 import com.lifeisfaceemptiness.handlelife.R;
+import com.lifeisfaceemptiness.handlelife.customui.InfoDialogButton;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -36,16 +37,12 @@ public class AccountBookFragment extends Fragment implements
     private View rootView;
 
     private Button selectDate;
-    private Button selectType;
     private TextView tvSelectedDate;
-    private TextView tvSelectedType;
 
     private String selectedDate;
     private String selectedType;
+    private InfoDialogButton infoButtonType;
 
-    WheelView typeSelectWheel;
-    List<String> types = new ArrayList<>();
-    ArrayWheelAdapter<String> arrayWheelAdapter;
 
     private Context mContext;
 
@@ -68,6 +65,11 @@ public class AccountBookFragment extends Fragment implements
         mContext = getActivity();
     }
 
+    /**
+     * 如果想获取infoButtonType的选项，只需在需要获取位置的调用其getBtnSet()方法
+     * 再存入数据库的位置使用：
+     * selectedType=infoButtonType.getBtnSet()即可将infoButtonType的内容保存进selectedType
+     * */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -76,13 +78,14 @@ public class AccountBookFragment extends Fragment implements
         }
 
         selectDate = rootView.findViewById(R.id.ab_btn_select_date);
-        selectType = rootView.findViewById(R.id.ab_btn_select_type);
-
         tvSelectedDate = rootView.findViewById(R.id.ab_selected_date);
-        tvSelectedType = rootView.findViewById(R.id.ab_selected_type);
+        infoButtonType = rootView.findViewById(R.id.ab_select_query_date);
+        infoButtonType.setBtnName(R.string.account_type_hint);
+        infoButtonType.setDialogType(InfoDialogButton.InfoDialogType.SINGLE_SELECT);
+        infoButtonType.setSingleSelectDialogContent(getResources().getStringArray(R.array.account_types)
+                , R.string.account_type_hint);
 
         selectDate.setOnClickListener(this);
-        selectType.setOnClickListener(this);
 
         return rootView;
     }
@@ -107,31 +110,7 @@ public class AccountBookFragment extends Fragment implements
                     .build();
             timePickerView.show();
 
-        } else if (v.getId() == R.id.ab_btn_select_type) {
-            Log.d(TAG, "select account type");
-            View view = getLayoutInflater().inflate(R.layout.wheelview_dialog, null);
-
-            types = Arrays.asList(getResources().getStringArray(R.array.account_types));
-            typeSelectWheel = view.findViewById(R.id.wv_dialog_view);
-            typeSelectWheel.setCyclic(false);
-            typeSelectWheel.setAdapter(new ArrayWheelAdapter<>(types));
-
-            AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
-            builder.setView(view);
-            builder.setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    typeSelectWheel.setOnItemSelectedListener(new OnItemSelectedListener() {
-                        @Override
-                        public void onItemSelected(int index) {
-                            selectedType = types.get(index);
-                            tvSelectedType.setText(selectedType);
-                            Log.d(TAG, "Selected type:" + selectedType);
-                        }
-                    });
-                }
-            });
-            builder.create().show();
         }
     }
+
 }

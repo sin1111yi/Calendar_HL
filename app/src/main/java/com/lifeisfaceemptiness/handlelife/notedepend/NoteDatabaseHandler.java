@@ -62,6 +62,7 @@ public class NoteDatabaseHandler {
             item = new NoteItem(Integer.parseInt(cursor.getString(1)), cursor.getString(2),
                     cursor.getString(3), cursor.getString(4), cursor.getString(5));
         } else {
+            //希望通过这一步骤在cursor为null时返回一个空的item
             item = new NoteItem(0x3f3f3f3f, "null", "null", "null", "null");
         }
         Objects.requireNonNull(cursor).close();
@@ -97,6 +98,10 @@ public class NoteDatabaseHandler {
         contentValues.put(NoteDatabaseHelper.note_update_time, item.getNoteUpdateTime());
         return db.update(NoteDatabaseHelper.table_name, contentValues,
                 NoteDatabaseHelper.note_id + "=?", new String[]{String.valueOf(item.getNoteId())});
+    }
+
+    public void removeNoteItem(NoteItem item) {
+        db.delete(NoteDatabaseHelper.table_name, NoteDatabaseHelper.note_id + "=" + item.getNoteId(), null);
     }
 
 }

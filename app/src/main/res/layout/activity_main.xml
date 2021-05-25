@@ -168,16 +168,7 @@
                 android:scaleType="fitXY"
                 fab:fab_colorNormal="@color/gray"
                 fab:fab_colorPressed="@color/deep_gray"
-                fab:fab_icon="@drawable/ic_linear_order"
-                fab:fab_size="mini" />
-
-            <com.getbase.floatingactionbutton.FloatingActionButton
-                android:id="@+id/fab_stat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                fab:fab_colorNormal="@color/gray"
-                fab:fab_colorPressed="@color/deep_gray"
-                fab:fab_icon="@drawable/ic_linear_data"
+                fab:fab_icon="@drawable/ic_linear_suggest"
                 fab:fab_size="mini" />
 
             <com.getbase.floatingactionbutton.FloatingActionButton
