@@ -78,7 +78,7 @@ public class EditActivity extends BaseNoteActivity {
             case R.id.delete:
                 new AlertDialog.Builder(EditActivity.this)
                         .setMessage("删除吗？")
-                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                        .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 if (openMode == 4){ // new note
@@ -92,7 +92,7 @@ public class EditActivity extends BaseNoteActivity {
                                 }
                                 finish();
                             }
-                        }).setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                        }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();

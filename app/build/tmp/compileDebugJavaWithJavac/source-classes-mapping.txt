@@ -1,14 +1,13 @@
 com/lifeisfaceemptiness/handlelife/base/activity/BaseActivity.java
  com.lifeisfaceemptiness.handlelife.base.activity.BaseActivity
-com/lifeisfaceemptiness/handlelife/note/BaseNoteActivity.java
- com.lifeisfaceemptiness.handlelife.note.BaseNoteActivity
 com/lifeisfaceemptiness/handlelife/group/GroupItemDecoration.java
  com.lifeisfaceemptiness.handlelife.group.GroupItemDecoration
+com/lifeisfaceemptiness/handlelife/note/BaseNoteActivity.java
+ com.lifeisfaceemptiness.handlelife.note.BaseNoteActivity
+com/lifeisfaceemptiness/handlelife/note/Note_crud.java
+ com.lifeisfaceemptiness.handlelife.note.Note_crud
 com/lifeisfaceemptiness/handlelife/create/fragment/CreateNoteFragment.java
  com.lifeisfaceemptiness.handlelife.create.fragment.CreateNoteFragment
- com.lifeisfaceemptiness.handlelife.create.fragment.CreateNoteFragment$1
- com.lifeisfaceemptiness.handlelife.create.fragment.CreateNoteFragment$2
- com.lifeisfaceemptiness.handlelife.create.fragment.CreateNoteFragment$3
 com/lifeisfaceemptiness/handlelife/note/Note.java
  com.lifeisfaceemptiness.handlelife.note.Note
 com/lifeisfaceemptiness/handlelife/base/adapter/BaseRecyclerAdapter.java
@@ -24,8 +23,6 @@ com/getbase/floatingactionbutton/FloatingActionButton.java
  com.getbase.floatingactionbutton.FloatingActionButton$1
  com.getbase.floatingactionbutton.FloatingActionButton$FAB_SIZE
  com.getbase.floatingactionbutton.FloatingActionButton$TranslucentLayerDrawable
-com/lifeisfaceemptiness/handlelife/note/CRUD.java
- com.lifeisfaceemptiness.handlelife.note.CRUD
 com/lifeisfaceemptiness/handlelife/overview/fragment/EventReminderFragment.java
  com.lifeisfaceemptiness.handlelife.overview.fragment.EventReminderFragment
 com/lifeisfaceemptiness/handlelife/overview/PageViewModel.java
@@ -38,6 +35,8 @@ com/lifeisfaceemptiness/handlelife/base/fragment/BaseFragment.java
  com.lifeisfaceemptiness.handlelife.base.fragment.BaseFragment
 com/lifeisfaceemptiness/handlelife/customui/HandleLinearLayout.java
  com.lifeisfaceemptiness.handlelife.customui.HandleLinearLayout
+com/lifeisfaceemptiness/handlelife/note/FirstEvent.java
+ com.lifeisfaceemptiness.handlelife.note.FirstEvent
 com/getbase/floatingactionbutton/FloatingActionsMenu.java
  com.getbase.floatingactionbutton.FloatingActionsMenu
  com.getbase.floatingactionbutton.FloatingActionsMenu$1
@@ -78,10 +77,8 @@ com/winlin/roomdb/database.java
  com.winlin.roomdb.database
 com/lifeisfaceemptiness/handlelife/note/NoteDatabase.java
  com.lifeisfaceemptiness.handlelife.note.NoteDatabase
-com/lifeisfaceemptiness/handlelife/create/CreateActivity.java
- com.lifeisfaceemptiness.handlelife.create.CreateActivity
- com.lifeisfaceemptiness.handlelife.create.CreateActivity$1
- com.lifeisfaceemptiness.handlelife.create.CreateActivity$2
+com/lifeisfaceemptiness/handlelife/SimpleWeekView.java
+ com.lifeisfaceemptiness.handlelife.SimpleWeekView
 com/lifeisfaceemptiness/handlelife/create/fragment/CreateAcFragment.java
  com.lifeisfaceemptiness.handlelife.create.fragment.CreateAcFragment
  com.lifeisfaceemptiness.handlelife.create.fragment.CreateAcFragment$1
@@ -106,6 +103,8 @@ com/winlin/roomdb/manager/DBEngine.java
  com.winlin.roomdb.manager.DBEngine$UpdateAsyncTask
 com/lifeisfaceemptiness/handlelife/create/fragment/CreateAbFragment.java
  com.lifeisfaceemptiness.handlelife.create.fragment.CreateAbFragment
+ com.lifeisfaceemptiness.handlelife.create.fragment.CreateAbFragment$1
+ com.lifeisfaceemptiness.handlelife.create.fragment.CreateAbFragment$AccountBook
 com/lifeisfaceemptiness/handlelife/customui/HandleTimePicker.java
  com.lifeisfaceemptiness.handlelife.customui.HandleTimePicker
 com/lifeisfaceemptiness/handlelife/SimpleMonthView.java
@@ -115,10 +114,9 @@ com/lifeisfaceemptiness/handlelife/base/fragment/FragmentAdapter.java
 com/lifeisfaceemptiness/handlelife/overview/fragment/CustomNoteFragment.java
  com.lifeisfaceemptiness.handlelife.overview.fragment.CustomNoteFragment
  com.lifeisfaceemptiness.handlelife.overview.fragment.CustomNoteFragment$1
+ com.lifeisfaceemptiness.handlelife.overview.fragment.CustomNoteFragment$1$1
+ com.lifeisfaceemptiness.handlelife.overview.fragment.CustomNoteFragment$1$2
  com.lifeisfaceemptiness.handlelife.overview.fragment.CustomNoteFragment$2
- com.lifeisfaceemptiness.handlelife.overview.fragment.CustomNoteFragment$3
- com.lifeisfaceemptiness.handlelife.overview.fragment.CustomNoteFragment$3$1
- com.lifeisfaceemptiness.handlelife.overview.fragment.CustomNoteFragment$3$2
 com/lifeisfaceemptiness/handlelife/notedepend/NoteListAdapter.java
  com.lifeisfaceemptiness.handlelife.notedepend.NoteListAdapter
  com.lifeisfaceemptiness.handlelife.notedepend.NoteListAdapter$1
@@ -126,6 +124,7 @@ com/lifeisfaceemptiness/handlelife/notedepend/NoteListAdapter.java
 com/lifeisfaceemptiness/handlelife/create/fragment/CreateErFragment.java
  com.lifeisfaceemptiness.handlelife.create.fragment.CreateErFragment
  com.lifeisfaceemptiness.handlelife.create.fragment.CreateErFragment$1
+ com.lifeisfaceemptiness.handlelife.create.fragment.CreateErFragment$EventReminder
 com/lifeisfaceemptiness/handlelife/notedepend/NoteDatabaseHandler.java
  com.lifeisfaceemptiness.handlelife.notedepend.NoteDatabaseHandler
 com/winlin/roomdb/dao.java
@@ -141,5 +140,7 @@ com/lifeisfaceemptiness/handlelife/notedepend/NoteItem.java
  com.lifeisfaceemptiness.handlelife.notedepend.NoteItem
 com/lifeisfaceemptiness/handlelife/overview/fragment/AlarmClockFragment.java
  com.lifeisfaceemptiness.handlelife.overview.fragment.AlarmClockFragment
-com/lifeisfaceemptiness/handlelife/SimpleWeekView.java
- com.lifeisfaceemptiness.handlelife.SimpleWeekView
+com/lifeisfaceemptiness/handlelife/create/CreateActivity.java
+ com.lifeisfaceemptiness.handlelife.create.CreateActivity
+ com.lifeisfaceemptiness.handlelife.create.CreateActivity$1
+ com.lifeisfaceemptiness.handlelife.create.CreateActivity$2

@@ -2098,12 +2098,12 @@ id er_create_editText
 id er_select_tip
 id er_selected_time
 id et
+id et1
 id event_reminder_tv_info
 id exitUntilCollapsed
 id expand
 id expand_activities_button
 id expanded_menu
-id fab
 id fab2
 id fab_create
 id fab_expand_menu_button
@@ -2641,6 +2641,7 @@ string cv_app_name
 string date_format
 string delete
 string enter_account
+string enter_below
 string enter_description
 string enter_tip_er
 string enter_tip_sd

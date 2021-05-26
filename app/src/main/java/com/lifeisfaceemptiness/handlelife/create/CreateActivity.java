@@ -20,6 +20,7 @@ import com.lifeisfaceemptiness.handlelife.create.fragment.CreateAcFragment;
 import com.lifeisfaceemptiness.handlelife.create.fragment.CreateErFragment;
 import com.lifeisfaceemptiness.handlelife.create.fragment.CreateNoteFragment;
 import com.getbase.floatingactionbutton.FloatingActionButton;
+import com.lifeisfaceemptiness.handlelife.note.Note_crud;
 
 import java.util.Objects;
 
@@ -29,9 +30,12 @@ public class CreateActivity extends AppCompatActivity implements
 
     FloatingActionButton fabReturnOverView;
 
+
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
+
         Log.d(TAG, "Destroyed");
     }
 
@@ -91,7 +95,7 @@ public class CreateActivity extends AppCompatActivity implements
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         if (fragmentNum == 0) {
-            //transaction.replace(R.id.show_fragment_zone, new CreateNoteFragment()).commit();
+            transaction.replace(R.id.show_fragment_zone, new CreateNoteFragment()).commit();
         } else if (fragmentNum == 1) {
             transaction.replace(R.id.show_fragment_zone, new CreateSdFragment()).commit();
         } else if (fragmentNum == 2) {

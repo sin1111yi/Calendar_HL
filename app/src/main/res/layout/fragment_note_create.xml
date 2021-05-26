@@ -26,16 +26,16 @@
 
             />
 
-        <Button
-            android:id="@+id/fab"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="加"
-            android:layout_marginLeft="5dp"
-            android:textColor="@color/black"
-            android:layout_weight="1"
-            android:drawableRight="@drawable/ic_baseline_add_24"
-            />
+<!--        <Button-->
+<!--            android:id="@+id/fab"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="加"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_weight="1"-->
+<!--            android:drawableRight="@drawable/ic_baseline_add_24"-->
+<!--            />-->
 
         <Button
             android:id="@+id/fab2"
