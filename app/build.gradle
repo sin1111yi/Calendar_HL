@@ -62,7 +62,6 @@ dependencies {
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
 
 
-    compile 'org.greenrobot:eventbus:3.0.0'
 
 
     implementation 'org.greenrobot:eventbus:3.1.1'

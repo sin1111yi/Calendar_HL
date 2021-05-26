@@ -5,12 +5,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.Fragment;
-
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -23,13 +17,21 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.lifeisfaceemptiness.handlelife.R;
-import com.lifeisfaceemptiness.handlelife.note.Note_crud;
+import com.lifeisfaceemptiness.handlelife.create.fragment.CreateNoteFragment;
 import com.lifeisfaceemptiness.handlelife.note.EditActivity;
 import com.lifeisfaceemptiness.handlelife.note.Note;
 import com.lifeisfaceemptiness.handlelife.note.NoteAdapter;
 import com.lifeisfaceemptiness.handlelife.note.NoteDatabase;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.lifeisfaceemptiness.handlelife.note.NoteMessage;
+import com.lifeisfaceemptiness.handlelife.note.Note_crud;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -38,8 +40,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-
 
 
 public class CustomNoteFragment extends Fragment implements AdapterView.OnItemClickListener {
@@ -59,8 +59,6 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
     FloatingActionButton btn3;
 
 
-
-
     TextView tv;
     private ListView lv;
     private EditText search_note;
@@ -68,13 +66,13 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
     public NoteAdapter adapter;
     private List<Note> noteList = new ArrayList<Note>();
     private Toolbar myToolbar;
-    //private Toolbar myToolbar;
 
 
+    CreateNoteFragment mCreateNoteFragment = new CreateNoteFragment();
 
     //接收startActivtyForResult的结果
     @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data){
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
 
         int returnMode;
         long note_Id;
@@ -104,14 +102,14 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
             op.open();
             op.updateNote(newNote);
             op.close();
-        }else if (returnMode == 2) { // 删除
+        } else if (returnMode == 2) { // 删除
             Note curNote = new Note();
             curNote.setId(note_Id);
             Note_crud op = new Note_crud(mContext);
             op.open();
             op.removeNote(curNote);
             op.close();
-        }else{
+        } else {
 
         }
         refreshListView();
@@ -120,14 +118,7 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
 
     }
 
-//    @Override
-//    public void onHiddenChanged(boolean hidden) {
-//        super.onHiddenChanged(hidden);
-//        Log.d(TAG, "back " );
-//
-//    }
-
-    public void refreshListView(){
+    public void refreshListView() {
 
         Note_crud op = new Note_crud(mContext);
         op.open();
@@ -139,13 +130,12 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
     }
 
 
-
-
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         switch (parent.getId()) {
             case R.id.lv:
                 Note curNote = (Note) parent.getItemAtPosition(position);
+                // TODO：这里是有问题的？
                 Intent intent = new Intent(mContext, EditActivity.class);
                 intent.putExtra("content", curNote.getContent());
                 intent.putExtra("id", curNote.getId());
@@ -159,51 +149,18 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
     }
 
 
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
 
-
-
-
-
-    public CustomNoteFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-
-     * @return A new instance of fragment CustomNoteFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static CustomNoteFragment newInstance() {
-        CustomNoteFragment fragment = new CustomNoteFragment();
-        Bundle args = new Bundle();
-        fragment.setArguments(args);
-        return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setHasOptionsMenu(true);
         Log.d("TAG", "KAIQI ");
-
-
-
-
-
-
-
-
-        //setContentView(R.layout.fragment_custom_note);
-        if (getArguments() != null) {
-        }
-
     }
-
-
 
 
     @Override
@@ -212,42 +169,18 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
         if (rootView == null) {
             rootView = inflater.inflate(R.layout.fragment_note_create, container, false);
         }
-
-        setHasOptionsMenu(true);
-
-
         EventBus.getDefault().register(this);
-
-
-        //========================
-        mContext=getContext();
-
-        //btn = rootView.findViewById(R.id.fab);
+        setHasOptionsMenu(true);
+        mContext = getContext();
         btn2 = rootView.findViewById(R.id.fab2);
-
         search_note = rootView.findViewById(R.id.search_note);
-
-        lv = (ListView)rootView.findViewById(R.id.lv);
-
+        lv = (ListView) rootView.findViewById(R.id.lv);
         adapter = new NoteAdapter(getContext(), noteList);
         refreshListView();
         lv.setAdapter(adapter);
-
-
+        /// item 的点击事件
         lv.setOnItemClickListener(this);
-
         Log.d(TAG, "onClick: click");
-
-
-//        btn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Log.d(TAG, "onClick: click");
-//                Intent intent = new Intent(mContext, EditActivity.class);
-//                intent.putExtra("mode", 4);
-//                startActivityForResult(intent, 0);
-//            }
-//        });
 
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -299,43 +232,41 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
         EventBus.getDefault().unregister(this);
     }
 
-    @Subscribe
-    public void onEvent(String data) {
-        //bt_main.setText(data);
-        Log.d(TAG, data);
-
-
-
-
-        Note newNote = new Note(data, dateToStr(), tag);
-        Note_crud op = new Note_crud(mContext);
-        op.open();
-        op.addNote(newNote);
-        op.close();
-        Log.d(TAG, "wancheng");
-        refreshListView();
-
-
+    @Override
+    public void onStart() {
+        super.onStart();
     }
 
-    public String dateToStr(){
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Subscribe
+    public void onEvent(NoteMessage data) {
+        Log.d("yangchao", "nsklsnslnskls");
+        if (data.getIsSave() == 1){
+            Log.d(TAG, data.toString());
+            Note newNote = new Note(data.getContent(), dateToStr(), tag);
+            Note_crud op = new Note_crud(mContext);
+            op.open();
+            op.addNote(newNote);
+            op.close();
+            Log.d(TAG, "wancheng");
+            refreshListView();
+        }
+    }
+
+    public String dateToStr() {
         Date date = new Date();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return simpleDateFormat.format(date);
     }
 
 
-
-    //===========================================
-
-
     @Override
-    public void onActivityCreated(@Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
     }
-
-
-
 
 }
