@@ -245,7 +245,7 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
     @Subscribe
     public void onEvent(NoteMessage data) {
         Log.d("yangchao", "nsklsnslnskls");
-        if (data.getIsSave() == 1){
+        if (data.getIsSave() == 1 && !data.getContent().isEmpty()) {
             Log.d(TAG, data.toString());
             Note newNote = new Note(data.getContent(), dateToStr(), tag);
             Note_crud op = new Note_crud(mContext);
