@@ -45,7 +45,6 @@ public class Note_crud {
     }
 
     public Note getNote(long id){
-
         Cursor cursor = db.query(NoteDatabase.TABLE_NAME, columns, NoteDatabase.ID + "=?",
                 new String[] {String.valueOf(id)}, null, null, null, null);
         if (cursor != null) cursor.moveToFirst();

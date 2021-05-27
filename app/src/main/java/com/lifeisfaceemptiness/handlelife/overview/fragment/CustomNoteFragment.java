@@ -17,7 +17,6 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.Toolbar;
@@ -130,6 +129,13 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
     }
 
 
+    /**
+     * 单个 item 的点击事件
+     * @param parent
+     * @param view
+     * @param position
+     * @param id
+     */
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         switch (parent.getId()) {
@@ -149,11 +155,6 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
     }
 
 
-    @Override
-    public void onAttach(@NonNull Context context) {
-        super.onAttach(context);
-
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -179,7 +180,7 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
         refreshListView();
         lv.setAdapter(adapter);
         /// item 的点击事件
-        lv.setOnItemClickListener(this);
+        lv.setOnItemClickListener(this::onItemClick);
         Log.d(TAG, "onClick: click");
 
         btn2.setOnClickListener(new View.OnClickListener() {
@@ -193,7 +194,7 @@ public class CustomNoteFragment extends Fragment implements AdapterView.OnItemCl
                                 dbHelper = new NoteDatabase(mContext);
                                 SQLiteDatabase db = dbHelper.getWritableDatabase();
                                 db.delete("notes", null, null);
-                                db.execSQL("update sqlite_sequence set seq=0 where name='notes'");
+                                db.execSQL("update sqlite_sequence set seq=0 where name='  notes'");
                                 refreshListView();
                             }
                         }).setNegativeButton("取消", new DialogInterface.OnClickListener() {

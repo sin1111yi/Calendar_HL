@@ -3,9 +3,6 @@ package com.lifeisfaceemptiness.handlelife.create.fragment;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.fragment.app.Fragment;
 
 import com.bigkoo.pickerview.builder.TimePickerBuilder;
 import com.bigkoo.pickerview.listener.OnTimeSelectListener;
@@ -118,5 +117,16 @@ public class CreateErFragment extends Fragment implements
     public void onPause() {
         SaveAllDate();
         super.onPause();
+    }
+
+    /**
+     * 设置接口，把当前的 Fragment 的数据的传给Activity
+     */
+    public interface ISendEventRemindDataListener {
+        void postEventRemindData(String name, String time);
+    }
+
+    public void sendEventRemindData(ISendEventRemindDataListener iSendEventRemindDataListener) {
+        iSendEventRemindDataListener.postEventRemindData(etEventTitle.getText().toString().trim(), selectedDate);
     }
 }

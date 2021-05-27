@@ -2,9 +2,6 @@ package com.lifeisfaceemptiness.handlelife.create.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.fragment.app.Fragment;
 
 import com.bigkoo.pickerview.builder.TimePickerBuilder;
 import com.bigkoo.pickerview.listener.OnTimeSelectListener;
@@ -30,21 +29,15 @@ public class CreateSdFragment extends Fragment implements
     private Button callTimePicker;
     private TextView tvSelectTip;
     private TextView tvSelectedDate;
-    private EditText etSdTitle;
 
+    // EditText 输入的值
+    private EditText etSdTitle;
+    // 选择日期最后显示的值
     private String selectedDate;
 
     private Context mContext;
 
-    private class SpecialDate {
-        public String Title;
-        public String Date;
-        //public Date Date;
-        public String Description;
-    }
-
     public CreateSdFragment() {
-        // Required empty public constructor
     }
 
     public static CreateSdFragment newInstance() {
@@ -102,14 +95,15 @@ public class CreateSdFragment extends Fragment implements
         }
     }
 
-    private void SaveAllData() {
-        SpecialDate saved = new SpecialDate();
-        saved.Title = etSdTitle.getText().toString();
-        saved.Date = selectedDate;
+    /**
+     * 设置接口，把当前的 Fragment 的数据的传给Activity
+     */
+    public interface ISendSpecialDayDataListener {
+        void postSpecialDayData(String name, String time);
     }
 
-    @Override
-    public void onPause() {
-        super.onPause();
+    public void sendSpecialDayData(ISendSpecialDayDataListener iSendSpecialDayDataListener) {
+        iSendSpecialDayDataListener.postSpecialDayData(etSdTitle.getText().toString().trim(), selectedDate);
     }
+
 }

@@ -17,9 +17,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:firstDayOfWeek="3"
-            android:shownWeekCount="6"/>
+            android:shownWeekCount="6" />
 
     </com.lifeisfaceemptiness.handlelife.customui.HandleLinearLayout>
+
+    <Button
+        android:id="@+id/btn_delete_sd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除全部" />
+
+    <ListView
+        android:id="@+id/lv_special_day"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="0dp"
+        android:layout_weight="1"
+        android:divider="?attr/lvBackground"></ListView>
 
 
 </LinearLayout>

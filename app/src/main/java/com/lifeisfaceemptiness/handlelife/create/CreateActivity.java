@@ -14,11 +14,15 @@ import androidx.fragment.app.FragmentTransaction;
 import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.githang.statusbar.StatusBarCompat;
 import com.lifeisfaceemptiness.handlelife.R;
+import com.lifeisfaceemptiness.handlelife.base.db.model.EventRemind;
+import com.lifeisfaceemptiness.handlelife.base.db.model.SpecialDay;
 import com.lifeisfaceemptiness.handlelife.create.fragment.CreateAbFragment;
 import com.lifeisfaceemptiness.handlelife.create.fragment.CreateAcFragment;
 import com.lifeisfaceemptiness.handlelife.create.fragment.CreateErFragment;
 import com.lifeisfaceemptiness.handlelife.create.fragment.CreateNoteFragment;
 import com.lifeisfaceemptiness.handlelife.create.fragment.CreateSdFragment;
+import com.lifeisfaceemptiness.handlelife.create.message.EventRemindMessage;
+import com.lifeisfaceemptiness.handlelife.create.message.SpecialDayMessage;
 import com.lifeisfaceemptiness.handlelife.note.NoteMessage;
 
 import org.greenrobot.eventbus.EventBus;
@@ -37,7 +41,6 @@ public class CreateActivity extends AppCompatActivity implements
     CreateErFragment mCreateErFragment;
     CreateAcFragment mCreateAcFragment;
 
-    private String noteContent;
     private FragmentManager mFragmentManager;
     private FragmentTransaction mTransaction;
 
@@ -107,17 +110,56 @@ public class CreateActivity extends AppCompatActivity implements
      * 用于做数据传递的，接受来自对应Fragment的值
      */
     private void newsDelivery() {
+        // 发送笔记数据
         if (mCreateNoteFragment != null) {
             // 接受来自CreateNoteFragment的数据
             mCreateNoteFragment.sendNoteData(new CreateNoteFragment.ISendNoteDataListener() {
                 @Override
                 public void postNoteData(String s) {
-                    noteContent = s;
+                    // EventBus 进行数据传递
+                    EventBus.getDefault().post(new NoteMessage(s, 1));
                 }
             });
-            // EventBus 进行数据传递
-            EventBus.getDefault().post(new NoteMessage(noteContent, 1));
+            // 阻止所有的Fragment都进行事件发送
+            return;
         }
+        // 发送特殊日期数据
+        if (mCreateSdFragment != null) {
+            mCreateSdFragment.sendSpecialDayData(new CreateSdFragment.ISendSpecialDayDataListener() {
+                @Override
+                public void postSpecialDayData(String name, String time) {
+                    if (name != null && time != null) {
+                        // EventBus 进行数据传递
+                        SpecialDay specialDay = new SpecialDay();
+                        specialDay.setTitle(name);
+                        specialDay.setDate(time);
+                        EventBus.getDefault().post(new SpecialDayMessage(specialDay, 1));
+                    }
+
+                }
+            });
+            // 阻止所有的Fragment都进行事件发送
+            return;
+        }
+
+        // 发送事件提醒
+        if (mCreateErFragment != null) {
+            mCreateErFragment.sendEventRemindData(new CreateErFragment.ISendEventRemindDataListener() {
+                @Override
+                public void postEventRemindData(String name, String time) {
+                    if (name != null && time != null) {
+                        EventRemind eventRemind = new EventRemind();
+                        eventRemind.setName(name);
+                        eventRemind.setTime(time);
+                        EventBus.getDefault().post(new EventRemindMessage(eventRemind, 1));
+                    }
+                }
+            });
+            // 阻止所有的Fragment都进行事件发送
+            return;
+        }
+
+
     }
 
 

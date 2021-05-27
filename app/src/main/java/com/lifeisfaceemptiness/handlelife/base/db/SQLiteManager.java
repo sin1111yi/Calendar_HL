@@ -13,25 +13,14 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class SQLiteManager extends SQLiteOpenHelper {
 
     // 数据库的表
-    private static final String[] TABLE_NAME = {
+    public static String[] TABLE_NAME = {
             "SPECIAL_DAY", "ACCOUNT_BOOK", "EVENT_REMIND", "ALARM_CLOCK"
     };
 
-    // 当前操作的表
-    private static int currentTable = 1;
 
-    public SQLiteManager(Context context) {
-        super(context, TABLE_NAME[currentTable], null, 1);
+    public SQLiteManager(Context context, int tableIndex) {
+        super(context, TABLE_NAME[tableIndex], null, 1);
     }
-
-    public int getCurrentTable() {
-        return currentTable;
-    }
-
-    public void setCurrentTable(int currentTable) {
-        this.currentTable = currentTable;
-    }
-
 
     // 创建数据库中的表
     private static final String CREATE_SPECIAL_DAY = "CREATE TABLE SPECIAL_DAY(id INTEGER PRIMARY KEY AUTOINCREMENT," +
@@ -57,22 +46,10 @@ public class SQLiteManager extends SQLiteOpenHelper {
      */
     @Override
     public void onCreate(SQLiteDatabase db) {
-        switch (currentTable) {
-            case 1:
-                db.execSQL(CREATE_SPECIAL_DAY);
-                break;
-            case 2:
-                db.execSQL(CREATE_ACCOUNT_BOOK);
-                break;
-            case 3:
-                db.execSQL(CREATE_EVENT_REMIND);
-                break;
-            case 4:
-                db.execSQL(CREATE_ALARM_CLOCK);
-                break;
-            default:
-                break;
-        }
+        db.execSQL(CREATE_SPECIAL_DAY);
+        db.execSQL(CREATE_ACCOUNT_BOOK);
+        db.execSQL(CREATE_EVENT_REMIND);
+        db.execSQL(CREATE_ALARM_CLOCK);
     }
 
     /**
