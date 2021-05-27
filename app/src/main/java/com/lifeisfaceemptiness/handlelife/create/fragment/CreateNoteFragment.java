@@ -43,7 +43,7 @@ public class CreateNoteFragment extends Fragment {
     }
 
     public void sendNoteData(ISendNoteDataListener iSendNoteDataListener) {
-        iSendNoteDataListener.postNoteData(et.getText().toString());
+        iSendNoteDataListener.postNoteData(et.getText().toString().trim());
     }
 
 }
