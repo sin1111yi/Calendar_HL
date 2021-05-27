@@ -31,13 +31,15 @@ public class CreateActivity extends AppCompatActivity implements
     FloatingActionButton fabReturnOverView;
 
     // 初始化 Fragment
-    final CreateNoteFragment mCreateNoteFragment = new CreateNoteFragment();
-    final CreateSdFragment mCreateSdFragment = new CreateSdFragment();
-    final CreateAbFragment mCreateAbFragment = new CreateAbFragment();
-    final CreateErFragment mCreateErFragment = new CreateErFragment();
-    final CreateAcFragment mCreateAcFragment = new CreateAcFragment();
+    CreateNoteFragment mCreateNoteFragment;
+    CreateSdFragment mCreateSdFragment;
+    CreateAbFragment mCreateAbFragment;
+    CreateErFragment mCreateErFragment;
+    CreateAcFragment mCreateAcFragment;
 
     private String noteContent;
+    private FragmentManager mFragmentManager;
+    private FragmentTransaction mTransaction;
 
 
     @Override
@@ -105,15 +107,17 @@ public class CreateActivity extends AppCompatActivity implements
      * 用于做数据传递的，接受来自对应Fragment的值
      */
     private void newsDelivery() {
-        // 接受来自CreateNoteFragment的数据
-        mCreateNoteFragment.sendNoteData(new CreateNoteFragment.ISendNoteDataListener() {
-            @Override
-            public void postNoteData(String s) {
-                noteContent = s;
-            }
-        });
-        // EventBus 进行数据传递
-        EventBus.getDefault().post(new NoteMessage(noteContent, 1));
+        if (mCreateNoteFragment != null) {
+            // 接受来自CreateNoteFragment的数据
+            mCreateNoteFragment.sendNoteData(new CreateNoteFragment.ISendNoteDataListener() {
+                @Override
+                public void postNoteData(String s) {
+                    noteContent = s;
+                }
+            });
+            // EventBus 进行数据传递
+            EventBus.getDefault().post(new NoteMessage(noteContent, 1));
+        }
     }
 
 
@@ -123,23 +127,23 @@ public class CreateActivity extends AppCompatActivity implements
      * @param fragmentNum
      */
     public void startBoostFragment(int fragmentNum) {
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        mFragmentManager = getSupportFragmentManager();
+        mTransaction = mFragmentManager.beginTransaction();
         switch (fragmentNum) {
             case 0:
-                transaction.replace(R.id.show_fragment_zone, mCreateNoteFragment).commit();
+                mTransaction.replace(R.id.show_fragment_zone, mCreateNoteFragment = new CreateNoteFragment()).commit();
                 break;
             case 1:
-                transaction.replace(R.id.show_fragment_zone, mCreateSdFragment).commit();
+                mTransaction.replace(R.id.show_fragment_zone, mCreateSdFragment = new CreateSdFragment()).commit();
                 break;
             case 2:
-                transaction.replace(R.id.show_fragment_zone, mCreateAbFragment).commit();
+                mTransaction.replace(R.id.show_fragment_zone, mCreateAbFragment = new CreateAbFragment()).commit();
                 break;
             case 3:
-                transaction.replace(R.id.show_fragment_zone, mCreateErFragment).commit();
+                mTransaction.replace(R.id.show_fragment_zone, mCreateErFragment = new CreateErFragment()).commit();
                 break;
             case 4:
-                transaction.replace(R.id.show_fragment_zone, mCreateAcFragment).commit();
+                mTransaction.replace(R.id.show_fragment_zone, mCreateAcFragment = new CreateAcFragment()).commit();
                 break;
             default:
                 break;
